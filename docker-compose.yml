@@ -1,0 +1,25 @@
+version: '3.8'
+name: '${COMPOSE_PROJECT_NAME}'
+services:
+  app:
+    build:
+      context: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./apps/site/nginx.conf:/etc/nginx/nginx.conf
+    labels:
+      - 'traefik.enable=true'
+
+      - 'traefik.http.middlewares.redirect-to-non-www.redirectregex.regex=^https?://www.(.*)'
+      - 'traefik.http.middlewares.redirect-to-non-www.redirectregex.replacement=https://$${1}'
+      - 'traefik.http.middlewares.redirect-to-non-www.redirectregex.permanent=true'
+
+      - 'traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(`${HOST}`) || Host(`www.${HOST}`)'
+      - 'traefik.http.routers.${COMPOSE_PROJECT_NAME}.entrypoints=websecure'
+      - 'traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls.certresolver=myresolver'
+      - 'traefik.http.routers.${COMPOSE_PROJECT_NAME}.middlewares=redirect-to-non-www'
+      - 'traefik.http.services.${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=80'
+
+      - 'traefik.docker.network=${COMPOSE_PROJECT_NAME}_default'
+
