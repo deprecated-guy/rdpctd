@@ -13,7 +13,20 @@ permissions:
   contents: read
 
 jobs:
+  build:
+    name: build site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+      - name: Install packages
+        uses: actions/setup-node@v4
+        run: npm i --force
+      - name: build
+        run: npx nx run site:build:production
+
   push_image:
+    needs: build
     name: Push Docker image to Docker Hub
     runs-on: ubuntu-latest
     steps:
