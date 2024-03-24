@@ -24,7 +24,6 @@ jobs:
         run: npm i --force
       - name: build
         run: npx nx run site:build:production
-
   push_image:
     needs: build
     name: Push Docker image to Docker Hub
