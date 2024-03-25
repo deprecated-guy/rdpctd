@@ -16,8 +16,14 @@
 				"polyfills": ["zone.js"],
 				"tsConfig": "apps/site/tsconfig.app.json",
 				"inlineStyleLanguage": "scss",
+        "stylePreprocessorOptions": {
+          "includePaths": ["apps/site/styles"]
+        },
 				"assets": ["apps/site/src/favicon.ico", "apps/site/src/assets"],
-				"styles": ["apps/site/src/styles.scss"],
+				"styles": [
+          "apps/site/styles/reset.scss",
+          "apps/site/src/styles.scss"
+        ],
 				"scripts": []
 			},
 			"configurations": {

@@ -42,6 +42,7 @@
 				}
 			}
 		}
+
 	},
 	"plugins": [
 		{
@@ -63,6 +64,17 @@
 			"linter": "eslint",
 			"style": "scss",
 			"unitTestRunner": "jest"
+		},
+		"@nx/angular:library": {
+			"linter": "eslint",
+			"unitTestRunner": "jest"
+		},
+		"@nx/angular:component": {
+			"style": "scss",
+      "selector": "site-${name}",
+      "changeDetection": "OnPush",
+      "prefix": "app",
+      "viewEncapsulation": "none"
 		}
 	},
 	"nxCloudAccessToken": "ODZkMWJmZjEtYTk3YS00NDBkLWIxYzctMjZhYjIzOGZkYTZhfHJlYWQtd3JpdGU="
