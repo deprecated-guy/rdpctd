@@ -6,3 +6,4 @@ COPY ./dist/apps/site/browser /usr/share/nginx/html
 COPY ./apps/site/nginx.conf /etc/nginx/nginx.conf
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
+EXPOSE [8080]
