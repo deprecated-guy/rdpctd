@@ -15,10 +15,17 @@
   "lint-staged": {
     "*.ts": [
       "eslint --fix",
-      "prettier . --write"
+      "prettier . --write",
+      "git commit . -f"
     ],
     "*.html": [
-      "prettier --write"
+      "prettier --write",
+      "git commit . -f"
+    ],
+    "*.scss": [
+      "prettier --write",
+      "stylelint **/*.scss --fix",
+      "git commit . -f"
     ]
   },
   "private": true,
