@@ -5,7 +5,12 @@
       <div class="menu">
         <ul>
           <li>
-            <a href="/">this ste has not developed for now</a>
+            <a routerLink="/" routerLinkActive="active">To home page</a>
+          </li>
+          <li class="counter">
+            time has passed: {{ count | async | plural : 'day' : 'days' }}
+          </li>
+          <li>
           </li>
         </ul>
       </div>

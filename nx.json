@@ -42,7 +42,6 @@
 				}
 			}
 		}
-
 	},
 	"plugins": [
 		{
@@ -71,10 +70,10 @@
 		},
 		"@nx/angular:component": {
 			"style": "scss",
-      "selector": "site-${name}",
-      "changeDetection": "OnPush",
-      "prefix": "app",
-      "viewEncapsulation": "none"
+			"selector": "site-${name}",
+			"changeDetection": "OnPush",
+			"prefix": "app",
+			"viewEncapsulation": "none"
 		}
 	},
 	"nxCloudAccessToken": "ODZkMWJmZjEtYTk3YS00NDBkLWIxYzctMjZhYjIzOGZkYTZhfHJlYWQtd3JpdGU="
