@@ -1,1 +1,27 @@
-<p>theme-changer works!</p>
+
+<div class="switcher">
+    <div class="select" >
+      <div class="theme-icon"  (click)="state.set('opened')">
+        <app-icon iconName="color-palette.svg" ></app-icon>
+      </div>
+      @if (showTheme()) {
+        <div class="theme-name">
+          {{theme()}}
+        </div>
+      }
+
+      <div class="options" [@themeChangerAnimation]="state()">
+        <div class="option" (click)="changeTheme('light')">
+          @if (theme() === 'light') {
+            <div class="check">✔</div>
+          } <div class="name">light</div>
+        </div>
+        <div class="option" (click)="changeTheme('dark')">
+          @if(theme() === 'dark'){
+            <div class="check">✔</div>
+
+          } <div class="name">dark</div>
+        </div>
+      </div>
+    </div>
+</div>

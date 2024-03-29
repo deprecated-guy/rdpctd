@@ -8,9 +8,10 @@
             <a routerLink="/" routerLinkActive="active">To home page</a>
           </li>
           <li class="counter">
-            time has passed: {{ count | async | plural : 'day' : 'days' }}
+             {{ count | async | plural : 'day' : 'days' }} is out
           </li>
           <li>
+            <app-theme-changer></app-theme-changer>
           </li>
         </ul>
       </div>

@@ -1,7 +1,10 @@
 
-<div class="layout">
-  <app-header></app-header>
+  <app-header
+    [translucent]="localStorage.getItem('theme')! === 'dark'"
+    [colored]="localStorage.getItem('theme')! ==='light'"></app-header>
   <div class="normal">
-    <router-outlet></router-outlet>
+    <main class="page">
+     <router-outlet ></router-outlet>
+    </main>
   </div>
-</div>
+

@@ -1,0 +1,35 @@
+.select {
+  position: relative;
+}
+
+
+.theme-icon {
+  border: 2px solid var(--theme-switcher-color);
+  padding: 0.5rem;
+  width: max-content;
+  border-radius: 0.3rem;
+
+
+}
+
+::ng-deep app-icon {
+  width: 24px;
+  height: 24px;
+  background: var(--theme-switcher-color);
+
+}
+
+.options {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.4rem;
+  background: var(--theme-select-bg);
+}
+
+.option {
+  display: flex;
+  gap: 0.2rem;
+  color: #000;
+}
