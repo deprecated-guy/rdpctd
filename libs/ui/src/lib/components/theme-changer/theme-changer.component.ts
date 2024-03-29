@@ -4,11 +4,12 @@ import { BehaviorSubject, tap } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { IconComponent } from '../icon/icon.component';
 import { themeChangerAnimation } from '../../animations';
+import { EventOutsideDirective } from '../../directives';
 
 @Component({
 	selector: 'app-theme-changer',
 	standalone: true,
-	imports: [CommonModule, IconComponent],
+	imports: [CommonModule, IconComponent, EventOutsideDirective],
 	templateUrl: './theme-changer.component.html',
 	styleUrl: './theme-changer.component.scss',
 	encapsulation: ViewEncapsulation.Emulated,
@@ -44,5 +45,9 @@ export class ThemeChangerComponent {
 
 	ngOnInit() {
 		this.changeTheme(localStorage.getItem('theme') ?? 'dark');
+	}
+
+	catchEvent(event: boolean) {
+		this.state.update((_) => (event ? 'closed' : 'opened'));
 	}
 }

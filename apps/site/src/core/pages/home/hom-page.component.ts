@@ -1,6 +1,10 @@
-import { Component } from '@angular/core';
+import type { ElementRef } from '@angular/core';
+import { Component, DestroyRef, inject, viewChild } from '@angular/core';
 import { AsyncPipe, I18nPluralPipe } from '@angular/common';
 import { PluralPipe } from '@core/pipes';
+import { interval, takeUntil, tap } from 'rxjs';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { DestroyService } from '../../../../../../libs/ui/src/lib/services';
 
 @Component({
 	selector: 'app-home',
@@ -8,7 +12,9 @@ import { PluralPipe } from '@core/pipes';
 	template: `
 		<h1>While this site is not on production ready.. :(</h1>
 		<div class="block">
-			<audio src="https://cdn.rdpctd.dev/assets/audio/1.mp3" autoplay="1"></audio>
+			<audio autoplay controls #audio muted loop>
+				<source src="https://cdn.rdpctd.dev/assets/audio/1.mp3" type="audio/mp3" />
+			</audio>
 		</div>
 
 		<p>I paste puppy dog picture</p>
@@ -35,4 +41,14 @@ import { PluralPipe } from '@core/pipes';
   `,
 	imports: [AsyncPipe, I18nPluralPipe, PluralPipe],
 })
-export default class HomPageComponent {}
+export default class HomPageComponent {
+	private readonly destroyService = inject(DestroyService);
+	private readonly destroyRef = inject(DestroyRef);
+
+	private readonly audio = viewChild<ElementRef<HTMLAudioElement>>('audio');
+	readonly playing = interval(1000).pipe(tap(() => this.audio()?.nativeElement.play()));
+
+	ngOnInit() {
+		this.playing.pipe(takeUntilDestroyed(this.destroyRef), takeUntil(this.destroyService)).subscribe();
+	}
+}

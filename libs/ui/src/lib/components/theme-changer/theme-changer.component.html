@@ -1,5 +1,5 @@
 
-<div class="switcher">
+<div class="switcher" appEventOutside (eventOutside)="catchEvent($event)" >
     <div class="select" >
       <div class="theme-icon"  (click)="state.set('opened')">
         <app-icon iconName="color-palette.svg" ></app-icon>
