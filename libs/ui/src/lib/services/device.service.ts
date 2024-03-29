@@ -56,6 +56,22 @@ export class DeviceService {
 		},
 	);
 
+	isMobileSignal = toSignal(
+		this.resieEvent.pipe(
+			map(() => this.isMobile()),
+			distinctUntilChanged(),
+		),
+		{ initialValue: this.isMobile() },
+	);
+
+	isTabletSignal = toSignal(
+		this.resieEvent.pipe(
+			map(() => this.isTab()),
+			distinctUntilChanged(),
+		),
+		{ initialValue: this.isTab() },
+	);
+
 	private getWidth() {
 		return window.innerWidth ? window.innerWidth : window.outerWidth;
 	}
@@ -66,22 +82,22 @@ export class DeviceService {
 
 	private isTab() {
 		return (
-			(window.innerWidth > this.devices.tab.min && window.innerWidth < this.devices.tab.max) ||
-			(window.outerWidth > this.devices.tab.min && window.outerWidth < this.devices.tab.max)
+			(this.width() > this.devices.tab.min && this.width() < this.devices.tab.max) ||
+			(this.width() > this.devices.tab.min && this.width() < this.devices.tab.max)
 		);
 	}
 
 	private isDesk() {
 		return (
-			(window.innerWidth > this.devices.desktop.min && window.innerWidth < this.devices.desktop.max) ||
-			(window.outerWidth > this.devices.desktop.min && window.outerWidth < this.devices.desktop.max)
+			(this.width() > this.devices.desktop.min && this.width() < this.devices.desktop.max) ||
+			(this.width() > this.devices.desktop.min && this.width() < this.devices.desktop.max)
 		);
 	}
 
 	private isMobile() {
 		return (
-			(window.innerWidth > this.devices.mobile.min && window.innerWidth < this.devices.mobile.max) ||
-			(window.outerWidth > this.devices.mobile.min && window.outerWidth < this.devices.mobile.max)
+			(this.width() > this.devices.mobile.min && this.width() < this.devices.mobile.max) ||
+			(this.width() > this.devices.mobile.min && this.width() < this.devices.mobile.max)
 		);
 	}
 }
