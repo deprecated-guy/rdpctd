@@ -1,6 +1,6 @@
 {
   "name": "@org/source",
-  "version": "0.0.0",
+  "version": "2.0.3-beta",
   "license": "MIT",
   "type": "module",
   "scripts": {
@@ -43,6 +43,8 @@
     "@ng-web-apis/common": "^3.0.6",
     "@nx/angular": "18.2.1",
     "@tinkoff/ng-polymorpheus": "^4.3.0",
+    "marked": "^9.1.6",
+    "ngx-markdown": "^17.1.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"

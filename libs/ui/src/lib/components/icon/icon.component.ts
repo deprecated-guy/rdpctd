@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 	host: {
 		'[style.display]': '"block"',
 		'[style.mask-image]': 'concatPath()',
+		'[style.--webkit-mask-image]': 'concatPath()',
+		'[style.background-color]': '"currentColor"',
 		'[style.mask-position]': '"center"',
 		'[style.width]': '"var(--icon-width, 1.135rem)"',
 		'[style.z-index]': '1',
@@ -27,6 +29,8 @@ export class IconComponent {
 			gif: 'any/',
 		};
 
-		return `url(/assets/images/${directory[this.iconName().split('.')[1]]}${this.iconName()})`;
+		return this.iconName().includes('https://')
+			? `url(${this.iconName()})`
+			: `url(/assets/images/${directory[this.iconName().split('.')[1]]}${this.iconName()})`;
 	});
 }

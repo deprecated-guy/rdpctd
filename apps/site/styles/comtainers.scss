@@ -1,6 +1,12 @@
+@use "@app/styles/media.scss";
+
 .normal {
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
   padding: 0 50px;
+
+  @media #{media.$mobile} {
+    padding: 0;
+  }
 }

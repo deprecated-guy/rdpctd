@@ -51,6 +51,7 @@ export default antfu(
 			},
 		},
 		rules: {
+			'style/eol-last': 'off',
 			'style/arrow-parens': 'off',
 			'antfu/if-newline': 'off',
 			'style/binary-ops': 'off',
@@ -69,7 +70,7 @@ export default antfu(
 			'no-alert': 'error',
 			'node/no-path-concat': 'off',
 			quotes: ['error', 'single'],
-      'style/brace-style': 'off',
+			'style/brace-style': 'off',
 			'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
 			'unused-imports/no-unused-imports': 'error',
 			'node/prefer-global/process': 'off',

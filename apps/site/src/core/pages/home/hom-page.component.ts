@@ -1,48 +1,27 @@
 import { Component } from '@angular/core';
 import { AsyncPipe, I18nPluralPipe } from '@angular/common';
 import { PluralPipe } from '@core/pipes';
+import { MarkdownComponent } from 'ngx-markdown';
 
 @Component({
 	selector: 'app-home',
 	standalone: true,
-	template: `
-		<h1>While this site is not on production ready.. :(</h1>
-		<div class="block">
-			<audio autoplay controls #audio muted loop>
-				<source src="https://cdn.rdpctd.dev/assets/audio/1.mp3" type="audio/mp3" />
-			</audio>
-		</div>
-
-		<p>I paste puppy dog picture</p>
-		<br />
-		<img style="width: 100%;" src="https://shorturl.at/nCE12" alt="" />
-		<br />
-		<p>Don't worry. I started developing this site currently. ;)</p>
-		<br />
-		<p>Thanks for waiting! ;)</p>
-	`,
+	template:
+		' <markdown src="assets/md/CHANGELOG.md"></markdown><br><markdown src="assets/md/page-content.md"></markdown>',
+	imports: [AsyncPipe, I18nPluralPipe, PluralPipe, MarkdownComponent],
 	styles: `
-    @use "@app/styles/media.scss";
+@use "@app/styles/media.scss";
 
-    iframe {
-      max-width: 30rem;
-      height: 22rem;
-    }
-    .block {
-      display: flex;
-      gap: 1.2rem;
+  ::ng-deep markdown img{
+    max-width: 44rem;
+    width: auto;
+    margin: 0 auto;
 
-      @media #{media.$mobile} {
-        flex-direction: column-reverse;
-      }
+    @media #{media.$mobile} {
+      margin: 0;
+      max-width: 17rem;
     }
-
-    audio {
-      @media #{media.$mobile} {
-      display: none;
-    }
-    }
+  }
   `,
-	imports: [AsyncPipe, I18nPluralPipe, PluralPipe],
 })
 export default class HomPageComponent {}
