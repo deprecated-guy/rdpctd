@@ -8,9 +8,9 @@ export class EventOutsideDirective {
 	private readonly element = inject<ElementRef<HTMLElement>>(ElementRef);
 	eventOutside = output<boolean>();
 
-	@HostListener('mousedown', ['$event', '$event.target'])
+	@HostListener('document:mousedown', ['$event'])
 	onMouseDown(event: PointerEvent) {
 		if (this.element.nativeElement.contains(event.target as Node)) this.eventOutside.emit(true);
-		this.eventOutside.emit(false);
+		else this.eventOutside.emit(false);
 	}
 }

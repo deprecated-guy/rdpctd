@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  position: absolute;
+  background: #fafaf9;
+  z-index: 100;
+}
+
+.drawer {
+  display: block;
+  position: relative;
+  color: black;
+  background: #f9f9fa;
+  width: 17rem;
+  height: 100%;
+}
+
+.opened {
+ animation: 300ms open;
+}
+
+.closed {
+  animation: close 300ms;
+}
+
+@keyframes open {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    width: 0;
+    transform: translateX(-100%);
+    display: none;
+  }
+}
+
+
+::ng-deep app-icon {
+  background: #fafaf9;
+}

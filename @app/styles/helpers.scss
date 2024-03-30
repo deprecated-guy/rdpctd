@@ -1,0 +1,9 @@
+@mixin clearButton() {
+  background: none;
+  border: none;
+}
+
+@mixin clearLink() {
+  text-decoration: none;
+  color: black;
+}

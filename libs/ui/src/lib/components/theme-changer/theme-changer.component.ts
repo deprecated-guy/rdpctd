@@ -48,6 +48,6 @@ export class ThemeChangerComponent {
 	}
 
 	catchEvent(event: boolean) {
-		this.state.update((_) => (event ? 'closed' : 'opened'));
+		this.state.set(!event ? 'closed' : 'opened');
 	}
 }

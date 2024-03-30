@@ -1,0 +1,13 @@
+<div class="drawer" #drawer  appEventOutside (eventOutside)="catchEvent($event)">
+  <div class="header" style="display: flex;;">
+  <div class="title jumbortrom">
+    {{context.title}}
+  </div>
+  </div>
+
+  <div class="content" >
+    <ng-container *polymorpheusOutlet="context.content as text">
+      {{text}}
+    </ng-container>
+  </div>
+</div>

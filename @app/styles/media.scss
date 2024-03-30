@@ -1,0 +1,10 @@
+$mobile-min: 1px;
+$mobile-max: 769px;
+$tab-min: $mobile-max;
+$tab-max: 1280px;
+$desc-min: $tab-max;
+$desc-max: 9999999px;
+
+$mobile: 'screen and (max-width: #{$mobile-max})';
+$tablet: 'screen and (min-width: #{$tab-min}) and (max-width: #{$tab-max})';
+$desktop: 'screen and (min-width: #{$desc-min}) and (max-width: #{$desc-max})';

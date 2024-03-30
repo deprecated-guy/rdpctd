@@ -1,0 +1,24 @@
+@import "styles/colors";
+
+
+.jumbortrom {
+  font-size: 1.5rem;
+  width: 100%;
+  color: $material-text-black;
+  text-align: center;
+  padding: 0.7rem 3rem;
+  line-height: 1.3;
+  background: $material-gray-background;
+  margin-bottom: 0.1rem;
+}
+
+.jumbortrom-link {
+  display: flex;
+  padding: 0.5rem 2rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: $material-text-link-color;
+  background: $material-text-link-background;
+}
+

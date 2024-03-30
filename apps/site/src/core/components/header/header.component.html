@@ -1,6 +1,10 @@
 <div class="header">
   <div class="normal">
     <div class="row">
+      <div class="mobile-menu">
+        <app-drawer-menu [content]="drawer" [menuTitle]="'Reactive Deprecated'"></app-drawer-menu>
+      </div>
+      <app-theme-changer class="theme"></app-theme-changer>
       <div class="logo">LOGO</div>
       <div class="menu">
         <ul>
@@ -18,3 +22,17 @@
     </div>
   </div>
 </div>
+
+<ng-template #drawer>
+  <div class="drawer-menu">
+    @for (route of routes(); track $index) {
+      <a appLinkExpandable appearance="full-width" [link]="route"></a>
+    }
+  </div>
+
+  <audio  controls>
+    <source src="https://cdn.rdpctd.dev/assets/audio/1.mp3" type="audio/mp3" />
+  </audio>
+
+
+</ng-template>

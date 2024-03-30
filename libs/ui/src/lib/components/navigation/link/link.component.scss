@@ -1,0 +1,24 @@
+@use "@app/styles/helpers.scss";
+
+:host {
+  display: block;
+  @include helpers.clearButton;
+  @include helpers.clearLink;
+
+  &[data-appearance='full-width'] {
+    .link {
+      justify-content: space-between;
+    }
+  }
+}
+
+.link {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1rem;
+}
+
+::ng-deep app-icon {
+  --icon-width: 1.5rem;
+  background: var(--text-color);
+}

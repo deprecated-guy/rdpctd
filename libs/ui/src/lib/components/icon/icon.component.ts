@@ -13,6 +13,7 @@ import { CommonModule } from '@angular/common';
 		'[style.mask-image]': 'concatPath()',
 		'[style.mask-position]': '"center"',
 		'[style.width]': '"var(--icon-width, 1.135rem)"',
+		'[style.z-index]': '1',
 		'[style.height]': '"var(--icon-width, 1.135rem)"',
 	},
 })

@@ -16,7 +16,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@core/*": ["apps/site/src/core/*"],
-			"@ui/*": ["libs/ui/src/index.ts"]
+			"@ui/*": ["libs/ui/src/lib/*"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

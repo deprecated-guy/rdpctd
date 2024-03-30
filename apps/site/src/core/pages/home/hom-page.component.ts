@@ -1,10 +1,6 @@
-import type { ElementRef } from '@angular/core';
-import { Component, DestroyRef, inject, viewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import { AsyncPipe, I18nPluralPipe } from '@angular/common';
 import { PluralPipe } from '@core/pipes';
-import { interval, takeUntil, tap } from 'rxjs';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { DestroyService } from '../../../../../../libs/ui/src/lib/services';
 
 @Component({
 	selector: 'app-home',
@@ -26,6 +22,8 @@ import { DestroyService } from '../../../../../../libs/ui/src/lib/services';
 		<p>Thanks for waiting! ;)</p>
 	`,
 	styles: `
+    @use "@app/styles/media.scss";
+
     iframe {
       max-width: 30rem;
       height: 22rem;
@@ -34,21 +32,17 @@ import { DestroyService } from '../../../../../../libs/ui/src/lib/services';
       display: flex;
       gap: 1.2rem;
 
-      @media (max-width: 768px) {
+      @media #{media.$mobile} {
         flex-direction: column-reverse;
       }
+    }
+
+    audio {
+      @media #{media.$mobile} {
+      display: none;
+    }
     }
   `,
 	imports: [AsyncPipe, I18nPluralPipe, PluralPipe],
 })
-export default class HomPageComponent {
-	private readonly destroyService = inject(DestroyService);
-	private readonly destroyRef = inject(DestroyRef);
-
-	private readonly audio = viewChild<ElementRef<HTMLAudioElement>>('audio');
-	readonly playing = interval(1000).pipe(tap(() => this.audio()?.nativeElement.play()));
-
-	ngOnInit() {
-		this.playing.pipe(takeUntilDestroyed(this.destroyRef), takeUntil(this.destroyService)).subscribe();
-	}
-}
+export default class HomPageComponent {}

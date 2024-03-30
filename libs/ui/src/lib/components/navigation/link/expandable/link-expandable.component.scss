@@ -1,0 +1,34 @@
+.inherited-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-height: max-content;
+  width: 100%;
+
+  ::ng-deep [appLink].jumbortrom-link.jumbortrom-link {
+   padding-left: 3rem;
+    ::ng-deep app-icon {
+      background: #f9f9fa;
+    }
+  }
+}
+
+.main-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+
+::ng-deep app-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  background: #fafaf9;
+
+}
