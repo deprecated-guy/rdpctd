@@ -13,6 +13,7 @@ export default antfu(
 		yaml: false,
 		markdown: false,
 		ignores: [
+			'**/jest.config.ts',
 			'*.json',
 			'tsconfig.*.json',
 			'node_modules',
@@ -131,6 +132,7 @@ export default antfu(
 			],
 		},
 		ignores: [
+			'**/jest.config.ts',
 			'*.json',
 			'tsconfig.*.json',
 			'node_modules',

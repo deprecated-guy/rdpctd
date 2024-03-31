@@ -69,7 +69,8 @@
 			}
 		},
 		"lint": {
-			"executor": "@nx/eslint:lint"
+			"executor": "@nx/eslint:lint",
+      "commands": "eslint --fix --quiet"
 		},
 		"test": {
 			"executor": "@nx/jest:jest",
