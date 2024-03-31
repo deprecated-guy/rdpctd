@@ -2,7 +2,7 @@
 <div class="switcher" appEventOutside (eventOutside)="catchEvent($event)" >
     <div class="select" >
       <div class="theme-icon"  (click)="state.set('opened')">
-        <app-icon iconName="color-palette.svg" ></app-icon>
+        <app-icon [iconName]="'palette'" ></app-icon>
       </div>
       @if (showTheme()) {
         <div class="theme-name">

@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import type { Icon } from '@ui/components';
 
 export interface ApplicationRouterLink {
-	icon?: string;
+	icon?: Icon;
 	routerLink: string;
 	title: string;
 	children?: ApplicationRouterLink[];

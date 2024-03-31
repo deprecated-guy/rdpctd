@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import type { Icon } from '../../icon/icon.component';
 import { IconComponent } from '../../icon/icon.component';
 
 export type LinkAppearance = 'default' | 'full-width';
@@ -16,7 +17,7 @@ export type LinkAppearance = 'default' | 'full-width';
 	},
 })
 export class LinkComponent {
-	icon = input<string>('');
-	iconRight = input('');
+	icon = input<Icon>();
+	iconRight = input<Icon>();
 	appearance = input<LinkAppearance>('default');
 }

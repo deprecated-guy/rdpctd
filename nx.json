@@ -76,18 +76,13 @@
 			"viewEncapsulation": "none"
 		}
 	},
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/nx-cloud",
-      "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ]
-      }
-    }
-  },
-  "nxCloudAccessToken": "ODZkMWJmZjEtYTk3YS00NDBkLWIxYzctMjZhYjIzOGZkYTZhfHJlYWQtd3JpdGU="
+	"tasksRunnerOptions": {
+		"default": {
+			"runner": "@nrwl/nx-cloud",
+			"options": {
+				"cacheableOperations": ["build", "lint", "test", "e2e"]
+			}
+		}
+	},
+	"nxCloudAccessToken": "ODZkMWJmZjEtYTk3YS00NDBkLWIxYzctMjZhYjIzOGZkYTZhfHJlYWQtd3JpdGU="
 }

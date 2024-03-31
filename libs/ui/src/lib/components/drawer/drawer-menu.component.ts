@@ -1,6 +1,7 @@
-import { Component, DestroyRef, inject, input } from '@angular/core';
+import { Component, DestroyRef, computed, inject, input } from '@angular/core';
 import type { PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import type { Icon } from '@ui/components';
 import { DrawerService } from './drawer.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { DrawerService } from './drawer.service';
 	template: '',
 	standalone: true,
 	host: {
-		'[style.mask]': '"url(/assets/images/svg/drawer.svg)"',
+		'[style.mask]': 'computedPath()',
 		'[style.mask-position]': '"center"',
 		'[style.mask-repeat]': '"no-repeat"',
 		'[style.display]': '"block"',
@@ -23,6 +24,8 @@ import { DrawerService } from './drawer.service';
 export class DrawerMenuComponent {
 	private readonly drawerService = inject(DrawerService);
 	private readonly destroyRef = inject(DestroyRef);
+	protected readonly computedPath = computed(() => `url(${this.icon()})`);
+	icon = input<string | Icon>('drawer');
 	content = input<PolymorpheusContent>();
 	menuTitle = input<string>('');
 

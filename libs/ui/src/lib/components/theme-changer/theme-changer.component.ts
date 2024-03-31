@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, ViewEncapsulation, input, signal } 
 import { CommonModule } from '@angular/common';
 import { BehaviorSubject, tap } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { IconComponent } from '../icon/icon.component';
-import { themeChangerAnimation } from '../../animations';
-import { EventOutsideDirective } from '../../directives';
+import { IconComponent } from '@ui/components';
+import { themeChangerAnimation } from '@ui/animations';
+import { EventOutsideDirective } from '@ui/directives';
 
 @Component({
 	selector: 'app-theme-changer',

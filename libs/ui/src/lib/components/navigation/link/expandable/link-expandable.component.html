@@ -5,13 +5,13 @@
         {{link()?.title}}
       </span>
       <span class="icon">
-        <app-icon [iconName]="'chevron-right.svg'"></app-icon>
+        <app-icon iconName="chevronRight"></app-icon>
       </span>
     </span>
-    <ul class="inherited-link" #children [@expand]="state()">
+    <ul class="inherited-link" [@expand]="state()">
       @for (child of link()?.children ?? []; track $index) {
         <li>
-          <a appLink [appearance]="appearance()" [routerLink]="child.routerLink" [iconRight]="child!.icon ?? ''">{{child.title}}</a>
+          <a appLink [appearance]="appearance()" [routerLink]="child.routerLink" [iconRight]="child?.icon ?? 'nothing'">{{child.title}}</a>
         </li>
       }
     </ul>

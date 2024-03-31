@@ -16,6 +16,7 @@
 		"baseUrl": ".",
 		"paths": {
 			"@core/*": ["apps/site/src/core/*"],
+			"@icons": ["libs/icons/src/index.ts"],
 			"@ui/*": ["libs/ui/src/lib/*"]
 		}
 	},

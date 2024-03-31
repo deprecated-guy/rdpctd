@@ -50,7 +50,7 @@ export class HeaderComponent {
 			children: [
 				{
 					title: 'home',
-					icon: 'home.svg',
+					icon: 'home',
 					routerLink: '',
 				},
 			],
