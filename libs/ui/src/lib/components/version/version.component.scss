@@ -1,0 +1,18 @@
+@use '@app/styles/media.scss';
+
+:host {
+	display: block;
+	width: 100%;
+	margin-top: 0.3rem;
+	color: #181819;
+	opacity: 0.4;
+	user-select: none;
+}
+
+.version {
+	display: flex;
+	justify-content: flex-end;
+	width: 10rem;
+	margin-left: auto;
+	text-align: right;
+}

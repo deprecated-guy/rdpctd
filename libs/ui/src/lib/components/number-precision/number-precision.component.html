@@ -1,0 +1,6 @@
+<div class="precision">
+	<div class="value">
+		{{ value() | precision : precision() | decimal }}
+	</div>
+	<div class="currency" [innerHTML]="currencySign()"></div>
+</div>
