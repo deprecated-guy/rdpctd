@@ -1,38 +1,41 @@
 <div class="header">
-  <div class="normal">
-    <div class="row">
-      <div class="mobile-menu">
-        <app-drawer-menu [content]="drawer" [menuTitle]="'Reactive Deprecated'" icon="drawer"></app-drawer-menu>
-      </div>
-      <app-theme-changer class="theme"></app-theme-changer>
-      <div class="logo">LOGO</div>
-      <div class="menu">
-        <ul>
-          <li>
-            <a routerLink="/" routerLinkActive="active">To home page</a>
-          </li>
-          <li class="counter">
-             {{ count | async | plural : 'day' : 'days' }} is out
-          </li>
-          <li>
-            <app-theme-changer></app-theme-changer>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+	<div class="normal">
+		<div class="row">
+			<div class="mobile-menu">
+				<app-drawer-menu [content]="drawer" [menuTitle]="'Reactive Deprecated'" icon="drawer"></app-drawer-menu>
+			</div>
+			<app-theme-changer class="theme"></app-theme-changer>
+			<div class="logo"><app-icon [iconName]="'logo'"></app-icon></div>
+			<div class="menu">
+				<ul>
+					<li>
+						<a routerLink="/" routerLinkActive="active">To home page</a>
+					</li>
+					<li class="counter">{{ count | async | plural : 'day' : 'days' }} is out</li>
+					<li>
+						<app-theme-changer></app-theme-changer>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 
+{{ removed() }}
 <ng-template #drawer>
-  <div class="drawer-menu">
-    @for (route of routes(); track $index) {
-      <a appLinkExpandable appearance="full-width" [link]="route"></a>
-    }
-  </div>
+	<div class="drawer-menu">
+		@for (route of routes(); track $index) {
+		<a appLinkExpandable appearance="full-width" [link]="route"></a>
+		}
+	</div>
 
-  <audio  controls>
-    <source src="https://cdn.rdpctd.dev/assets/audio/1.mp3" type="audio/mp3" />
-  </audio>
+	<audio controls>
+		<source src="https://cdn.rdpctd.dev/assets/audio/1.mp3" type="audio/mp3" />
+	</audio>
 
+	<app-precision [value]="2" [currency]="'020'" [decimal]="'always'"></app-precision>
 
+	<div class="version">
+		<app-version></app-version>
+	</div>
 </ng-template>

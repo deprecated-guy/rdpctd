@@ -1,3 +1,4 @@
+import type { OnInit } from '@angular/core';
 import { ChangeDetectionStrategy, Component, inject, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive } from '@angular/router';
@@ -5,7 +6,14 @@ import { interval, map } from 'rxjs';
 import { differenceInDays } from 'date-fns';
 import { PluralPipe } from '@core/pipes';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { DrawerMenuComponent, LinkExpandableComponent, ThemeChangerComponent } from '@ui/components';
+import {
+	DrawerMenuComponent,
+	IconComponent,
+	LinkExpandableComponent,
+	NumberPrecisionComponent,
+	ThemeChangerComponent,
+	VersionComponent,
+} from '@ui/components';
 import { RouterService } from '@ui/services';
 
 @Component({
@@ -19,6 +27,9 @@ import { RouterService } from '@ui/services';
 		ThemeChangerComponent,
 		DrawerMenuComponent,
 		LinkExpandableComponent,
+		IconComponent,
+		VersionComponent,
+		NumberPrecisionComponent,
 	],
 	templateUrl: './header.component.html',
 	styleUrl: './header.component.scss',
@@ -26,12 +37,13 @@ import { RouterService } from '@ui/services';
 	host: {
 		'[class.translucent]': 'translucent()',
 		'[class.colored]': 'colored()',
+		'[class.removed]': 'removed()',
 	},
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
 	private readonly routerService = inject(RouterService);
 	readonly routes = toSignal(this.routerService.gwtLinks());
-
+	removed = input(false);
 	count = interval(1000).pipe(
 		map(() => {
 			const startDate = new Date('2024-03-24');

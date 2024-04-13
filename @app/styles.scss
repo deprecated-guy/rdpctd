@@ -1,24 +1,22 @@
-@import "styles/colors";
-
+@import 'styles/colors';
 
 .jumbortrom {
-  font-size: 1.5rem;
-  width: 100%;
-  color: $material-text-black;
-  text-align: center;
-  padding: 0.7rem 3rem;
-  line-height: 1.3;
-  background: $material-gray-background;
-  margin-bottom: 0.1rem;
+	width: 100%;
+	margin-bottom: 0.1rem;
+	padding: 0.7rem 3rem;
+	background: $material-gray-background;
+	color: $material-text-black;
+	font-size: 1.5rem;
+	line-height: 1.3;
+	text-align: center;
 }
 
 .jumbortrom-link {
-  display: flex;
-  padding: 0.5rem 2rem;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  color: $material-text-link-color;
-  background: $material-text-link-background;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5rem 2rem;
+	background: $material-text-link-background;
+	color: $material-text-link-color;
 }
-

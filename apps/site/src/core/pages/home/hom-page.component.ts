@@ -7,27 +7,9 @@ import { DragDirective, DragMoveDirective, DragPlaceholder, ListDraggableDirecti
 @Component({
 	selector: 'app-home',
 	standalone: true,
-	template: ` <ul listDraggable class="area">
-			<li class="box" drag>123</li>
-			<li class="box" drag>
-				123
-
-				<ng-template dragPlaceholder let-position>
-					<div
-						class="helper"
-						[attr.draggable]="true"
-						[style.left]="position.x / 16 + 'rem'"
-						[style.top]="position.y / 16 + 'rem'"
-					>
-						helper
-					</div>
-				</ng-template>
-			</li>
-		</ul>
-
-		<ng-template #test></ng-template>
-		<div class="box" drag>123</div>
-		<markdown src="assets/md/CHANGELOG.md"></markdown><br /><markdown src="assets/md/page-content.md"></markdown>`,
+	template: ` <markdown src="assets/md/CHANGELOG.md"></markdown><br /><markdown
+			src="assets/md/page-content.md"
+		></markdown>`,
 	imports: [
 		AsyncPipe,
 		I18nPluralPipe,

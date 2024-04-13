@@ -1,11 +1,9 @@
+<app-header
+	[removed]="hiddenHeader()"
+	[colored]="localStorage.getItem('theme') === 'light'"
+	[translucent]="localStorage.getItem('theme') === 'dark'"
+></app-header>
 
-  <app-header
-    [translucent]="localStorage.getItem('theme')! === 'dark'"
-    [colored]="localStorage.getItem('theme')! ==='light'"></app-header>
-  <div class="normal">
-    <main class="page">
-     <router-outlet ></router-outlet>
-    </main>
-  </div>
-  <app-drawer-host></app-drawer-host>
-
+<div class="page">
+	<router-outlet></router-outlet>
+</div>

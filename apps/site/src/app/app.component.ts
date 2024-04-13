@@ -1,7 +1,9 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
 import { HeaderComponent } from '@core/components';
-import { DrawerHostComponent } from '../../../../libs/ui/src/lib/components/drawer';
+import { DrawerHostComponent } from '@ui/components';
+import { map } from 'rxjs';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
 	standalone: true,
@@ -11,6 +13,18 @@ import { DrawerHostComponent } from '../../../../libs/ui/src/lib/components/draw
 	styleUrl: './app.component.scss',
 })
 export class AppComponent {
-	title = 'site';
+	private readonly router = inject(Router);
+	readonly hiddenHeader = toSignal(
+		this.router.events.pipe(
+			map((event) => {
+				if (event instanceof NavigationEnd && this.router.url.startsWith('/docs')) return true;
+				return false;
+			}),
+		),
+		{
+			initialValue: false,
+		},
+	);
+
 	protected readonly localStorage = localStorage;
 }

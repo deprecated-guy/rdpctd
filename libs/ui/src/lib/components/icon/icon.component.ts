@@ -7,6 +7,7 @@ export const icons = {
 	drawer: '/assets/images/svg/drawer.svg',
 	home: '/assets/images/svg/home.svg',
 	palette: '/assets/images/svg/palette.svg',
+	logo: '/assets/logo.svg',
 };
 
 export type Icon = keyof typeof icons;
@@ -24,6 +25,7 @@ export type Icon = keyof typeof icons;
 		'[style.background-color]': '"currentColor"',
 		'[style.mask-position]': '"center"',
 		'[style.width]': '"var(--icon-width, 1.135rem)"',
+		'[style.mask-repeat]': '"no-repeat"',
 		'[style.z-index]': '1',
 		'[style.height]': '"var(--icon-width, 1.135rem)"',
 	},

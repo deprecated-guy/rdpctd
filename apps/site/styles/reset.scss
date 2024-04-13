@@ -1,61 +1,62 @@
-@import "comtainers";
+@import 'comtainers';
 
-*:after, *:before, * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*:after,
+*:before,
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
-html, body {
-  height: 100%;
+html,
+body {
+	height: 100%;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 li {
-  list-style: none;
+	list-style: none;
 
-  .active {
-    border-bottom: 2px solid;
-  }
+	.active {
+		border-bottom: 2px solid;
+	}
 }
 
 a {
-  position: relative;
-  color: black;
-  transition: all .3s;
-  text-decoration: none;
+	position: relative;
+	color: black;
+	text-decoration: none;
+	transition: all 0.3s;
 
-  &:after, &:before {
-    top: 100%;
-    width: 0;
-    position: absolute;
-    display: flex;
-    content: "";
-    height: 3px;
-    transition: width .2s;
-  }
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		display: flex;
+		width: 0;
+		height: 3px;
+		transition: width 0.2s;
+	}
 
-  &:after {
-    background: #e88989;
-    right: 0;
-  }
+	&:after {
+		right: 0;
+		background: #e88989;
+	}
 
-  &:before {
-    background: #5f5bee;
-    left: 0;
-  }
+	&:before {
+		left: 0;
+		background: #5f5bee;
+	}
 
-
-
-  &:hover {
-      &:after, &:before {
-        width: 50%;
-      }
-  }
+	&:hover {
+		&:after,
+		&:before {
+			width: 50%;
+		}
+	}
 }
-
-

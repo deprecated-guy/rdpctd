@@ -1,6 +1,6 @@
 import { EventOutsideDirective } from './event-outside.directive';
 
-describe('EventOutsideDirective', () => {
+describe('eventOutsideDirective', () => {
 	it('should create an instance', () => {
 		const directive = new EventOutsideDirective();
 		expect(directive).toBeTruthy();

@@ -8,6 +8,7 @@ import { Pipe } from '@angular/core';
 })
 export class PluralPipe implements PipeTransform {
 	public transform(value: any, word: string, pWord: string): string {
-		return value === 1 ? `${value} ${word}` : `${value} ${pWord}`;
+		if (value === 1 || value === 3) return word;
+		else return pWord;
 	}
 }

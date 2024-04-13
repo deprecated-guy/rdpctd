@@ -3,3 +3,10 @@
 /coverage
 /.nx/cache
 .angular
+Dockerfile
+.editorconfig
+docker-compose.yml
+.eslintignore
+.prettierignore
+*.conf
+.gitignore

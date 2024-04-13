@@ -1,83 +1,85 @@
-@use "@app/styles/media.scss";
+@use '@app/styles/media.scss';
 
 :host {
-  display: block;
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  padding: 10px;
+	position: fixed;
+	z-index: 10;
+	display: block;
+	width: 100%;
+	padding: 10px;
 
-  &.translucent {
-    background: none;
-    backdrop-filter: blur(10px);
-    box-shadow: 1px 1px 3px white;
-  }
+	&.translucent {
+		background: none;
+		backdrop-filter: blur(10px);
+		box-shadow: 1px 1px 3px white;
+	}
 
-  &.colored {
-    background: var(--header-bg);
-    color: white;
+	&.colored {
+		background: var(--header-bg);
+		color: white;
 
-    a {
-      color: white;
-    }
-  }
+		a {
+			color: white;
+		}
+	}
 
+	&.removed {
+		display: none;
+	}
 }
 
 .header {
-  display: flex;
-  width: 100%;
-
-
+	display: flex;
+	width: 100%;
 }
 
 .row {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 
-
 .menu {
-  ul {
-    display: flex;
-      gap: 1rem;
-    li {
-    }
-  }
+	@media #{media.$mobile}, #{media.$tablet} {
+		display: none;
+	}
 
-  @media #{media.$mobile}, #{media.$tablet} {
-    display: none;
-  }
+	ul {
+		display: flex;
+		gap: 1rem;
+	}
 }
 
 a {
-  color: var(--text-color);
+	color: var(--text-color);
 }
 
 .mobile-menu {
-  display: none;
+	display: none;
 
-  @media #{media.$mobile}, #{media.$tablet} {
-    display: block;
-  }
+	@media #{media.$mobile}, #{media.$tablet} {
+		display: block;
+	}
 }
 
 audio {
-  @media #{media.$mobile}, #{media.$tablet} {
-    display: flex;
-    margin-top: auto;
-    max-width: 17rem;
-  }
+	@media #{media.$mobile}, #{media.$tablet} {
+		display: flex;
+		max-width: 17rem;
+		margin-top: auto;
+	}
 }
 
-
 .theme {
-  display: none;
+	display: none;
 
-  @media #{media.$mobile}, #{media.$tablet} {
-    display: block;
-  }
+	@media #{media.$mobile}, #{media.$tablet} {
+		display: block;
+	}
+}
+
+app-icon {
+	--icon-width: 2rem;
+	color: white;
 }

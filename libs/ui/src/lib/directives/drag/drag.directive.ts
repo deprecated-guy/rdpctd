@@ -102,6 +102,7 @@ export class ListDraggableDirective {
 
 	ngAfterContentInit() {
 		this.draggables().forEach((draggable) => draggable.dragStart.subscribe(() => this.measure(draggable)));
+		// eslint-disable-next-line max-len
 		this.draggables().forEach((draggable) => draggable.dragMove.subscribe(() => this.maintainBoundaries(draggable)));
 	}
 
