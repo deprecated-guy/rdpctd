@@ -1,20 +1,23 @@
-@use "@app/styles/helpers.scss";
+@use '@app/styles/helpers.scss';
 
 :host {
-  display: block;
-  @include helpers.clearButton;
-  @include helpers.clearLink;
+	@include helpers.clearButton;
+	@include helpers.clearLink;
+	display: block;
 
-  &[data-appearance='full-width'] {
-    .link {
-      justify-content: space-between;
-    }
-  }
+	&[data-appearance='full-width'] {
+		.link {
+			justify-content: space-between;
+		}
+	}
 }
 
 .link {
-  display: flex;
-  gap: 0.5rem;
-  font-size: 1rem;
+	display: flex;
+	gap: 0.5rem;
+	font-size: 1rem;
 }
 
+app-icon {
+	color: var(--text-color);
+}

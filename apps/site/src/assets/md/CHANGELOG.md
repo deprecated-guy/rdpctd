@@ -2,7 +2,7 @@
 # CHANGELOG
 <br>
 
-### 🔝 Version 2.0.3-beta 🔝
+### 🔝 Version 2.0.4-beta 🔝
 <br>
 
 ### 🔥 What's new?
@@ -10,9 +10,11 @@
 <br>
 <details>
   <summary>
-    🆕 🔥 Basic icons processing 
+    🆕 🔥 DBasic decimal  processing
   </summary>
-  I successfully added icon processing component. All resources you can seen in my cdn
+
+Basic precision for numeric values 
+
 
 </details>
 
@@ -48,6 +50,3 @@
 <br>
 
 ### Changelog include All info about updates
-
-
-

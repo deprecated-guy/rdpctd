@@ -71,6 +71,7 @@ export default antfu(
 			'no-alert': 'error',
 			'node/no-path-concat': 'off',
 			quotes: ['error', 'single'],
+			'dot-notation': 'off',
 			'style/brace-style': 'off',
 			'no-unused-vars': 'off', // or "@typescript-eslint/no-unused-vars": "off",
 			'unused-imports/no-unused-imports': 'error',

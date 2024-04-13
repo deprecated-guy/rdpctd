@@ -1,19 +1,24 @@
 .inherited-link {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  max-height: max-content;
-  width: 100%;
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+	width: 100%;
+	max-height: max-content;
 }
 
 .main-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .icon {
-  display: flex;
-  width: 1.5rem;
-  height: 1.5rem;
+	display: flex;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+[appLink] {
+	width: 100%;
+	color: white;
 }

@@ -8,6 +8,9 @@ export const icons = {
 	home: '/assets/images/svg/home.svg',
 	palette: '/assets/images/svg/palette.svg',
 	logo: '/assets/logo.svg',
+	'go-back': '/assets/images/svg/go-back.svg',
+	dark: '/assets/images/svg/dark-mode.svg',
+	light: '/assets/images/svg/light-mode.svg',
 };
 
 export type Icon = keyof typeof icons;

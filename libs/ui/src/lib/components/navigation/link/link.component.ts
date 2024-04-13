@@ -19,5 +19,5 @@ export type LinkAppearance = 'default' | 'full-width';
 export class LinkComponent {
 	icon = input<Icon>();
 	iconRight = input<Icon>();
-	appearance = input<LinkAppearance>('default');
+	appearance = input<LinkAppearance | string>('default');
 }

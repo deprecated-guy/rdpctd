@@ -2,8 +2,8 @@ import type { ElementRef } from '@angular/core';
 import { ChangeDetectionStrategy, Component, Inject, ViewEncapsulation, inject, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { POLYMORPHEUS_CONTEXT, PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
-import { EventOutsideDirective } from '../../directives';
-import { ThemeChangerComponent } from '../theme-changer/theme-changer.component';
+import { EventOutsideDirective } from '@ui/directives';
+import { ThemeChangerComponent } from '@ui/components';
 import type { Drawer } from './tokens';
 import { DRAWERS } from './tokens';
 
@@ -21,10 +21,6 @@ import { DRAWERS } from './tokens';
 export class DrawerComponent {
 	private readonly drawer = viewChild<ElementRef<HTMLElement>>('drawer');
 	private readonly drawers = inject(DRAWERS);
-
-	close() {
-		this.context.$implicit.complete();
-	}
 
 	ngOnInit() {
 		this.drawer()?.nativeElement.classList.add('opened');

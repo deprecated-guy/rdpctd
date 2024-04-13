@@ -16,16 +16,16 @@
 		"*.ts": [
 			"eslint --fix \"**/*.ts\"",
 			"prettier * --write",
-			"git commit . -F"
+			"git commit . -F --allow-empty"
 		],
 		"*.html": [
 			"prettier --write",
-			"git commit . -F"
+			"git commit . -F --alow-empty"
 		],
 		"*.scss": [
 			"prettier --write",
 			"stylelint \\\"**/*.scss\\\" --fix -f",
-			"git commit . -F"
+			"git commit . -F --allow-empty"
 		]
 	},
 	"private": true,

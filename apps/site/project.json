@@ -7,7 +7,7 @@
   "tags": [],
   "targets": {
     "build": {
-      "executor": "@ng-doc/builder:application",
+      "executor": "@nx/angular:application",
       "outputs": [
         "{options.outputPath}"
       ],
@@ -45,7 +45,6 @@
           "apps/site/src/assets"
         ],
         "styles": [
-          "node_modules/@ng-doc/app/styles/global.css",
           "apps/site/styles/reset.scss",
           "apps/site/src/styles.scss"
         ],

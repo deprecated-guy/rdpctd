@@ -1,7 +1,7 @@
 {
 	"extends": "stylelint-config-standard-scss",
 	"plugins": ["stylelint-order"],
-	"ignoreFiles": ["**/*.js", "**/*.ts", "**/*.html", "**/*.css", "**/*.svg", "src/styles/multiline-ellipsis.scss"],
+	"ignoreFiles": ["**/*.js", "**/*.ts", "**/*.html", "**/*.css", "**/*.svg", "apps/site/src/styles.scss"],
 	"rules": {
 		"no-empty-source": null,
 		"indentation": "tab",

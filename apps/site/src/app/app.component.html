@@ -4,6 +4,12 @@
 	[translucent]="localStorage.getItem('theme') === 'dark'"
 ></app-header>
 
-<div class="page">
+<div class="page normal" [class.hidden]="hiddenHeader()">
 	<router-outlet></router-outlet>
 </div>
+
+<div class="docs" [class.visible]="hiddenHeader()">
+	<router-outlet name="docs"></router-outlet>
+</div>
+
+<app-drawer-host></app-drawer-host>
