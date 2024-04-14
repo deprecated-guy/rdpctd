@@ -1,0 +1,8 @@
+@use '@app/styles/helpers.scss';
+
+a {
+	&:after,
+	&:before {
+		display: none;
+	}
+}

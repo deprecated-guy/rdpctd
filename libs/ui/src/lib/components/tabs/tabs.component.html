@@ -1,0 +1,16 @@
+<ng-content></ng-content>
+
+<div class="tabs" #tab>
+	@for(tab of tabs()!; track $index){
+	<div class="tab" (click)="selectTab(tab)" [class.active]="tab.active">
+		@if(tab.icon) {
+		<app-icon [iconName]="tab.icon"></app-icon>
+		}
+		<div class="text">
+			{{ tab.title }}
+		</div>
+	</div>
+	}
+</div>
+
+<div class="app-underline" [style.transform]="tabTranslation" [style.width]="underlineWidth"></div>

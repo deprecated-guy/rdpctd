@@ -3,7 +3,6 @@
 	[colored]="localStorage.getItem('theme') === 'light'"
 	[translucent]="localStorage.getItem('theme') === 'dark'"
 ></app-header>
-
 <div class="page normal" [class.hidden]="hiddenHeader()">
 	<router-outlet></router-outlet>
 </div>

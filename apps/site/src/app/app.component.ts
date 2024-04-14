@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { HeaderComponent } from '@core/components';
 import { DrawerHostComponent } from '@ui/components';
 import { map } from 'rxjs';
@@ -16,13 +16,10 @@ import { AsyncPipe, NgIf } from '@angular/common';
 export class AppComponent {
 	private readonly router = inject(Router);
 
-	private readonly route = inject(ActivatedRoute);
-	private readonly data = this.route.data;
-
 	readonly hiddenHeader = toSignal(
 		this.router.events.pipe(
-			map((event) => {
-				if (event instanceof NavigationEnd && this.router.url.startsWith('/(docs')) return true;
+			map(() => {
+				if (this.router.url.startsWith('/(docs:docs')) return true;
 				return false;
 			}),
 		),
