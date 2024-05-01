@@ -3,6 +3,7 @@
   "version": "2.0.5-beta",
   "license": "MIT",
   "scripts": {
+    "release": "release-it",
     "prepare": "npx husky && lint-staged --concurrent false"
   },
   "husky": {
