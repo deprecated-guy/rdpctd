@@ -2,7 +2,7 @@
 # CHANGELOG
 <br>
 
-### 🔝 Version 2.0.4-beta 🔝
+### 🔝 Version 2.0.5-beta 🔝
 <br>
 
 ### 🔥 What's new?
