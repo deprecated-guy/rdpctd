@@ -1,0 +1,49 @@
+@mixin fancy-underline-animation($color1, $color2, $size) {
+	&:after,
+	&:before {
+		content: '';
+		position: absolute;
+		top: 100%;
+		display: flex;
+		width: 0;
+		height: $size;
+		transition: width 0.2s;
+	}
+
+	&:after {
+		right: 0;
+		background: $color2;
+	}
+
+	&:before {
+		left: 0;
+		background: $color1;
+	}
+
+	&:hover {
+		&:after,
+		&:before {
+			width: 50%;
+		}
+	}
+}
+
+@mixin underline-animation($size, $duration) {
+	&:after {
+		content: '';
+		position: absolute;
+		top: 100%;
+		display: block;
+		width: 100%;
+		height: $size;
+		background: var(--text-color);
+		opacity: 0;
+		transition: $duration height;
+	}
+
+	&:hover {
+		&:after {
+			opacity: 1;
+		}
+	}
+}

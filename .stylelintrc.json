@@ -3,6 +3,8 @@
 	"plugins": ["stylelint-order"],
 	"ignoreFiles": ["**/*.js", "**/*.ts", "**/*.html", "**/*.css", "**/*.svg", "apps/site/src/styles.scss"],
 	"rules": {
+		"scss/at-import-partial-extension": "always",
+		"scss/at-import-partial-extension-whitelist": ["scss", "css"],
 		"no-empty-source": null,
 		"indentation": "tab",
 		"declaration-empty-line-before": null,
