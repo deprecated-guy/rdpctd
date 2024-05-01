@@ -16,25 +16,28 @@
     "git": {
       "commitMessage": "chore: v${version}"
     },
+    "github": {
+      "release": false
+    },
     "npm": {
       "publish": false
     },
     "plugins": {
       "@release-it/conventional-changelog": {
-        "infile": "apps/site/src/assets/md/CHANGELOG.md"
-      },
-      "preset": {
-        "name": "conventionalcommits",
-        "typws": [
-          {
-            "type": "feat",
-            "section": "features"
-          },
-          {
-            "type": "fix",
-            "section": "fixes"
-          }
-        ]
+        "infile": "apps/site/src/assets/md/CHANGELOG.md",
+        "preset": {
+          "name": "conventionalcommits",
+          "typws": [
+            {
+              "type": "feat",
+              "section": "features"
+            },
+            {
+              "type": "fix",
+              "section": "fixes"
+            }
+          ]
+        }
       }
     }
   },
