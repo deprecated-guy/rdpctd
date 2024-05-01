@@ -6,7 +6,7 @@ import { ActiveZoneDirective } from '@ui/directives';
 import { DropDownService } from '@ui/components/drop-down/drop-down.service';
 
 import type { Icon } from '@ui/components/icon';
-import { IconComponent } from '@ui/components/icon';
+import { IconComponent } from '../../icon';
 
 export type LinkAppearance = 'default' | 'full-width';
 

@@ -34,7 +34,6 @@ export class BreadcrumbsComponent {
 				filter((event) => event instanceof NavigationEnd),
 				tap((event) => {
 					if (event instanceof NavigationEnd) {
-						console.log(this.generateBreadCrumb(this.activatedRoute));
 						this.breadcrumbs.next([...this.breadcrumbs.value, ...this.generateBreadCrumb(this.activatedRoute)]);
 					}
 				}),

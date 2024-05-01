@@ -38,8 +38,4 @@ import { AsyncPipe } from '@angular/common';
 })
 export class DropDownHostComponent {
 	readonly dropdowns = inject(DROPDOWNS);
-
-	ngOnInit() {
-		console.log(this.dropdowns.value);
-	}
 }
