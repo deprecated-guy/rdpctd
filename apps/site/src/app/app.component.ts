@@ -1,32 +1,17 @@
-import { Component, inject } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '@core/components';
 import { DrawerHostComponent } from '@ui/components';
-import { map } from 'rxjs';
-import { toSignal } from '@angular/core/rxjs-interop';
 import { AsyncPipe, NgIf } from '@angular/common';
+import { DropDownHostComponent } from '@ui/components/drop-down/drop-down-host.component';
 
 @Component({
 	standalone: true,
-	imports: [RouterModule, HeaderComponent, DrawerHostComponent, AsyncPipe, NgIf],
+	imports: [RouterModule, HeaderComponent, DrawerHostComponent, AsyncPipe, NgIf, DropDownHostComponent],
 	selector: 'app-root',
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 })
 export class AppComponent {
-	private readonly router = inject(Router);
-
-	readonly hiddenHeader = toSignal(
-		this.router.events.pipe(
-			map(() => {
-				if (this.router.url.startsWith('/(docs:docs')) return true;
-				return false;
-			}),
-		),
-		{
-			initialValue: false,
-		},
-	);
-
 	protected readonly localStorage = localStorage;
 }

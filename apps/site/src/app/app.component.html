@@ -1,14 +1,10 @@
 <app-header
-	[removed]="hiddenHeader()"
 	[colored]="localStorage.getItem('theme') === 'light'"
 	[translucent]="localStorage.getItem('theme') === 'dark'"
 ></app-header>
-<div class="page normal" [class.hidden]="hiddenHeader()">
+<div class="page normal">
 	<router-outlet></router-outlet>
 </div>
 
-<div class="docs" [class.visible]="hiddenHeader()">
-	<router-outlet name="docs"></router-outlet>
-</div>
-
 <app-drawer-host></app-drawer-host>
+<app-drop-down-host></app-drop-down-host>

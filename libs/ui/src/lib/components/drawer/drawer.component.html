@@ -1,4 +1,4 @@
-<div class="drawer" #drawer appEventOutside (eventOutside)="catchEvent($event)">
+<div class="drawer" #drawer activeZone (activeZoneChange)="catchEvent($event)" tabindex="0">
 	<div class="header" style="display: flex">
 		<div class="title jumbotron">
 			{{ context.title }}

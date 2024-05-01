@@ -17,6 +17,7 @@
 		"paths": {
 			"@core/*": ["apps/site/src/core/*"],
 			"@icons": ["libs/icons/src/index.ts"],
+			"@shared/*": ["apps/shared/*"],
 			"@ui/*": ["libs/ui/src/lib/*"]
 		}
 	},

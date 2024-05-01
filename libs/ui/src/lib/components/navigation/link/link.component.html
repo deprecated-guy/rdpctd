@@ -1,4 +1,4 @@
-<div class="link">
+<div class="link" #link activeZone (activeZoneChange)="dropdownOpened = $event">
 	@if(icon()) {
 	<div class="icon">
 		<app-icon [iconName]="icon()"> </app-icon>

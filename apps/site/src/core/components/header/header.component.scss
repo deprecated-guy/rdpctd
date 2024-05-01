@@ -21,10 +21,6 @@
 			color: white;
 		}
 	}
-
-	&.removed {
-		display: none;
-	}
 }
 
 .header {
@@ -82,4 +78,12 @@ audio {
 app-icon {
 	--icon-width: 2rem;
 	color: white;
+}
+
+.drop-down-menu {
+	width: max-content;
+
+	[appLink] {
+		font-size: 0.7rem;
+	}
 }

@@ -26,29 +26,17 @@
           ]
         },
         "assets": [
-          {
-            "glob": "**/*",
-            "input": "node_modules/@ng-doc/app/assets",
-            "output": "assets/ng-doc/app"
-          },
-          {
-            "glob": "**/*",
-            "input": "node_modules/@ng-doc/ui-kit/assets",
-            "output": "assets/ng-doc/ui-kit"
-          },
-          {
-            "glob": "**/*",
-            "input": "ng-doc/undefined/assets",
-            "output": "assets/ng-doc"
-          },
           "apps/site/src/favicon.ico",
           "apps/site/src/assets"
         ],
         "styles": [
           "apps/site/styles/reset.scss",
-          "apps/site/src/styles.scss"
+          "apps/site/src/styles.scss",
+
         ],
-        "scripts": [],
+        "scripts": [
+          "node_modules/prismjs/prism.js"
+        ],
         "allowedCommonJsDependencies": [
           "@ng-doc/core"
         ]

@@ -3,7 +3,9 @@
 :host {
 	@include helpers.clearButton;
 	@include helpers.clearLink;
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	&[data-appearance='full-width'] {
 		.link {
@@ -13,11 +15,23 @@
 }
 
 .link {
+	position: relative;
 	display: flex;
 	gap: 0.5rem;
+	align-items: center;
+	justify-content: center;
+	width: auto;
 	font-size: 1rem;
+	text-align: center;
 }
 
 app-icon {
+	--icon-width: 1.5rem !important;
 	color: var(--text-color);
+}
+
+app-drop-down {
+	position: absolute;
+	top: 20px;
+	z-index: 1;
 }

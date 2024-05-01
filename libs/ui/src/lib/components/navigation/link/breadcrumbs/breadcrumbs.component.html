@@ -1,0 +1,14 @@
+<ul class="breadcrumbs">
+	@if (breadcrumbs | async; as breadcrumbs) {
+	<ng-container>
+		@for (breadcrumb of breadcrumbs; track $index) {
+		<li>
+			<a appLink [routerLink]="breadcrumb.url">{{ breadcrumb.label }}</a>
+		</li>
+		@if ($index !== breadcrumbs.lastIndexOf(breadcrumb)) {
+		{{ separator() }}
+		} }
+	</ng-container>
+
+	}
+</ul>

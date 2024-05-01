@@ -3,13 +3,12 @@ import { AsyncPipe, I18nPluralPipe } from '@angular/common';
 import { PluralPipe } from '@core/pipes';
 import { MarkdownComponent } from 'ngx-markdown';
 import { DragDirective, DragMoveDirective, DragPlaceholder, ListDraggableDirective } from '@ui/directives';
+import { PrismComponent } from '@shared/prism';
 
 @Component({
 	selector: 'app-home',
 	standalone: true,
-	template: ` <markdown src="assets/md/CHANGELOG.md"></markdown><br /><markdown
-			src="assets/md/page-content.md"
-		></markdown>`,
+	templateUrl: './hom-page.component.html',
 	imports: [
 		AsyncPipe,
 		I18nPluralPipe,
@@ -19,9 +18,12 @@ import { DragDirective, DragMoveDirective, DragPlaceholder, ListDraggableDirecti
 		DragMoveDirective,
 		ListDraggableDirective,
 		DragPlaceholder,
+		PrismComponent,
 	],
 	styles: `
     @use "@app/styles/media.scss";
+
+
 
     .box {
       padding: 0.5rem;

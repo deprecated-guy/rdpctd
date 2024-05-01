@@ -1,2 +1,3 @@
-export * from './event-outside.directive';
+export * from './active-zone.directive';
 export * from './drag';
+export * from './centerize-element.directive';

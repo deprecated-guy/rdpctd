@@ -1,4 +1,5 @@
 @import 'comtainers';
+@import '@app/styles/animations.scss';
 
 *:after,
 *:before,
@@ -26,39 +27,11 @@ li {
 	}
 }
 
-a {
+a:not(.dropdown-menu) {
+	@include underline-animation(2px, 0.3s);
 	position: relative;
 	color: black;
 	text-decoration: none;
-	transition: all 0.3s;
-
-	&:after,
-	&:before {
-		content: '';
-		position: absolute;
-		top: 100%;
-		display: flex;
-		width: 0;
-		height: 3px;
-		transition: width 0.2s;
-	}
-
-	&:after {
-		right: 0;
-		background: #e88989;
-	}
-
-	&:before {
-		left: 0;
-		background: #5f5bee;
-	}
-
-	&:hover {
-		&:after,
-		&:before {
-			width: 50%;
-		}
-	}
 }
 
 .example-block:not(.tab) {
@@ -85,4 +58,12 @@ a {
 .doc-paragraph {
 	margin: 0.4rem 0;
 	font-size: 0.9rem;
+}
+
+.drop-down-menu {
+	a {
+		&:after {
+			display: none;
+		}
+	}
 }

@@ -1,9 +1,9 @@
-import antfu from '@antfu/eslint-config';
-import unusedImports from 'eslint-plugin-unused-imports';
-import regEx from 'eslint-plugin-regex';
-import prettier from 'eslint-config-prettier';
+const antfu = require('@antfu/eslint-config').default;
+const unusedImports = require('eslint-plugin-unused-imports');
+const regEx = require('eslint-plugin-regex');
+const prettier = require('eslint-config-prettier');
 
-export default antfu(
+module.exports = antfu(
 	{
 		stylistic: {
 			semi: true,
@@ -52,6 +52,7 @@ export default antfu(
 			},
 		},
 		rules: {
+			'no-var': 'off',
 			'style/eol-last': 'off',
 			'style/arrow-parens': 'off',
 			'antfu/if-newline': 'off',
@@ -101,9 +102,7 @@ export default antfu(
 					'@angular-eslint/component-selector': ['error', { type: 'element', prefix: 'app', style: 'kebab-case' }],
 				},
 			},
-			unusedImports: {
-				rules: [unusedImports],
-			},
+			...unusedImports,
 		},
 		rules: {
 			'prefer-arrow-callback': 0,

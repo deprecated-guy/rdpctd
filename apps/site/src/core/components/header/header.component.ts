@@ -9,10 +9,12 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import {
 	DrawerMenuComponent,
 	IconComponent,
+	LinkComponent,
 	LinkExpandableComponent,
 	NumberPrecisionComponent,
 	ThemeChangerComponent,
 	VersionComponent,
+	WithDropDownComponent,
 } from '@ui/components';
 import { RouterService } from '@ui/services';
 
@@ -30,6 +32,8 @@ import { RouterService } from '@ui/services';
 		IconComponent,
 		VersionComponent,
 		NumberPrecisionComponent,
+		LinkComponent,
+		WithDropDownComponent,
 	],
 	templateUrl: './header.component.html',
 	styleUrl: './header.component.scss',
@@ -37,13 +41,12 @@ import { RouterService } from '@ui/services';
 	host: {
 		'[class.translucent]': 'translucent()',
 		'[class.colored]': 'colored()',
-		'[class.removed]': 'removed()',
 	},
 })
 export class HeaderComponent implements OnInit {
 	private readonly routerService = inject(RouterService);
-	readonly routes = toSignal(this.routerService.gwtLinks());
-	removed = input(false);
+	readonly drawerNavigation = toSignal(this.routerService.gwtLinks());
+
 	count = interval(1000).pipe(
 		map(() => {
 			const startDate = new Date('2024-03-24');

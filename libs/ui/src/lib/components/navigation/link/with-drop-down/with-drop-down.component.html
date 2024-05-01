@@ -1,0 +1,30 @@
+<div
+	class="link with-drop-down"
+	activeZone
+	(activeZoneChange)="dropdownOpened = $event"
+	appCenterize
+	centerizeElement=".dropdown"
+>
+	<div class="text-content">
+		@if(icon()) {
+		<div class="icon">
+			<app-icon [iconName]="icon()"> </app-icon>
+		</div>
+		}
+		<div class="content">
+			<ng-content></ng-content>
+		</div>
+		@if(iconRight()) {
+		<div class="icon">
+			<app-icon [iconName]="iconRight()"> </app-icon>
+		</div>
+		}
+	</div>
+	@if (dropdownOpened) {
+	<div class="dropdown" @dropDownAnimation #dropdownTemplate>
+		<ng-container *polymorpheusOutlet="dropdown() as text">
+			<div [innerHTML]="text"></div>
+		</ng-container>
+	</div>
+	}
+</div>

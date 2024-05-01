@@ -2,19 +2,36 @@
 	<div class="normal">
 		<div class="row">
 			<div class="mobile-menu">
-				<app-drawer-menu [content]="drawer" [menuTitle]="'Reactive Deprecated'" icon="drawer"></app-drawer-menu>
+				<app-drawer-menu [content]="drawer" [menuTitle]="'Reactive Deprecated'" [icon]="'drawer'"></app-drawer-menu>
 			</div>
 			<app-theme-changer class="theme"></app-theme-changer>
 			<div class="logo"><app-icon [iconName]="'logo'"></app-icon></div>
 			<div class="menu">
 				<ul>
 					<li>
-						<a routerLink="/" routerLinkActive="active">To home page</a>
+						<a
+							[routerLink]="'/'"
+							[routerLinkActive]="'active'"
+							appLink
+							[icon]="'home'"
+							[routerLinkActiveOptions]="{ exact: true }"
+							>Home</a
+						>
 					</li>
 					<li>
-						<a [routerLink]="[{ outlets: { docs: ['docs'] } }]" routerLinkActive="active">docs</a>
+						<a
+							appLinkWithDropDown
+							[dropdown]="dropdownGamesTemplate"
+							routerLinkActive="active"
+							routerLink="/games"
+							icon="game"
+							>Games</a
+						>
 					</li>
-					<li class="counter">{{ count | async | plural : 'day' : 'days' }} is out</li>
+					@if(count | async; as number) {
+
+					<li class="counter">{{ number | plural : 'day' : 'days' }} is out</li>
+					}
 					<li>
 						<app-theme-changer></app-theme-changer>
 					</li>
@@ -24,9 +41,15 @@
 	</div>
 </div>
 
+<ng-template #dropdownGamesTemplate>
+	<div class="drop-down-menu">
+		<a appLink>Adventures / RPG</a>
+	</div>
+</ng-template>
+
 <ng-template #drawer>
 	<div class="drawer-menu">
-		@for (route of routes(); track $index) {
+		@for (route of drawerNavigation(); track $index) {
 		<a appLinkExpandable appearance="full-width" class="jumbotron-link" [link]="route"></a>
 		}
 	</div>

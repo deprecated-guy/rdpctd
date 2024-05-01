@@ -1,27 +1,6 @@
+<div class="switcher">
+	@if(theme | async; as theme) {
 
-<div class="switcher" appEventOutside (eventOutside)="catchEvent($event)" >
-    <div class="select" >
-      <div class="theme-icon"  (click)="state.set('opened')">
-        <app-icon [iconName]="'palette'" ></app-icon>
-      </div>
-      @if (showTheme()) {
-        <div class="theme-name">
-          {{theme()}}
-        </div>
-      }
-
-      <div class="options" [@themeChangerAnimation]="state()">
-        <div class="option" (click)="changeTheme('light')">
-          @if (theme() === 'light') {
-            <div class="check">✔</div>
-          } <div class="name">light</div>
-        </div>
-        <div class="option" (click)="changeTheme('dark')">
-          @if(theme() === 'dark'){
-            <div class="check">✔</div>
-
-          } <div class="name">dark</div>
-        </div>
-      </div>
-    </div>
+	<app-icon (click)="changeTheme()" [iconName]="theme === 'dark' ? 'light' : 'dark'"></app-icon>
+	}
 </div>

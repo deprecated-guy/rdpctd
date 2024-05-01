@@ -1,0 +1,38 @@
+@use '@app/styles/helpers.scss';
+
+:host {
+	@include helpers.clearButton;
+	@include helpers.clearLink;
+	display: block;
+
+	&[data-appearance='full-width'] {
+		.link {
+			justify-content: space-between;
+		}
+	}
+}
+
+.link {
+	position: relative;
+	display: flex;
+	gap: 0.5rem;
+	flex-direction: column;
+	font-size: 1rem;
+}
+
+.text-content {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.dropdown {
+	position: absolute;
+	top: 3rem;
+	padding: 0.25rem;
+	background: var(--dropdown-bg);
+	font-size: 0.6rem;
+}
+
+.with-drop-down {
+	justify-content: center;
+}

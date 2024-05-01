@@ -11,6 +11,7 @@ export const icons = {
 	'go-back': '/assets/images/svg/go-back.svg',
 	dark: '/assets/images/svg/dark-mode.svg',
 	light: '/assets/images/svg/light-mode.svg',
+	game: '/assets/images/svg/game.svg',
 };
 
 export type Icon = keyof typeof icons;
@@ -27,10 +28,10 @@ export type Icon = keyof typeof icons;
 		'[style.mask-image]': 'path()',
 		'[style.background-color]': '"currentColor"',
 		'[style.mask-position]': '"center"',
-		'[style.width]': '"var(--icon-width, 1.135rem)"',
+		'[style.width.rem]': '1.5',
 		'[style.mask-repeat]': '"no-repeat"',
 		'[style.z-index]': '1',
-		'[style.height]': '"var(--icon-width, 1.135rem)"',
+		'[style.height.rem]': '1.5',
 	},
 })
 export class IconComponent {

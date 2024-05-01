@@ -5,8 +5,6 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { BehaviorSubject, map } from 'rxjs';
 import type { Icon } from '@ui/components';
 import { IconComponent, LinkComponent } from '@ui/components';
-import { MermaidAPI } from 'ngx-markdown';
-import Theme = MermaidAPI.Theme;
 
 interface RouteData {
 	package: string;
@@ -32,7 +30,6 @@ export class DocsLayoutComponent {
 
 	changeTheme() {
 		this.themeSubj.next(this.themeSubj.value === 'dark' ? 'light' : 'dark');
-		console.log(this.themeSubj.value);
 		this.renderer.setAttribute(document.body, 'data-theme', this.themeSubj.getValue());
 		localStorage.setItem('theme', this.themeSubj.value);
 	}

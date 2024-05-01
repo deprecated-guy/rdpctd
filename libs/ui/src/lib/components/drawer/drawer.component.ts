@@ -2,15 +2,15 @@ import type { ElementRef } from '@angular/core';
 import { ChangeDetectionStrategy, Component, Inject, ViewEncapsulation, inject, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { POLYMORPHEUS_CONTEXT, PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
-import { EventOutsideDirective } from '@ui/directives';
 import { ThemeChangerComponent } from '@ui/components';
+import { ActiveZoneDirective } from '@ui/directives';
 import type { Drawer } from './tokens';
 import { DRAWERS } from './tokens';
 
 @Component({
 	selector: 'app-drawer',
 	standalone: true,
-	imports: [CommonModule, PolymorpheusModule, EventOutsideDirective, ThemeChangerComponent],
+	imports: [CommonModule, PolymorpheusModule, ThemeChangerComponent, ActiveZoneDirective],
 	templateUrl: './drawer.component.html',
 	styleUrl: './drawer.component.scss',
 	encapsulation: ViewEncapsulation.None,
