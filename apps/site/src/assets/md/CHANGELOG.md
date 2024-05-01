@@ -1,5 +1,12 @@
 
 
+## [2.0.8](https://github.com/deprecated-guy/rdpctd/compare/2.0.7...2.0.8) (2024-05-01)
+
+
+### Bug Fixes
+
+* edit changelog ([30ede48](https://github.com/deprecated-guy/rdpctd/commit/30ede4818d2c142af9ef7a7e437ea0b83d01f62e))
+
 ## [2.0.7](https://github.com/deprecated-guy/rdpctd/compare/2.0.6...2.0.7) (2024-05-01)
 
 
