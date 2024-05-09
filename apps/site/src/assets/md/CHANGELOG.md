@@ -1,5 +1,12 @@
 
 
+## [2.1.0](https://github.com/deprecated-guy/rdpctd/compare/2.0.8...2.1.0) (2024-05-09)
+
+
+### Features
+
+* Themes ([179b2ba](https://github.com/deprecated-guy/rdpctd/commit/179b2bad78a6c248bc8daf5af909e00ee035d204))
+
 ## [2.0.8](https://github.com/deprecated-guy/rdpctd/compare/2.0.7...2.0.8) (2024-05-01)
 
 
