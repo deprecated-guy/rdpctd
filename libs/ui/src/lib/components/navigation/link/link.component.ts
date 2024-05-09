@@ -25,7 +25,6 @@ export class LinkComponent {
 	private readonly renderer = inject(RendererFactory2).createRenderer(null, null);
 	private readonly dropdownService = inject(DropDownService);
 	private readonly host = viewChild<HTMLDivElement>('link')!;
-	dropdownOpened = false;
 	icon = input<Icon>();
 	iconRight = input<Icon>();
 	appearance = input<LinkAppearance | string>('default');

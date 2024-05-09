@@ -27,43 +27,7 @@ li {
 	}
 }
 
-a:not(.dropdown-menu) {
-	@include underline-animation(2px, 0.3s);
-	position: relative;
-	color: black;
+a {
+	color: var(--text-color);
 	text-decoration: none;
-}
-
-.example-block:not(.tab) {
-	padding: 0.5rem 1rem;
-	background: var(--examples-bg);
-	color: var(--text-color);
-}
-
-.doc-heading {
-	display: flex;
-	justify-content: center;
-	margin: 0.4rem 0;
-	color: var(--text-color);
-	font-size: 1.8rem;
-	text-align: center;
-}
-
-.doc-content {
-	max-width: 900px;
-	margin: 0 auto;
-	padding: 0.8rem;
-}
-
-.doc-paragraph {
-	margin: 0.4rem 0;
-	font-size: 0.9rem;
-}
-
-.drop-down-menu {
-	a {
-		&:after {
-			display: none;
-		}
-	}
 }

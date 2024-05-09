@@ -50,7 +50,7 @@
 <ng-template #drawer>
 	<div class="drawer-menu">
 		@for (route of drawerNavigation(); track $index) {
-		<a appLinkExpandable appearance="full-width" class="jumbotron-link" [link]="route"></a>
+		<a appLinkExpandable appearance="full-width" [link]="route"></a>
 		}
 	</div>
 

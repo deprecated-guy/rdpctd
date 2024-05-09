@@ -1,21 +1,19 @@
 <div class="link-container">
-	<div class="main-link">
-		<span class="jumbotron-link" (click)="updateState()">
-			<span class="link-title">
-				{{ link()?.title }}
-			</span>
-			<span class="icon">
-				<app-icon iconName="chevronRight"></app-icon>
-			</span>
+	<div class="main-link jumbotron-link" [attr.data-appearance]="appearance()" (click)="updateState()">
+		<span class="link-title">
+			{{ link()?.title }}
 		</span>
-		<ul class="inherited-link" [@expand]="state()">
-			@for (child of link()?.children ?? []; track $index) {
-			<li class="jumbotron-link">
-				<a appLink [appearance]="appearance()" [routerLink]="child.routerLink" [iconRight]="child?.icon ?? 'nothing'">{{
-					child.title
-				}}</a>
-			</li>
-			}
-		</ul>
+		<span class="icon">
+			<app-icon iconName="chevronRight"></app-icon>
+		</span>
 	</div>
+	<ul class="inherited-link" [@expand]="state()">
+		@for (child of link()?.children ?? []; track $index) {
+		<li class="jumbotron-link">
+			<a appLink [appearance]="appearance()" [routerLink]="child.routerLink" [iconRight]="child?.icon ?? 'nothing'">{{
+				child.title
+			}}</a>
+		</li>
+		}
+	</ul>
 </div>

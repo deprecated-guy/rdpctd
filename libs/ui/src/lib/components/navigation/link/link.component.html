@@ -1,4 +1,4 @@
-<div class="link" #link>
+<div class="link" [attr.data-appearance]="appearance()">
 	@if(icon()) {
 	<div class="icon">
 		<app-icon [iconName]="icon()"> </app-icon>

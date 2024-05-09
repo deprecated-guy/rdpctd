@@ -36,6 +36,9 @@ import { IconComponent } from '../../../icon/icon.component';
 			transition('expanded<=>closed', animate(200)),
 		]),
 	],
+	host: {
+		'[attr.data-appearance]': 'appearance()',
+	},
 })
 export class LinkExpandableComponent {
 	private readonly children = viewChild('children');

@@ -47,7 +47,7 @@
 	}
 }
 
-a {
+a:not(.drawer-menu) {
 	color: var(--text-color);
 }
 
