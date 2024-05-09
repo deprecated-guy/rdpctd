@@ -1,5 +1,12 @@
 
 
+## [2.1.1](https://github.com/deprecated-guy/rdpctd/compare/2.1.0...2.1.1) (2024-05-09)
+
+
+### Bug Fixes
+
+* version changed ([a6eb8ca](https://github.com/deprecated-guy/rdpctd/commit/a6eb8ca85825290d281148c76f72006e5c654cea))
+
 ## [2.1.0](https://github.com/deprecated-guy/rdpctd/compare/2.0.8...2.1.0) (2024-05-09)
 
 
