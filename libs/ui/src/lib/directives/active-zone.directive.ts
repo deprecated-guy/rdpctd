@@ -18,10 +18,8 @@ export class ActiveZoneDirective {
 	@HostListener('pointerenter', ['$event'])
 	@HostListener('pointerleave', ['$event'])
 	onPointerEnter(event: PointerEvent) {
-		if (event.type === 'pointerenter') {
-			if (this.element.contains(event.target as Node)) this.activeZoneChangePointerEnter.emit(true);
-		} else {
-			this.activeZoneChangePointerEnter.emit(false);
-		}
+		if (event.type === 'pointerenter' && this.element.contains(event.target as Node))
+			this.activeZoneChangePointerEnter.emit(true);
+		else this.activeZoneChangePointerEnter.emit(false);
 	}
 }
