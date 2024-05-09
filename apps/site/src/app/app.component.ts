@@ -14,4 +14,5 @@ import { DropDownHostComponent } from '@ui/components/drop-down/drop-down-host.c
 })
 export class AppComponent {
 	protected readonly localStorage = localStorage;
+	protected readonly window = window;
 }

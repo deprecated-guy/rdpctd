@@ -1,7 +1,6 @@
-// @ts-expect-error https://thymikee.github.io/jest-preset-angular/docs/getting-started/test-environment
 import 'jest-preset-angular/setup-jest';
 
-globalThis.ngJest = {
+(globalThis as any).ngJest = {
 	testEnvironmentOptions: {
 		errorOnUnknownElements: true,
 		errorOnUnknownProperties: true,

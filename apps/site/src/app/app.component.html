@@ -1,6 +1,6 @@
 <app-header
 	[colored]="localStorage.getItem('theme') === 'light'"
-	[translucent]="localStorage.getItem('theme') === 'dark'"
+	[translucent]="localStorage.getItem('theme') === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches"
 ></app-header>
 <div class="page normal">
 	<router-outlet></router-outlet>

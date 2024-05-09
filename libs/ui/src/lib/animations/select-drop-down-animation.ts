@@ -1,7 +1,9 @@
-import { animate, state, style, transition, trigger } from '@angular/animations';
+import { animate, style, transition, trigger } from '@angular/animations';
 
 export const themeChangerAnimation = trigger('themeChangerAnimation', [
-	state('opened', style({ transform: 'translateY(0)', opacity: 1 })),
-	state('closed', style({ transform: 'translateY(-20px)', opacity: 0 })),
-	transition('opened<=>closed', animate(200)),
+	transition(':enter', [
+		style({ transform: 'translateY(-20px)', opacity: 0 }),
+		animate('200ms', style({ transform: 'translateY(0)', opacity: 1 })),
+	]),
+	transition(':leave', [animate('200ms', style({ transform: 'translateY(-20px)', opacity: 0 }))]),
 ]);

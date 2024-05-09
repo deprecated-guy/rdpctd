@@ -1,6 +1,20 @@
 <div class="switcher">
-	@if(theme | async; as theme) {
+	<app-icon (click)="isOpened = !isOpened" [iconName]="theme()"></app-icon>
 
-	<app-icon (click)="changeTheme()" [iconName]="theme === 'dark' ? 'light' : 'dark'"></app-icon>
+	@if(isOpened) {
+	<div class="themes" @themeChangerAnimation>
+		<div class="theme" (click)="changeTheme('dark')">
+			<app-icon iconName="dark"></app-icon>&nbsp;
+			<div class="theme-name">Dark</div>
+		</div>
+		<div class="theme" (click)="changeTheme('light')">
+			<app-icon iconName="light"></app-icon>&nbsp;
+			<div class="theme-name">Light</div>
+		</div>
+		<div class="theme" (click)="changeTheme('system')">
+			<app-icon iconName="system"></app-icon>&nbsp;
+			<div class="theme-name">System</div>
+		</div>
+	</div>
 	}
 </div>

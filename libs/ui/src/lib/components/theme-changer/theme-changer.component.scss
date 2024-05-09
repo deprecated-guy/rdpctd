@@ -1,26 +1,42 @@
-.select {
-  position: relative;
+.switcher {
+	position: relative;
 }
 
-
 .theme-icon {
-  border: 2px solid white;
-  padding: 0.5rem;
-  width: max-content;
-  border-radius: 0.3rem;
+	width: max-content;
+	padding: 0.5rem;
+	border: 2px solid white;
+	border-radius: 0.3rem;
 }
 
 .options {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  padding: 0.4rem;
-  background: var(--theme-select-bg);
+	position: absolute;
+	display: flex;
+	gap: 0.3rem;
+	flex-direction: column;
+	padding: 0.4rem;
+	background: var(--theme-select-bg);
 }
 
 .option {
-  display: flex;
-  gap: 0.2rem;
-  color: #000;
+	display: flex;
+	gap: 0.2rem;
+	color: #000;
+}
+
+.theme {
+	display: flex;
+	gap: 0.3rem;
+}
+
+.themes {
+	position: absolute;
+	top: 2rem;
+	left: -40px;
+	display: flex;
+	gap: 0.3rem;
+	flex-direction: column;
+	padding: 0.3rem;
+	border-radius: 0.3rem;
+	background: var(--theme-bg);
 }

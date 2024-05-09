@@ -12,6 +12,7 @@ export const icons = {
 	dark: '/assets/images/svg/dark-mode.svg',
 	light: '/assets/images/svg/light-mode.svg',
 	game: '/assets/images/svg/game.svg',
+	system: '/assets/images/svg/system.svg',
 };
 
 export type Icon = keyof typeof icons;
