@@ -1,5 +1,12 @@
 
 
+## [2.1.2](https://github.com/deprecated-guy/rdpctd/compare/2.1.1...2.1.2) (2024-05-09)
+
+
+### Bug Fixes
+
+* link styles fixed ([19248be](https://github.com/deprecated-guy/rdpctd/commit/19248bed012948b21de09f88ef10898a0bda21f2))
+
 ## [2.1.1](https://github.com/deprecated-guy/rdpctd/compare/2.1.0...2.1.1) (2024-05-09)
 
 
