@@ -1,5 +1,7 @@
 
 
+## [2.1.4](https://github.com/deprecated-guy/rdpctd/compare/2.1.3...2.1.4) (2024-06-21)
+
 ## [2.1.3](https://github.com/deprecated-guy/rdpctd/compare/2.1.2...2.1.3) (2024-05-09)
 
 ## [2.1.2](https://github.com/deprecated-guy/rdpctd/compare/2.1.1...2.1.2) (2024-05-09)
