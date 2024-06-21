@@ -1,25 +1,31 @@
 import { Directive, ElementRef, HostListener, inject, output } from '@angular/core';
+import { RouterLinkActive } from '@angular/router';
 
 @Directive({
-	selector: '[activeZone]',
+	selector: '[pointerOut],[clickOutside]',
 	standalone: true,
 })
 export class ActiveZoneDirective {
 	private readonly element = inject<ElementRef<HTMLElement>>(ElementRef).nativeElement;
-	activeZoneChangePointerDown = output<boolean>();
-	activeZoneChangePointerEnter = output<boolean>();
+	private readonly routerLinkActive = inject(RouterLinkActive);
 
-	@HostListener('document:pointerdown', ['$event'])
-	onPointerEvent(event: PointerEvent) {
-		if (this.element.contains(event.target as Node)) this.activeZoneChangePointerDown.emit(true);
-		else this.activeZoneChangePointerDown.emit(false);
+	readonly clickOutside = output<boolean>();
+	readonly pointerOut = output<boolean>();
+
+	@HostListener('mouseenter', ['$event'])
+	@HostListener('mouseleave', ['$event'])
+	onMouseEnter(event: MouseEvent) {
+		if (event.type === 'mouseleave'
+			&& this.element.contains(event.target as Node)
+			&& this.routerLinkActive.isActive
+		) this.pointerOut.emit(true);
+		else this.pointerOut.emit(false);
 	}
 
-	@HostListener('pointerenter', ['$event'])
-	@HostListener('pointerleave', ['$event'])
-	onPointerEnter(event: PointerEvent) {
-		if (event.type === 'pointerenter' && this.element.contains(event.target as Node))
-			this.activeZoneChangePointerEnter.emit(true);
-		else this.activeZoneChangePointerEnter.emit(false);
+	@HostListener('mousedown', ['$event'])
+	@HostListener('pointerdown', ['$event'])
+	onMouseDown(event: MouseEvent) {
+		if (!this.element.contains(event.target as Node) && !this.routerLinkActive.isActive) this.clickOutside.emit(true);
+		else this.clickOutside.emit(false);
 	}
 }

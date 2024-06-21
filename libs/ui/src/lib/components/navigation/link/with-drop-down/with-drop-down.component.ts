@@ -1,10 +1,11 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActiveZoneDirective, CenterizeElementDirective } from '@ui/directives';
 import type { Icon } from '@ui/components';
 import { IconComponent } from '@ui/components';
 import { type PolymorpheusContent, PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import { animate, style, transition, trigger } from '@angular/animations';
+import { DeviceService } from '@ui/services';
 
 @Component({
 	selector: 'a[appLinkWithDropDown], button[appLinkWithDropDown]',
@@ -24,8 +25,14 @@ import { animate, style, transition, trigger } from '@angular/animations';
 	imports: [CommonModule, ActiveZoneDirective, IconComponent, PolymorpheusModule, CenterizeElementDirective],
 })
 export class WithDropDownComponent {
-	dropdownOpened = false;
+	readonly deviceService = inject(DeviceService);
+
+	dropdownOpened = signal(false);
 	icon = input<Icon>();
 	iconRight = input<Icon>();
 	dropdown = input<PolymorpheusContent>(null);
+
+	catchEvent(event: boolean) {
+		this.dropdownOpened.set(!event);
+	}
 }
