@@ -14,7 +14,7 @@ export class DropDownService {
 	private readonly dropdowns = inject(DROPDOWNS);
 	private readonly id = inject(IdService);
 
-	open<T>(content: PolymorpheusContent, options?: DropdownOptions) {
+	open(content: PolymorpheusContent, options?: DropdownOptions) {
 		return new Observable((observer) => {
 			const component = new PolymorpheusComponent(DropdownComponent);
 			const dropdown = {
@@ -24,7 +24,6 @@ export class DropDownService {
 				$implicit: observer,
 				...options,
 			};
-			console.log(dropdown);
 
 			this.dropdowns.next([...this.dropdowns.value, dropdown as any]);
 			observer.next(dropdown);

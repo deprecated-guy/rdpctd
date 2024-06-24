@@ -33,9 +33,13 @@ export class BreadcrumbsComponent {
 			.pipe(
 				filter((event) => event instanceof NavigationEnd),
 				tap((event) => {
-					if (event instanceof NavigationEnd) {
-						this.breadcrumbs.next([...this.breadcrumbs.value, ...this.generateBreadCrumb(this.activatedRoute)]);
-					}
+					if (event instanceof NavigationEnd)
+					{ this.breadcrumbs.next(
+						[
+							...this.breadcrumbs.value,
+							...this.generateBreadCrumb(this.activatedRoute),
+						],
+					); }
 				}),
 				distinctUntilChanged(),
 				takeUntilDestroyed(this.destroyRef),

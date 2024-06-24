@@ -25,7 +25,8 @@ export class ActiveZoneDirective {
 	@HostListener('mousedown', ['$event'])
 	@HostListener('pointerdown', ['$event'])
 	onMouseDown(event: MouseEvent) {
-		if (!this.element.contains(event.target as Node) && !this.routerLinkActive.isActive) this.clickOutside.emit(true);
+		if (!this.element.contains(event.target as Node) && !this.routerLinkActive.isActive)
+			this.clickOutside.emit(true);
 		else this.clickOutside.emit(false);
 	}
 }

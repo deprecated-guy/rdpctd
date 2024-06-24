@@ -1,0 +1,8 @@
+@for(dialog of dialogs | async; track $index) {
+
+	<section role="dialog"
+	>
+		<ng-container *polymorpheusOutlet="dialog.component; context: dialog"></ng-container>
+	</section>
+}
+

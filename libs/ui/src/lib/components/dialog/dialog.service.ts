@@ -17,9 +17,11 @@ export type DialogContext<T = unknown> = Context & {
 };
 
 export interface DialogSettings extends DialogContext {
+	id: string;
 	appearance: DialogAppearance;
 	content: PolymorpheusContent;
 	dismisable?: boolean;
+	heading?: string;
 }
 
 export const DIALOGS = createDiToken(new BehaviorSubject<ReadonlyArray<DialogSettings>>([]));
@@ -29,7 +31,10 @@ export class DialogService {
 	private readonly dialogs = inject(DIALOGS);
 	private readonly id = inject(IdService);
 
-	open(content: PolymorpheusContent, settings: Omit<DialogSettings, 'context' | 'content'>): Observable<DialogSettings> {
+	open(
+		content: PolymorpheusContent,
+		settings: Omit<DialogSettings, 'context' | 'content'>,
+	): Observable<DialogSettings> {
 		return new Observable<DialogSettings>(
 			(observer) => {
 				const component = new PolymorpheusComponent(DialogComponent);

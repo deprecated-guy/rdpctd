@@ -1,0 +1,11 @@
+@if (context.heading; as heading) {
+	<div class="dialog-heading">
+		{{ heading }}
+	</div>
+}
+
+<ng-container *polymorpheusOutlet="context.content as content">
+	<div [innerHTML]="content"></div>
+</ng-container>
+
+<div class="close" (click)="close.complete()"></div>
