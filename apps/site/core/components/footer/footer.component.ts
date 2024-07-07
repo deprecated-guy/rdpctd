@@ -1,11 +1,15 @@
 import { Component, computed } from '@angular/core';
 import * as luxon from 'luxon';
+import { VersionComponent } from '@ui/components';
 
 @Component({
 	selector: 'app-footer',
 	standalone: true,
 	templateUrl: 'footer.component.html',
 	styleUrls: ['footer.component.scss'],
+	imports: [
+		VersionComponent,
+	],
 })
 export class FooterComponent {
 	readonly powerDate = computed(() => {
