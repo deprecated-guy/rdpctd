@@ -1,0 +1,40 @@
+
+host {
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+
+.header {
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 0.7rem;
+  box-shadow: 0 1px white;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 10rem;
+  font-family: 'Playwrite GB+S', cursive;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: .25s ease-in-out;
+
+  &:hover {
+    color: gray;
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+}

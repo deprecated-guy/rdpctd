@@ -1,0 +1,12 @@
+@use "@app/styles/helpers.scss";
+
+:host {
+  @include helpers.clearButton;
+  @include helpers.clearLink;
+  font-size: 1rem;
+}
+
+.link {
+  color: white;
+}
+

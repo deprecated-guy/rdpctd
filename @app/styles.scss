@@ -1,4 +1,5 @@
 @import 'styles/colors';
+@import 'styles/fonts';
 
 .jumbotron {
 	width: 100%;
@@ -19,4 +20,24 @@
 	padding: 0.5rem 2rem;
 	background: $material-text-link-background;
 	color: $material-text-link-color;
+}
+
+.highlighted {
+	position: relative;
+
+	&:before {
+		position: absolute;
+		width: 0.3rem;
+		height: 0.3rem;
+		display: block;
+		content: '';
+		border-radius: 50%;
+		top: 0.5rem;
+		left: -1rem;
+		background: lightblue;
+	}
+}
+
+.red-cursive {
+	color: red;
 }

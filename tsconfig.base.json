@@ -15,7 +15,7 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
-			"@core/*": ["apps/site/src/core/*"],
+			"@core/*": ["apps/site/core/*"],
 			"@icons": ["libs/icons/src/index.ts"],
 			"@shared/*": ["apps/shared/*"],
 			"@ui/*": ["libs/ui/src/lib/*"]

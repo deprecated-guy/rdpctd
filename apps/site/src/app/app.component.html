@@ -1,10 +1,17 @@
-<app-header
-	[colored]="localStorage.getItem('theme') === 'light'"
-	[translucent]="localStorage.getItem('theme') === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches"
-></app-header>
-<div class="page normal">
-	<router-outlet></router-outlet>
-</div>
+<tui-theme-night></tui-theme-night>
+<tui-root [tuiMode]="'onDark'">
+	<app-header></app-header>
 
-<app-drawer-host></app-drawer-host>
-<app-drop-down-host></app-drop-down-host>
+	<div class="page normal">
+		<router-outlet></router-outlet>
+	</div>
+
+	<app-footer></app-footer>
+
+	<ng-container ngProjectAs="tuiOverContent">
+		<!-- Content over app content -->
+	</ng-container>
+	<app-update-alerts></app-update-alerts>
+
+	<tui-svg-defs-host></tui-svg-defs-host>
+</tui-root>

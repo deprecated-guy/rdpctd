@@ -1,0 +1,42 @@
+@if (dropdownItem()?.children) {
+	<tui-hosted-dropdown
+		[content]="dropDown"
+		tuiDropdownHover
+		[title]="dropdownItem()?.title"
+	>
+			<a
+				class="link"
+				tuiLink
+				[icon]="dropdownItem()?.icon ?? ''"
+				[routerLink]="dropdownItem()?.routerLink ?? ''"
+			>
+				{{dropdownItem()?.title}}
+			</a>
+	</tui-hosted-dropdown>
+
+
+	<ng-template #dropDown>
+		<ul>
+			@for (item of dropdownItem()?.children; track $index) {
+				<li>
+					<a
+						tuiLink
+						[routerLink]="item.routerLink"
+						[icon]="item?.icon ?? ''"
+					>
+						{{ item.title }}
+					</a>
+				</li>
+			}
+		</ul>
+	</ng-template>
+} @else {
+	<a
+		class="link"
+		tuiLink
+		[icon]="dropdownItem()?.icon ?? ''"
+		[routerLink]="dropdownItem()?.routerLink ?? ''"
+	>
+		{{dropdownItem()?.title}}
+	</a>
+}

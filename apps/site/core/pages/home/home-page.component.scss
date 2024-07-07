@@ -1,0 +1,92 @@
+.page-content {
+  font-size: 1.1rem;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 90% 10% 1fr;
+  font-family: 'Poppins', cursive;
+  letter-spacing: 0.05rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+}
+
+.highlight-block {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  right: 5rem;
+  gap: 1rem;
+  width: 5rem;
+  border-left: 1px solid white;
+  padding: 0 2rem;
+}
+
+a {
+  color: white;
+}
+
+.welcome-block {
+
+  p {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+  }
+}
+.what-is {
+  font-size: 1.2rem;
+}
+
+.site-name {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 0.6rem;
+}
+
+.thanks {
+  cursor: pointer;
+  transition: all .3s;
+  width: max-content;
+  margin: 0 auto;
+
+  &:hover {
+    color: #c1c1c1;
+    text-decoration: underline dashed currentColor;
+  }
+}
+
+.core-team {
+  max-width: max-content;
+  display: flex;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.developer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.45rem;
+  width: max-content;
+}
+
+.dev-team {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.4rem;
+}

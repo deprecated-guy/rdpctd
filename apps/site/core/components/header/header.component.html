@@ -1,0 +1,19 @@
+<div class="header">
+	<div class="flexible-container">
+		<div class="row">
+
+				<div class="logo">
+					it's Deprecated!
+				</div>
+
+				<div class="menu">
+
+				@for (item of headerService.navigation(); track $index) {
+					<app-header-item [dropdownItem]="item"></app-header-item>
+				}
+
+					<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
+				</div>
+		</div>
+	</div>
+</div>

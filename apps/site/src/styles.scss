@@ -3,6 +3,8 @@
 @import 'prismjs/plugins/toolbar/prism-toolbar.css';
 @import 'prismjs/themes/prism-okaidia.css';
 @import 'prismjs/plugins/line-numbers/prism-line-numbers.css';
+@import '@taiga-ui/core/styles/taiga-ui-local';
+
 
 :root {
 	--theme-select-bg: #f5f5f5;
