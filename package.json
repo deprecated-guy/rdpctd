@@ -1,6 +1,6 @@
 {
   "name": "@org/source",
-  "version": "2.1.5",
+  "version": "2.1.6",
   "license": "MIT",
   "scripts": {
     "release": "release-it",
