@@ -1,4 +1,4 @@
-<div class="drawer" #drawer (clickOutside)="catchEvent($event)" tabindex="0">
+<div class="drawer" #drawer (tuiActiveZoneChange)="catchEvent($event)" tabindex="0">
 	<div class="header" style="display: flex">
 		<div class="title jumbotron">
 			{{ context.title }}

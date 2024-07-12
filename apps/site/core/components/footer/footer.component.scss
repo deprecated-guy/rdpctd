@@ -1,3 +1,5 @@
+@use "@app/styles/media.scss";
+
 .footer {
   border-top: solid white 1px;
   padding: 1rem 0;
@@ -7,6 +9,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media #{media.$mobile} {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1.4rem;
+  }
 }
 
 .created-with {

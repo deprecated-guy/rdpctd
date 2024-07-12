@@ -2,7 +2,7 @@ import { Component, input } from '@angular/core';
 import { TuiDropdownModule, TuiHostedDropdownModule, TuiLinkModule } from '@taiga-ui/core';
 import { RouterLink } from '@angular/router';
 import type { Navigation } from '@core/types';
-import { LinkComponent } from '@ui/components';
+import { IconComponent, LinkComponent } from '@ui/components';
 
 @Component({
 	selector: 'app-header-item',
@@ -15,6 +15,7 @@ import { LinkComponent } from '@ui/components';
 		RouterLink,
 		LinkComponent,
 		TuiHostedDropdownModule,
+		IconComponent,
 	],
 })
 export class HeaderItemComponent {

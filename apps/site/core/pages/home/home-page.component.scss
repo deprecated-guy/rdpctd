@@ -1,3 +1,6 @@
+@use "@app/styles/media.scss";
+
+
 .page-content {
   font-size: 1.1rem;
   justify-content: center;
@@ -7,6 +10,10 @@
   grid-template-columns: 90% 10% 1fr;
   font-family: 'Poppins', cursive;
   letter-spacing: 0.05rem;
+
+  @media  #{media.$mobile} {
+    display: block;
+  }
 }
 
 .row {
@@ -17,17 +24,6 @@
 
 .content {
   width: 100%;
-}
-
-.highlight-block {
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  right: 5rem;
-  gap: 1rem;
-  width: 5rem;
-  border-left: 1px solid white;
-  padding: 0 2rem;
 }
 
 a {
@@ -43,7 +39,12 @@ a {
     font-size: 1.1rem;
     margin-top: 1rem;
   }
+
+  h1 {
+    line-height: 1.2;
+  }
 }
+
 .what-is {
   font-size: 1.2rem;
 }
@@ -52,6 +53,12 @@ a {
   font-weight: 500;
   font-size: 2rem;
   margin-bottom: 0.6rem;
+  line-height: 1.3rem;
+
+  @media #{media.$mobile} {
+    font-size: 1.4rem;
+    word-spacing: 1rem;
+  }
 }
 
 .thanks {

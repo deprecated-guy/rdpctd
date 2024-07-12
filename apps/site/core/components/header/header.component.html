@@ -14,6 +14,56 @@
 
 					<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
 				</div>
+			<div class="mobile-button">
+				<app-drawer-menu
+					[content]="drawer"
+					menuTitle="Reacive Deprecated"
+				></app-drawer-menu>
+			</div>
 		</div>
 	</div>
 </div>
+
+<ng-template #drawer>
+	<div class="drawer-content">
+		<div class="links">
+			@for (item of headerService.navigation(); track $index) {
+				<a
+					class="drawer-link"
+					tuiLink
+					(click)="item.children ? openExpand() : 0"
+				>
+				<span class="link-text">
+					{{ item.title }}
+				</span>
+				</a>
+				@if(item.children) {
+					<tui-expand
+						class="expanded-content"
+						[expanded]="expanded()"
+					>
+						<ul>
+							@for (subItem of item.children; track $index) {
+								<li>
+									<a
+										class="sub-link"
+										tuiLink
+										[routerLink]="subItem.routerLink"
+									>
+								<span class="sublink-text">
+
+									{{ subItem.title }}
+								</span>
+									</a>
+								</li>
+							}
+						</ul>
+					</tui-expand>
+				}
+
+			}
+		</div>
+
+		<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
+	</div>
+</ng-template>

@@ -25,10 +25,10 @@ import { DrawerService } from './drawer.service';
 export class DrawerMenuComponent {
 	private readonly drawerService = inject(DrawerService);
 	private readonly destroyRef = inject(DestroyRef);
-	icon = input<Icon>('drawer');
+	readonly icon = input<Icon>('drawer');
 	protected readonly computedPath = computed(() => `url(${icons[this.icon()]})`);
-	content = input<PolymorpheusContent>();
-	menuTitle = input<string>('');
+	readonly content = input<PolymorpheusContent>();
+	readonly menuTitle = input<string>('');
 
 	protected openDrawer() {
 		this.drawerService
