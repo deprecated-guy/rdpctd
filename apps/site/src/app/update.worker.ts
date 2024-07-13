@@ -7,7 +7,6 @@ import type {
 } from 'rxjs';
 import {
 	NEVER,
-
 	catchError,
 	combineLatest,
 	filter,
@@ -34,7 +33,7 @@ function parseVersion(version: string): number {
 
 function fetchVersion(): Observable<number> {
 	return from(
-		fetch('/assets/version.txt')
+		fetch('/version')
 			.then((response) => {
 				return response.text();
 			})
@@ -48,7 +47,7 @@ function fetchVersion(): Observable<number> {
 
 const changed$ = combineLatest([
 	fetchVersion(),
-	interval(120000).pipe(
+	interval(5000).pipe(
 		switchMap(() => fetchVersion()),
 	),
 ]).pipe(
@@ -60,8 +59,8 @@ let subscription: Subscription | null = null;
 addEventListener('message', async (ev: MessageEvent<'start' | 'destroy'>) => {
 	switch (ev.data) {
 		case 'start':
-			subscription = changed$.subscribe((data) => {
-				postMessage(null);
+			subscription = changed$.subscribe(() => {
+				postMessage('update');
 			});
 			break;
 		case 'destroy':

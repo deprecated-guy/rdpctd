@@ -1,0 +1,16 @@
+<div class="flexible-container">
+	<div class="page-content">
+		<app-games-banner
+			[title]="'Games'"
+			[backGroundImage]="'./assets/images/avif/gaming.avif'"
+		></app-games-banner>
+
+		<app-games-page-menu
+			[menuLinks]="navigationService.pageNavigation()"
+		></app-games-page-menu>
+
+		<div class="content">
+			This page will be empty for now
+		</div>
+	</div>
+</div>

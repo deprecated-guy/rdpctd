@@ -15,10 +15,10 @@
 		"skipDefaultLibCheck": true,
 		"baseUrl": ".",
 		"paths": {
+			"@ui/*": ["libs/ui/src/lib/*"],
 			"@core/*": ["apps/site/core/*"],
 			"@icons": ["libs/icons/src/index.ts"],
-			"@shared/*": ["apps/shared/*"],
-			"@ui/*": ["libs/ui/src/lib/*"]
+			"@shared/*": ["apps/shared/*"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

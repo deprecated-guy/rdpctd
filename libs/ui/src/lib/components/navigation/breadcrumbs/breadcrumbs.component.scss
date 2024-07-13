@@ -2,9 +2,13 @@
 	display: flex;
 	gap: 0.3rem;
 	max-width: 9rem;
-	color: var(--text-color);
+	color: white;
 }
 
 [appLink] {
-	color: var(--text-color);
+	color: white;
+}
+
+.separator {
+	color: white;
 }

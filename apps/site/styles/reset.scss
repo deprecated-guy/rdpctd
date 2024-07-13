@@ -22,12 +22,18 @@ body {
 li {
 	list-style: none;
 
-	.active {
-		border-bottom: 2px solid;
-	}
 }
 
 a {
-	color: var(--text-color);
+	color: darkgrey;
 	text-decoration: none;
+	transition: all .3s;
+
+	&:hover {
+		color: white;
+	}
+}
+
+.active {
+	color: darkgrey;
 }

@@ -3,6 +3,33 @@ import { Component, DestroyRef, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { TuiAlertService } from '@taiga-ui/core';
 import { AsyncPipe } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { PolymorpheusComponent } from '@tinkoff/ng-polymorpheus';
+
+@Component({
+	selector: 'changelog-message',
+	standalone: true,
+	imports: [
+		RouterLink,
+	],
+	template: 'New update is available. <br>check the <a routerLink="/changelog">changelog</a> <- clickable',
+	styles: [`
+		:host {
+
+			text-align: center;
+		}
+
+		a {
+
+			text-decoration: dotted white 2px;
+
+				&:hover {
+					text-decoration: none;
+				}
+    }
+	`],
+})
+export class ChangelogMessageComponent {}
 
 @Component({
 	selector: 'app-update-alerts',
@@ -44,13 +71,14 @@ export class UpdateAlertsComponent implements OnInit, OnDestroy {
 	}
 
 	show(): void {
+		const content = new PolymorpheusComponent(ChangelogMessageComponent);
 		this.open = true;
 
 		this.alertService
-			.open('New update is available. check he <a routerLink="/changelog">changelog</a>!', {
+			.open(content, {
 				label: 'Update',
 				status: 'warning',
-				autoClose: false,
+				autoClose: 2000,
 				hasCloseButton: false,
 			})
 			.pipe(takeUntilDestroyed(this.destroyRef))

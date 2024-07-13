@@ -1,0 +1,38 @@
+<div class="flexible-container">
+	<div
+		class="menu"
+		#menu
+	>
+		@for(item of menuLinks(); track $index) {
+			<li>
+				<a
+					tuiLink
+					[routerLink]="item.routerLink"
+					[routerLinkActive]="'active'"
+					[tuiDropdown]="item.children ? dropdown : null"
+					[routerLinkActiveOptions]="{exact: true}"
+					tuiDropdownHover
+				>
+					{{ item.title }}
+				</a>
+			</li>
+
+			<ng-template #dropdown>
+				@for(child of item.children; track $index) {
+					<li>
+						<a
+							tuiLink
+							[routerLink]="item.routerLink"
+							routerLinkActive="active"
+							[tuiDropdown]="child.children ? dropdown : null"
+							tuiDropdownHover
+						>
+							{{ child.title }}
+						</a>
+					</li>
+				}
+			</ng-template>
+		}
+	</div>
+
+</div>

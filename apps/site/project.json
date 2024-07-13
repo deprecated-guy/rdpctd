@@ -17,9 +17,18 @@
 				"tsConfig": "apps/site/tsconfig.app.json",
 				"inlineStyleLanguage": "scss",
 				"stylePreprocessorOptions": {
-					"includePaths": ["apps/site/styles"]
+					"includePaths": ["apps/site/styles", "./"]
 				},
-				"assets": ["apps/site/src/favicon.ico", "apps/site/src/assets"],
+				"assets":
+				[
+				"apps/site/src/favicon.ico",
+				"apps/site/src/assets",
+				{
+	              "glob": "**/*",
+	              "input": "node_modules/@taiga-ui/icons/src",
+	              "output": "assets/taiga-ui/icons"
+	            },
+				],
 				"styles": [
 					"node_modules/@taiga-ui/core/styles/taiga-ui-theme.less",
 					"node_modules/@taiga-ui/core/styles/taiga-ui-local.less",

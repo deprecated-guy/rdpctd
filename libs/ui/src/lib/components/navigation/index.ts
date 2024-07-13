@@ -1,2 +1,2 @@
 export * from './link';
-export * from './';
+export * from './breadcrumbs';
