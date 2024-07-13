@@ -1,5 +1,12 @@
 
 
+## [2.2.0](https://github.com/deprecated-guy/rdpctd/compare/2.1.6...2.2.0) (2024-07-13)
+
+
+### Features
+
+* **site:** added new page ([23cf1d6](https://github.com/deprecated-guy/rdpctd/commit/23cf1d60e336ab0b4da1e928abcb23380bbdae00))
+
 ## [2.1.6](https://github.com/deprecated-guy/rdpctd/compare/2.1.5...2.1.6) (2024-07-12)
 
 ## [2.1.5](https://github.com/deprecated-guy/rdpctd/compare/2.1.4...2.1.5) (2024-07-07)
