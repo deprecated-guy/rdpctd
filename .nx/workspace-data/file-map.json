@@ -1,0 +1,1434 @@
+{
+  "version": "6.0",
+  "nxVersion": "19.6.4",
+  "deps": {
+    "@angular-eslint/schematics": "^17.3.0",
+    "@angular-eslint/utils": "18.0.1",
+    "@angular/animations": "18.2.2",
+    "@angular/common": "18.2.2",
+    "@angular/compiler": "18.2.2",
+    "@angular/core": "18.2.2",
+    "@angular/forms": "18.2.2",
+    "@angular/platform-browser": "18.2.2",
+    "@angular/platform-browser-dynamic": "18.2.2",
+    "@angular/router": "18.2.2",
+    "@floating-ui/dom": "^1.6.4",
+    "@nx/angular": "19.6.4",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "@taiga-ui/addon-charts": "4.4.1",
+    "@taiga-ui/addon-commerce": "4.4.1",
+    "@taiga-ui/addon-doc": "4.4.1",
+    "@taiga-ui/addon-editor": "^3.35.0",
+    "@taiga-ui/addon-table": "4.4.1",
+    "@taiga-ui/cdk": "4.4.1",
+    "@taiga-ui/core": "4.4.1",
+    "@taiga-ui/icons": "4.4.1",
+    "@taiga-ui/legacy": "4.4.1",
+    "@taiga-ui/polymorpheus": "^4.7.0",
+    "@types/luxon": "^3.4.2",
+    "@types/prismjs": "^1.26.3",
+    "luxon": "^3.4.4",
+    "marked": "^9.1.6",
+    "ngx-markdown": "latest",
+    "prism-themes": "^1.3.0",
+    "release-it": "^17.2.1",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.14.3",
+    "@angular-devkit/build-angular": "18.2.2",
+    "@angular-devkit/core": "18.2.2",
+    "@angular-devkit/schematics": "18.2.2",
+    "@angular-eslint/eslint-plugin": "18.0.1",
+    "@angular-eslint/eslint-plugin-template": "18.0.1",
+    "@angular-eslint/template-parser": "18.0.1",
+    "@angular/cli": "17.3.6",
+    "@angular/compiler-cli": "18.2.2",
+    "@angular/language-service": "18.2.2",
+    "@antfu/eslint-config": "^2.9.0",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@nx/devkit": "19.6.4",
+    "@nx/eslint": "19.6.4",
+    "@nx/eslint-plugin": "19.6.4",
+    "@nx/jest": "19.6.4",
+    "@nx/js": "19.6.4",
+    "@nx/playwright": "19.6.4",
+    "@nx/workspace": "19.6.4",
+    "@playwright/test": "^1.36.0",
+    "@schematics/angular": "18.2.2",
+    "@stylistic/eslint-plugin": "^1.7.0",
+    "@swc-node/register": "1.9.2",
+    "@swc/core": "1.5.7",
+    "@swc/helpers": "0.5.12",
+    "@types/jest": "29.5.12",
+    "@types/node": "18.16.9",
+    "@typescript-eslint/eslint-plugin": "7.16.0",
+    "@typescript-eslint/parser": "7.16.0",
+    "eslint": "8.57.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-playwright": "^0.15.3",
+    "eslint-plugin-regex": "^1.10.0",
+    "eslint-plugin-unicorn": "^51.0.1",
+    "eslint-plugin-unused-imports": "^3.1.0",
+    "husky": "^9.0.11",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "jest-preset-angular": "14.1.1",
+    "lint-staged": "^15.2.2",
+    "nx": "19.6.4",
+    "prettier": "^2.6.2",
+    "stylelint": "^14.1.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "10.9.1",
+    "typescript": "5.5.4"
+  },
+  "pathMappings": {
+    "@ui/*": [
+      "libs/ui/src/lib/*"
+    ],
+    "@core/*": [
+      "apps/site/core/*"
+    ],
+    "@icons": [
+      "libs/icons/src/index.ts"
+    ],
+    "@shared/*": [
+      "apps/shared/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/playwright/plugin",
+      "options": {
+        "targetName": "e2e"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "2374015138586113482"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "6735175061466857373"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "12040479358860647098"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "10533234009292190829"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16718859004094159296"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16002859196136172863"
+      },
+      {
+        "file": ".stylelintrc.json",
+        "hash": "6584642611273190665"
+      },
+      {
+        "file": "@app/styles.scss",
+        "hash": "6751073670544562302"
+      },
+      {
+        "file": "@app/styles/animations.scss",
+        "hash": "2356226981778440058"
+      },
+      {
+        "file": "@app/styles/colors.scss",
+        "hash": "9321145188958129851"
+      },
+      {
+        "file": "@app/styles/fonts.scss",
+        "hash": "12963312856185215372"
+      },
+      {
+        "file": "@app/styles/helpers.scss",
+        "hash": "15174633213739512132"
+      },
+      {
+        "file": "@app/styles/index.ts",
+        "hash": "11599067226990834830"
+      },
+      {
+        "file": "@app/styles/media.scss",
+        "hash": "14949630566539513345"
+      },
+      {
+        "file": "@app/styles/mixins.css",
+        "hash": "15036214574332298676"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "4994892546905600232"
+      },
+      {
+        "file": "README.md",
+        "hash": "18039151155636579385"
+      },
+      {
+        "file": "apps/shared/components/banner.component.html",
+        "hash": "6324986471101619984"
+      },
+      {
+        "file": "apps/shared/components/banner.component.scss",
+        "hash": "16796206064688779044"
+      },
+      {
+        "file": "apps/shared/components/banner.component.ts",
+        "hash": "8482905030071884966"
+      },
+      {
+        "file": "apps/shared/components/index.ts",
+        "hash": "5054771398833662235"
+      },
+      {
+        "file": "apps/shared/components/menu/index.ts",
+        "hash": "14339211539003883323"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.component.html",
+        "hash": "13961188937584122743"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.component.scss",
+        "hash": "13042312538660926492"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.component.ts",
+        "hash": "3857543613485533368"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.spec.ts",
+        "hash": "773086909397414136"
+      },
+      {
+        "file": "apps/shared/index.ts",
+        "hash": "1876729099506414002"
+      },
+      {
+        "file": "apps/shared/prism/highlight.service.ts",
+        "hash": "14251125054005398332"
+      },
+      {
+        "file": "apps/shared/prism/index.ts",
+        "hash": "13091410641929237706"
+      },
+      {
+        "file": "apps/shared/prism/prism.composnt.ts",
+        "hash": "7809930322099467087"
+      },
+      {
+        "file": "apps/shared/services/app-title.strategy.ts",
+        "hash": "4434206773157554893"
+      },
+      {
+        "file": "apps/shared/services/index.ts",
+        "hash": "11063451600824480113"
+      },
+      {
+        "file": "apps/shared/utils/index.ts",
+        "hash": "10987243275213197703"
+      },
+      {
+        "file": "apps/shared/utils/to-int.ts",
+        "hash": "3627492181200841854"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "14014965562667558644"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "15474704570665545565"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "6401502104204425905"
+      },
+      {
+        "file": "fucking_forbidden.txt",
+        "hash": "3769467211614037210"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "4634451141672255890"
+      },
+      {
+        "file": "jest.preset.cjs",
+        "hash": "14464320925661375313"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "7473220183190921152"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "14963468593480723543"
+      },
+      {
+        "file": "nginx.conf",
+        "hash": "15056848018467873989"
+      },
+      {
+        "file": "nx.json",
+        "hash": "16920245762557786011"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "3230894902420816577"
+      },
+      {
+        "file": "package.json",
+        "hash": "18069193612890396671"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "5858805953047146107"
+      }
+    ],
+    "projectFileMap": {
+      "site-e2e": [
+        {
+          "file": "apps/site-e2e/playwright.config.ts",
+          "hash": "16871041557852848344",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/project.json",
+          "hash": "13813813342432828684"
+        },
+        {
+          "file": "apps/site-e2e/src/example.spec.ts",
+          "hash": "10535992647702454484",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/tsconfig.json",
+          "hash": "7012811660374785764"
+        }
+      ],
+      "site": [
+        {
+          "file": "apps/site/.idea/.gitignore",
+          "hash": "16259663310133185705"
+        },
+        {
+          "file": "apps/site/app.component.ts",
+          "hash": "9021446216453416223",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "ui",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/comments/comments.component.ts",
+          "hash": "12477569221758836480",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/addon-editor",
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.html",
+          "hash": "11483102615737529325"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.scss",
+          "hash": "5506487418028673181"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.ts",
+          "hash": "5019663333881166676",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.html",
+          "hash": "1913144224113455600"
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.scss",
+          "hash": "11349465459996919914"
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.ts",
+          "hash": "4208307548147047250",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:luxon",
+            "ui",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.service.ts",
+          "hash": "960623142596184788",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.spec.ts",
+          "hash": "3999655794764044536",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/index.ts",
+          "hash": "6785501596725676180"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.html",
+          "hash": "1446277021145414988"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.scss",
+          "hash": "12061479180151337652"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.spec.ts",
+          "hash": "5630069330071402158",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.ts",
+          "hash": "4269732425128755714",
+          "deps": [
+            "npm:@angular/core",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.html",
+          "hash": "11101175079135893817"
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.scss",
+          "hash": "16471011461481255550"
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.ts",
+          "hash": "12941647847618645006",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/index.ts",
+          "hash": "7668091337790116480"
+        },
+        {
+          "file": "apps/site/core/pages/changelog/changelog-page.component.ts",
+          "hash": "3709144273010069693",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ngx-markdown"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page-menu.service.ts",
+          "hash": "16525954597278059140",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.html",
+          "hash": "4669054763900284953"
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.ts",
+          "hash": "16632215219466990148",
+          "deps": [
+            "npm:@angular/core",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.html",
+          "hash": "108891061275071302"
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.scss",
+          "hash": "1063822320311731940"
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.ts",
+          "hash": "13944699022234311560",
+          "deps": [
+            "npm:@angular/core",
+            "ui",
+            "npm:@taiga-ui/kit"
+          ]
+        },
+        {
+          "file": "apps/site/core/routes.ts",
+          "hash": "9296979566643320017",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/core/services/index.ts",
+          "hash": "9960828106358643742"
+        },
+        {
+          "file": "apps/site/core/services/version-checker.ts",
+          "hash": "13281608742877626651",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/site/core/types/index.ts",
+          "hash": "16792068329914762467"
+        },
+        {
+          "file": "apps/site/core/types/navigation.ts",
+          "hash": "13596354618083482558"
+        },
+        {
+          "file": "apps/site/favicon.ico",
+          "hash": "8177864596884989230"
+        },
+        {
+          "file": "apps/site/jest.config.ts",
+          "hash": "4594408215348490631"
+        },
+        {
+          "file": "apps/site/nginx.conf",
+          "hash": "11042413931057454861"
+        },
+        {
+          "file": "apps/site/project.json",
+          "hash": "10699027076067477151"
+        },
+        {
+          "file": "apps/site/pwabuilder-sw.js",
+          "hash": "4327776593525947569"
+        },
+        {
+          "file": "apps/site/src/app/app.component.html",
+          "hash": "734291074626152238"
+        },
+        {
+          "file": "apps/site/src/app/app.component.scss",
+          "hash": "11166012981606546035"
+        },
+        {
+          "file": "apps/site/src/app/app.component.spec.ts",
+          "hash": "17533233993363202480",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.component.ts",
+          "hash": "51508583529971376",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "ui",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.config.ts",
+          "hash": "1045256214934825695",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser",
+            "npm:ngx-markdown",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.routes.ts",
+          "hash": "900313941850849633",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update-alert/update-alert.component.spec.ts",
+          "hash": "3799408773772524607",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update-alert/update-alert.component.ts",
+          "hash": "10278048244625503872",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update.worker.ts",
+          "hash": "2687586432758036068",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/site/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/site/src/assets/audio/1.mp3",
+          "hash": "12517172483144333080"
+        },
+        {
+          "file": "apps/site/src/assets/icons/android-chrome-192x192.png",
+          "hash": "7554562995625848166"
+        },
+        {
+          "file": "apps/site/src/assets/icons/android-chrome-512x512.png",
+          "hash": "3760469285071407085"
+        },
+        {
+          "file": "apps/site/src/assets/icons/apple-touch-icon.png",
+          "hash": "16484408581097406029"
+        },
+        {
+          "file": "apps/site/src/assets/icons/favicon-16x16.png",
+          "hash": "793523201967719027"
+        },
+        {
+          "file": "apps/site/src/assets/icons/favicon-32x32.png",
+          "hash": "9686903329107219367"
+        },
+        {
+          "file": "apps/site/src/assets/icons/site.webmanifest",
+          "hash": "15656720897124240449"
+        },
+        {
+          "file": "apps/site/src/assets/images/avif/gaming.avif",
+          "hash": "2091177350363909433"
+        },
+        {
+          "file": "apps/site/src/assets/images/home.svg",
+          "hash": "17385893261432377413"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/arrow-back.svg",
+          "hash": "16478592501813965403"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/chevron-right.svg",
+          "hash": "9740220266409664291"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/dark-mode.svg",
+          "hash": "9186116881370337183"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/drawer.svg",
+          "hash": "10966457523750163136"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/game.svg",
+          "hash": "1992619078645377789"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/go-back.svg",
+          "hash": "15713111610721385284"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/home.svg",
+          "hash": "2873902914267026661"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/install-desktop-rounded.svg",
+          "hash": "7967312247491124147"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/light-mode.svg",
+          "hash": "494311918134035544"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/palette.svg",
+          "hash": "5374860913320618550"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/system.svg",
+          "hash": "10928649621634633373"
+        },
+        {
+          "file": "apps/site/src/assets/logo.svg",
+          "hash": "13914118732899144713"
+        },
+        {
+          "file": "apps/site/src/assets/md/CHANGELOG.md",
+          "hash": "15840058443220099704"
+        },
+        {
+          "file": "apps/site/src/assets/version.txt",
+          "hash": "967953648387744540"
+        },
+        {
+          "file": "apps/site/src/favicon.ico",
+          "hash": "7874704730912671046"
+        },
+        {
+          "file": "apps/site/src/index.html",
+          "hash": "3804961075423929717"
+        },
+        {
+          "file": "apps/site/src/main.ts",
+          "hash": "16035020251937385991",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/site/src/manifest.json",
+          "hash": "6703198591361658899"
+        },
+        {
+          "file": "apps/site/src/styles.scss",
+          "hash": "16702359457705768455"
+        },
+        {
+          "file": "apps/site/src/test-setup.ts",
+          "hash": "3663864336796512338",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/site/styles/comtainers.scss",
+          "hash": "5913477300004289269"
+        },
+        {
+          "file": "apps/site/styles/reset.scss",
+          "hash": "10545327061799297318"
+        },
+        {
+          "file": "apps/site/tsconfig.app.json",
+          "hash": "6370381941926563109"
+        },
+        {
+          "file": "apps/site/tsconfig.editor.json",
+          "hash": "5683551997488081321"
+        },
+        {
+          "file": "apps/site/tsconfig.json",
+          "hash": "12908826500892150196"
+        },
+        {
+          "file": "apps/site/tsconfig.spec.json",
+          "hash": "11325107235789347333"
+        },
+        {
+          "file": "apps/site/tsconfig.worker.json",
+          "hash": "2628236068720859373"
+        },
+        {
+          "file": "apps/site/version",
+          "hash": "6549415737367071778"
+        }
+      ],
+      "ui": [
+        {
+          "file": "libs/ui/README.md",
+          "hash": "17507811124529675953"
+        },
+        {
+          "file": "libs/ui/jest.config.ts",
+          "hash": "13784117228871454901"
+        },
+        {
+          "file": "libs/ui/project.json",
+          "hash": "7800963360974074380"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/contains-or-after.ts",
+          "hash": "9833667438310655994"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/element-checks.ts",
+          "hash": "17005631327003235703"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/get-actual-target.ts",
+          "hash": "8013928700333394893"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/get-native-focused.ts",
+          "hash": "2350493627228745863"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/get-viewport-width.ts",
+          "hash": "9682238535489634544"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/handller.ts",
+          "hash": "8022158405478774787"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/index.ts",
+          "hash": "16967521129699280803"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/move-focus.ts",
+          "hash": "9785746502260113622"
+        },
+        {
+          "file": "libs/ui/src/lib/additional/tests/to-observable.spec.ts",
+          "hash": "999649564101526811",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/additional/to-observable.ts",
+          "hash": "15209428210015885776",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/animations/drawer-animations.ts",
+          "hash": "18169721325049593418",
+          "deps": [
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/animations/host-animation.ts",
+          "hash": "12113644772112406793",
+          "deps": [
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/animations/index.ts",
+          "hash": "1473123072006973930"
+        },
+        {
+          "file": "libs/ui/src/lib/animations/select-drop-down-animation.ts",
+          "hash": "16641993171438865229",
+          "deps": [
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/dialog/dialog-close.service.ts",
+          "hash": "16121232165705406551",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs",
+            "npm:@ng-web-apis/common",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/dialog/dialog-host.component.html",
+          "hash": "11705141983953462891"
+        },
+        {
+          "file": "libs/ui/src/lib/components/dialog/dialog-host.component.ts",
+          "hash": "6829498068647968578",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/dialog/dialog.component.html",
+          "hash": "6263947118525674898"
+        },
+        {
+          "file": "libs/ui/src/lib/components/dialog/dialog.component.ts",
+          "hash": "11877696809929568494",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/dialog/dialog.service.ts",
+          "hash": "17583052629847332984",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer-host.component.ts",
+          "hash": "13949099184766008119",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer-menu.component.ts",
+          "hash": "16726611607284248082",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer.component.html",
+          "hash": "2711403646319917821"
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer.component.scss",
+          "hash": "9154491813174848943"
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer.component.spec.ts",
+          "hash": "7539787390707015192",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer.component.ts",
+          "hash": "9002937481195776607",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@taiga-ui/cdk",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/drawer.service.ts",
+          "hash": "14984409183961534856",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/index.ts",
+          "hash": "6690889022037528120"
+        },
+        {
+          "file": "libs/ui/src/lib/components/drawer/tokens.ts",
+          "hash": "1423747864306272391",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/constants.ts",
+          "hash": "276246437635917226",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/drop-down-host.component.ts",
+          "hash": "10327183685448760082",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/drop-down.service.ts",
+          "hash": "17940621856396710001",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/dropdown.component.html",
+          "hash": "7413318463436559318"
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/dropdown.component.scss",
+          "hash": "14849571758878223386"
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/dropdown.component.spec.ts",
+          "hash": "5017129600891645733",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/drop-down/dropdown.component.ts",
+          "hash": "11372269735038604753",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/icon/icon.component.html",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "libs/ui/src/lib/components/icon/icon.component.scss",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "libs/ui/src/lib/components/icon/icon.component.spec.ts",
+          "hash": "8618956067041057971",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/icon/icon.component.ts",
+          "hash": "16367467808449036012",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/icon/index.ts",
+          "hash": "5845494365524735083"
+        },
+        {
+          "file": "libs/ui/src/lib/components/index.ts",
+          "hash": "1224573423690471600"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/breadcrumbs/breadcrumbs.component.html",
+          "hash": "8986119837448309641"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/breadcrumbs/breadcrumbs.component.scss",
+          "hash": "5916571711304096574"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/breadcrumbs/breadcrumbs.component.spec.ts",
+          "hash": "14168562762766304472",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/breadcrumbs/breadcrumbs.component.ts",
+          "hash": "2297405975662187294",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/breadcrumbs/index.ts",
+          "hash": "13180051409166744875"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/index.ts",
+          "hash": "11365238939971263321"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/expandable/index.ts",
+          "hash": "4234413441684262067"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/expandable/link-expandable.component.html",
+          "hash": "100890757956175094"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/expandable/link-expandable.component.scss",
+          "hash": "15808434424295104195"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/expandable/link-expandable.component.spec.ts",
+          "hash": "13119500491856203472",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/expandable/link-expandable.component.ts",
+          "hash": "11734459654556197703",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/router",
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/index.ts",
+          "hash": "10646711249899101684"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/link.component.html",
+          "hash": "5179168393923473790"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/link.component.scss",
+          "hash": "10764698871978196561"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/link.component.spec.ts",
+          "hash": "13474508832589891915",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/link.component.ts",
+          "hash": "10138942915217973984",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/with-drop-down/index.ts",
+          "hash": "1818301606557857273"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/with-drop-down/with-drop-down.component.html",
+          "hash": "17253307552393992456"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/with-drop-down/with-drop-down.component.scss",
+          "hash": "15276914347952131974"
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/with-drop-down/with-drop-down.component.spec.ts",
+          "hash": "10279695354721608836",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/navigation/link/with-drop-down/with-drop-down.component.ts",
+          "hash": "13650880598813012737",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@angular/animations"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/number-precision/index.ts",
+          "hash": "3312401857406539754"
+        },
+        {
+          "file": "libs/ui/src/lib/components/number-precision/number-precision.component.html",
+          "hash": "17438725340139675214"
+        },
+        {
+          "file": "libs/ui/src/lib/components/number-precision/number-precision.component.scss",
+          "hash": "14727798983918637560"
+        },
+        {
+          "file": "libs/ui/src/lib/components/number-precision/number-precision.component.ts",
+          "hash": "698040194952520024",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/tabs/index.ts",
+          "hash": "1961428661859078723"
+        },
+        {
+          "file": "libs/ui/src/lib/components/tabs/tabs.component.html",
+          "hash": "4682536759721235161"
+        },
+        {
+          "file": "libs/ui/src/lib/components/tabs/tabs.component.scss",
+          "hash": "15877153890865123426"
+        },
+        {
+          "file": "libs/ui/src/lib/components/tabs/tabs.component.spec.ts",
+          "hash": "13963718355574813974",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/tabs/tabs.component.ts",
+          "hash": "5016970523523025411",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/tabs/tabs.directive.spec.ts",
+          "hash": "5336906528400373901"
+        },
+        {
+          "file": "libs/ui/src/lib/components/theme-changer/theme-changer.component.html",
+          "hash": "11234878061208499774"
+        },
+        {
+          "file": "libs/ui/src/lib/components/theme-changer/theme-changer.component.scss",
+          "hash": "15619414853049574143"
+        },
+        {
+          "file": "libs/ui/src/lib/components/theme-changer/theme-changer.component.spec.ts",
+          "hash": "11662439113545672451",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/theme-changer/theme-changer.component.ts",
+          "hash": "1702399609619079469",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/version/index.ts",
+          "hash": "16419751146346670628"
+        },
+        {
+          "file": "libs/ui/src/lib/components/version/version.component.html",
+          "hash": "12552656974456713231"
+        },
+        {
+          "file": "libs/ui/src/lib/components/version/version.component.scss",
+          "hash": "13743980289274075955"
+        },
+        {
+          "file": "libs/ui/src/lib/components/version/version.component.spec.ts",
+          "hash": "3187916057096643964",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/version/version.component.ts",
+          "hash": "6661799629644060831",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/di/create-di-token.ts",
+          "hash": "3576383144526575541",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/di/index.ts",
+          "hash": "4435080438694917979"
+        },
+        {
+          "file": "libs/ui/src/lib/directives/active-zone.directive.ts",
+          "hash": "12567442048221814977",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/directives/centerize-element.directive.ts",
+          "hash": "8697302226389219598",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@floating-ui/dom"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/directives/device.directive.ts",
+          "hash": "9566819187931013055",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/directives/drag/drag.directive.spec.ts",
+          "hash": "7481509322273938288"
+        },
+        {
+          "file": "libs/ui/src/lib/directives/drag/drag.directive.ts",
+          "hash": "13697028156013548553",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/directives/drag/index.ts",
+          "hash": "12451672563774633569"
+        },
+        {
+          "file": "libs/ui/src/lib/directives/index.ts",
+          "hash": "664990217095776571"
+        },
+        {
+          "file": "libs/ui/src/lib/directives/scroll-spy.directive.ts",
+          "hash": "16482620593694564997",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/pipes/index.ts",
+          "hash": "5166352912110979210"
+        },
+        {
+          "file": "libs/ui/src/lib/pipes/plural.pipe.ts",
+          "hash": "15509425264039405600",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/pipes/precision.pipe.ts",
+          "hash": "7146764328400855733",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/rxjs/event-with.ts",
+          "hash": "3813046078185234570"
+        },
+        {
+          "file": "libs/ui/src/lib/rxjs/index.ts",
+          "hash": "11437452665471563270"
+        },
+        {
+          "file": "libs/ui/src/lib/rxjs/typed-from-event.ts",
+          "hash": "16378062978868440601",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/services/destroy.service.ts",
+          "hash": "716073344184778600",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/services/device.service.ts",
+          "hash": "3918568337965079074",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/services/id.service.ts",
+          "hash": "16636650209998150818",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/services/index.ts",
+          "hash": "17240055136192798704"
+        },
+        {
+          "file": "libs/ui/src/lib/services/router.service.ts",
+          "hash": "8351848521221417753",
+          "deps": [
+            "npm:@angular/core",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/tokens/icons.ts",
+          "hash": "14365026451186302350"
+        },
+        {
+          "file": "libs/ui/src/lib/tokens/index.ts",
+          "hash": "3332499183744521043"
+        },
+        {
+          "file": "libs/ui/src/lib/tokens/is-chrome.ts",
+          "hash": "12697952243797417352"
+        },
+        {
+          "file": "libs/ui/src/test-setup.ts",
+          "hash": "8330833895872625958",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "libs/ui/tsconfig.json",
+          "hash": "17257668314327718781"
+        },
+        {
+          "file": "libs/ui/tsconfig.lib.json",
+          "hash": "4812140318364688608"
+        },
+        {
+          "file": "libs/ui/tsconfig.spec.json",
+          "hash": "11325107235789347333"
+        }
+      ]
+    }
+  }
+}
