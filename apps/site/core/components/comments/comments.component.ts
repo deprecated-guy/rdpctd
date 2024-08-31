@@ -1,35 +1,13 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, signal } from '@angular/core';
+import { TuiEditorModule } from '@taiga-ui/addon-editor';
+import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-comments',
-  standalone: true,
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  template: ``,
+	selector: 'app-comments',
+	standalone: true,
+	imports: [TuiEditorModule, FormsModule],
+	template: '<tui-editor [(ngModel)]="editorContent()"></tui-editor>',
 })
 export class CommentsComponent {
-  comments: { text: string; replies: string[] }[] = [];
-  newComment: string = '';
-  replyText: string = '';
-
-  addComment() {
-    if (this.newComment) {
-      this.comments.push({ text: this.newComment, replies: [] });
-      this.newComment = '';
-    }
-  }
-
-  addReply(comment: { replies: string[] }) {
-    if (this.replyText) {
-      comment.replies.push(this.replyText);
-      this.replyText = '';
-    }
-  }
-
-  onCommentChange(value: string) {
-    this.newComment = value;
-  }
-
-  onReplyChange(value: string) {
-    this.replyText = value;
-  }
+	readonly editorContent = signal('');
 }
