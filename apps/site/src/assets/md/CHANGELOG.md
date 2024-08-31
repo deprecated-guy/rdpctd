@@ -1,5 +1,13 @@
 
 
+## [2.3.0](https://github.com/deprecated-guy/rdpctd/compare/2.2.0...2.3.0) (2024-08-31)
+
+
+### Features
+
+* Add PWA support with manifest, service worker, and installation prompt ([134ee3b](https://github.com/deprecated-guy/rdpctd/commit/134ee3bb5a36bb8b337460384c92bb2f507e3a73))
+* Add PWA support with manifest, service worker, and installation prompt ([ef5d6a2](https://github.com/deprecated-guy/rdpctd/commit/ef5d6a20583147d5cde1093691c916500c239e79))
+
 ## [2.2.0](https://github.com/deprecated-guy/rdpctd/compare/2.1.6...2.2.0) (2024-07-13)
 
 
