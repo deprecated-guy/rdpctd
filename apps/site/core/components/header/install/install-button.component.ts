@@ -8,9 +8,9 @@ import { IconComponent } from '@ui/components';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	imports: [IconComponent],
 	standalone: true,
-    host: {
-        '(click)': 'installApp()'
-    }
+	host: {
+		'(click)': 'installApp()',
+	},
 })
 export class InstallButtonComponent {
 	protected deferredPrompt = signal<any>(null);
