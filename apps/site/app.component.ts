@@ -6,7 +6,7 @@ import { DropDownHostComponent } from '@ui/components/drop-down/drop-down-host.c
 import { FooterComponent } from '@core/components/footer/footer.component';
 import { TuiRoot } from '@taiga-ui/core';
 import { UpdateAlertsComponent } from './update-alert/update-alert.component';
-import { CommentsComponent } from './core';
+
 
 @Component({
 	standalone: true,
