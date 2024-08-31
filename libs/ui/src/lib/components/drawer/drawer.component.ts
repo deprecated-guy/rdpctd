@@ -1,13 +1,10 @@
-import type { ElementRef } from '@angular/core';
-import { ChangeDetectionStrategy, Component, Inject, ViewEncapsulation, viewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Inject, OnInit, ViewEncapsulation, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { POLYMORPHEUS_CONTEXT, PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
-import { ThemeChangerComponent } from '@ui/components';
 import { RouterLinkActive } from '@angular/router';
-import { TuiActiveZoneModule } from '@taiga-ui/cdk';
-import type { BehaviorSubject } from 'rxjs';
-import type { Drawer } from './tokens';
-import { DRAWERS } from './tokens';
+import { TuiActiveZone } from '@taiga-ui/cdk';
+import { BehaviorSubject } from 'rxjs';
+import { Drawer, DRAWERS } from './tokens';
 
 @Component({
 	selector: 'app-drawer',
@@ -15,34 +12,38 @@ import { DRAWERS } from './tokens';
 	imports: [
 		CommonModule,
 		PolymorpheusModule,
-		ThemeChangerComponent,
-		TuiActiveZoneModule,
+		TuiActiveZone,
 	],
 	templateUrl: './drawer.component.html',
 	styleUrl: './drawer.component.scss',
 	encapsulation: ViewEncapsulation.None,
 	changeDetection: ChangeDetectionStrategy.OnPush,
-	animations: [],
 	providers: [RouterLinkActive],
 })
-export class DrawerComponent {
-	private readonly drawer = viewChild<ElementRef<HTMLElement>>('drawer');
-
-	ngOnInit() {
-		this.drawer()?.nativeElement.classList.add('opened');
-	}
+export class DrawerComponent implements OnInit {
+	private readonly drawerElement = viewChild<ElementRef<HTMLElement>>('drawer');
 
 	constructor(
-		@Inject(POLYMORPHEUS_CONTEXT) readonly context: Drawer<any>,
-		@Inject(DRAWERS) readonly drawers: BehaviorSubject<Drawer<any>[]>,
+		@Inject(POLYMORPHEUS_CONTEXT) readonly context: Drawer<unknown>,
+		@Inject(DRAWERS) private readonly drawersSubject: BehaviorSubject<Drawer<unknown>[]>,
 	) {}
 
-	catchEvent(event: boolean) {
-		if (!event) {
-			this.drawer()!.nativeElement.classList.remove('open');
-			this.drawer()!.nativeElement.classList.add('closed');
+	ngOnInit(): void {
+		this.drawerElement()?.nativeElement.classList.add('opened');
+	}
 
-			this.drawers.next([]);
+	onActiveZoneChange(isActive: boolean): void {
+		if (!isActive) {
+			this.closeDrawer();
 		}
+	}
+
+	private closeDrawer(): void {
+		const element = this.drawerElement()?.nativeElement;
+		if (element) {
+			element.classList.remove('open');
+			element.classList.add('closed');
+		}
+		this.drawersSubject.next([]);
 	}
 }

@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { TuiDropdownModule, TuiHostedDropdownModule, TuiLinkModule } from '@taiga-ui/core';
+import { TuiDropdownDirective, TuiDropdownHover, TuiDropdownManual, TuiLink } from '@taiga-ui/core';
 import { RouterLink } from '@angular/router';
 import type { Navigation } from '@core/types';
 import { IconComponent, LinkComponent } from '@ui/components';
@@ -7,15 +7,16 @@ import { IconComponent, LinkComponent } from '@ui/components';
 @Component({
 	selector: 'app-header-item',
 	templateUrl: './header-item.component.html',
-	styleUrls: ['./header-item.component.scss'],
+	styleUrl: './header-item.component.scss',
 	standalone: true,
 	imports: [
-		TuiLinkModule,
-		TuiDropdownModule,
 		RouterLink,
 		LinkComponent,
-		TuiHostedDropdownModule,
+		TuiDropdownManual,
 		IconComponent,
+		TuiLink,
+		TuiDropdownHover,
+		TuiDropdownDirective,
 	],
 })
 export class HeaderItemComponent {

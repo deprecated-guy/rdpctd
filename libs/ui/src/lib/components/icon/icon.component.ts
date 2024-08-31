@@ -13,6 +13,7 @@ export const icons = {
 	light: '/assets/images/svg/light-mode.svg',
 	game: '/assets/images/svg/game.svg',
 	system: '/assets/images/svg/system.svg',
+	download: '/assets/images/svg/install-desktop-rounded.svg',
 };
 
 export type Icon = keyof typeof icons;

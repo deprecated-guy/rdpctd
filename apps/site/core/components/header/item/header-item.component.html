@@ -1,19 +1,14 @@
 @if (dropdownItem()?.children) {
-	<tui-hosted-dropdown
-		[content]="dropDown"
+	<a
+		class="link"
+		tuiLink
 		tuiDropdownHover
-		[title]="dropdownItem()?.title"
+		[tuiDropdown]="dropDown"
+		[iconEnd]="dropdownItem()?.icon ?? ''"
+		[routerLink]="dropdownItem()?.routerLink ?? ''"
 	>
-			<a
-				class="link"
-				tuiLink
-				[icon]="dropdownItem()?.icon ?? ''"
-				[routerLink]="dropdownItem()?.routerLink ?? ''"
-			>
-				{{dropdownItem()?.title}}
-			</a>
-	</tui-hosted-dropdown>
-
+		{{dropdownItem()?.title}}
+	</a>
 >
 
 
@@ -24,7 +19,7 @@
 					<a
 						tuiLink
 						[routerLink]="item.routerLink"
-						[icon]="item?.icon ?? ''"
+						[iconStart]="item?.icon ?? ''"
 					>
 						{{ item.title }}
 					</a>
@@ -36,7 +31,7 @@
 	<a
 		class="link"
 		tuiLink
-		[icon]="dropdownItem()?.icon ?? ''"
+		[iconStart]="dropdownItem()?.icon ?? ''"
 		[routerLink]="dropdownItem()?.routerLink ?? ''"
 	>
 		{{dropdownItem()?.title}}

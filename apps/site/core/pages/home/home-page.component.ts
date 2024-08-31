@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ScrollSpyDirective } from '@ui/directives';
-import { TuiAvatarModule } from '@taiga-ui/kit';
+import { TuiAvatar } from '@taiga-ui/kit';
 
 @Component({
 	selector: 'app-home-page',
@@ -9,7 +9,7 @@ import { TuiAvatarModule } from '@taiga-ui/kit';
 	templateUrl: './home-page.component.html',
 	imports: [
 		ScrollSpyDirective,
-		TuiAvatarModule,
+		TuiAvatar,
 	],
 })
 export default class HomePageComponent {}

@@ -1,4 +1,4 @@
-@use "@app/styles/helpers.scss";
+@use "@app/styles/helpers";
 
 :host {
   @include helpers.clearButton;
@@ -7,6 +7,6 @@
 }
 
 .link {
-  color: white;
+  color: currentColor;
 }
 

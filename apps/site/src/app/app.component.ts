@@ -2,12 +2,10 @@ import { Component, signal } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { HeaderComponent } from '@core/components';
 import { DrawerHostComponent } from '@ui/components';
-import { AsyncPipe, NgIf } from '@angular/common';
 import { DropDownHostComponent } from '@ui/components/drop-down/drop-down-host.component';
-import type { TuiBrightness } from '@taiga-ui/core';
-import { TuiModeModule, TuiRootModule, TuiSvgDefsHostModule, TuiThemeNightModule } from '@taiga-ui/core';
 import { FooterComponent } from '@core/components/footer/footer.component';
 import { UpdateAlertsComponent } from './update-alert/update-alert.component';
+import { TuiRoot } from '@taiga-ui/core';
 
 @Component({
 	standalone: true,
@@ -15,13 +13,8 @@ import { UpdateAlertsComponent } from './update-alert/update-alert.component';
 		RouterModule,
 		HeaderComponent,
 		DrawerHostComponent,
-		AsyncPipe,
-		NgIf,
 		DropDownHostComponent,
-		TuiRootModule,
-		TuiModeModule,
-		TuiThemeNightModule,
-		TuiSvgDefsHostModule,
+		TuiRoot,
 		UpdateAlertsComponent,
 		FooterComponent,
 	],
@@ -29,8 +22,4 @@ import { UpdateAlertsComponent } from './update-alert/update-alert.component';
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 })
-export class AppComponent {
-	protected readonly localStorage = localStorage;
-	protected readonly window = window;
-	readonly theme = signal<TuiBrightness | null>(null);
-}
+export class AppComponent {}

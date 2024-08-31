@@ -13,12 +13,16 @@
 				}
 
 					<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
+					<app-theme-changer></app-theme-changer>
 				</div>
-			<div class="mobile-button">
+			<div class="mobile-buttons">
 				<app-drawer-menu
+					*appDevice="['mobile', 'tablet']"
 					[content]="drawer"
-					menuTitle="Reacive Deprecated"
+					menuTitle="Reactive Deprecated"
 				></app-drawer-menu>
+
+				<app-install-button *appDevice="['mobile', 'tablet']"></app-install-button>
 			</div>
 		</div>
 	</div>
@@ -65,5 +69,6 @@
 		</div>
 
 		<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
+		<app-theme-changer class="theme-changer"></app-theme-changer>
 	</div>
 </ng-template>

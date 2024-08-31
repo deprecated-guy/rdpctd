@@ -7,7 +7,6 @@ import {
 	input,
 	signal,
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router, RouterLink } from '@angular/router';
 import { LinkComponent } from '@ui/components';
 import { distinctUntilChanged, filter } from 'rxjs';
@@ -21,7 +20,7 @@ interface Breadcrumb {
 @Component({
 	selector: 'app-breadcrumbs',
 	standalone: true,
-	imports: [CommonModule, LinkComponent, RouterLink],
+	imports: [ LinkComponent, RouterLink],
 	templateUrl: './breadcrumbs.component.html',
 	styleUrls: ['./breadcrumbs.component.scss'],
 	encapsulation: ViewEncapsulation.Emulated,
@@ -35,9 +34,7 @@ export class BreadcrumbsComponent {
 
 	 readonly separator = input('/');
 
-	 constructor(
-
-	 ) {
+	 constructor() {
 	 	this.breadcrumbs.set(this.buildBreadCrumb(this.activatedRoute));
 	 }
 

@@ -2,24 +2,24 @@ import { Injectable } from '@angular/core';
 import { distinctUntilChanged, fromEvent, map } from 'rxjs';
 import { toSignal } from '@angular/core/rxjs-interop';
 
-export interface Breacpoint {
-	mobile: {
-		min: number;
-		max: number;
+export interface Breakpoint {
+	readonly mobile: {
+		readonly min: number;
+		readonly max: number;
 	};
-	desktop: {
-		min: number;
-		max: number;
+	readonly desktop: {
+		readonly min: number;
+		readonly max: number;
 	};
-	tab: {
-		min: number;
-		max: number;
+	readonly tab: {
+		readonly min: number;
+		readonly max: number;
 	};
 }
 
 @Injectable({ providedIn: 'root' })
 export class DeviceService {
-	private readonly devices: Breacpoint = {
+	private readonly devices: Breakpoint = {
 		mobile: {
 			min: Number.NEGATIVE_INFINITY,
 			max: 780,
@@ -34,9 +34,9 @@ export class DeviceService {
 		},
 	};
 
-	private resieEvent = fromEvent(window, 'resize');
+	private readonly resieEvent = fromEvent(window, 'resize');
 
-	width = toSignal(
+	readonly width = toSignal(
 		this.resieEvent.pipe(
 			map(() => this.getWidth()),
 			distinctUntilChanged(),
@@ -46,7 +46,7 @@ export class DeviceService {
 		},
 	);
 
-	height = toSignal(
+	readonly height = toSignal(
 		this.resieEvent.pipe(
 			map(() => this.getHeight()),
 			distinctUntilChanged(),
@@ -56,7 +56,7 @@ export class DeviceService {
 		},
 	);
 
-	isMobileSignal = toSignal(
+	readonly isMobileSignal = toSignal(
 		this.resieEvent.pipe(
 			map(() => this.isMobile()),
 			distinctUntilChanged(),
@@ -64,7 +64,7 @@ export class DeviceService {
 		{ initialValue: this.isMobile() },
 	);
 
-	isTabletSignal = toSignal(
+	readonly isTabletSignal = toSignal(
 		this.resieEvent.pipe(
 			map(() => this.isTab()),
 			distinctUntilChanged(),

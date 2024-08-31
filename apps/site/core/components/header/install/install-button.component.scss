@@ -1,0 +1,23 @@
+.install-button {
+  color: currentColor;
+  width: max-content;
+  height: max-content;
+  padding: 0.25rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+
+}
+
+
+.install-button i {
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.install-button:hover {
+  border: 1px solid currentColor;
+}
+
+.install-button:active {
+  border: 1px solid currentColor;
+}

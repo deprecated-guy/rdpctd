@@ -6,7 +6,7 @@ import { themeChangerAnimation } from '@ui/animations';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { ActiveZoneDirective } from '@ui/directives';
 
-type Theme = 'light' | 'dark' | 'system';
+type Theme = 'light' | 'dark';
 
 @Component({
 	selector: 'app-theme-changer',
@@ -22,25 +22,18 @@ type Theme = 'light' | 'dark' | 'system';
 	},
 })
 export class ThemeChangerComponent {
-	private readonly theme$ = new BehaviorSubject<Theme>((localStorage.getItem('theme') as Theme) ?? 'system');
+	private readonly theme$ = new BehaviorSubject<Theme>((localStorage.getItem('theme') as Theme) ?? 'light');
 	isOpened = false;
-	theme = toSignal(this.theme$);
+	readonly theme = toSignal(this.theme$);
 
 	constructor() {
-		const media = window.matchMedia('(prefers-color-scheme: dark)');
-		if (this.theme() === 'system') document.body.setAttribute('data-theme', media.matches ? 'dark' : 'light');
-		else document.body.setAttribute('data-theme', 'dark');
+		document.body.setAttribute('tuiTheme', this.theme() as string);
 	}
 
 	changeTheme = (theme: Theme): void => {
-		localStorage.setItem('theme', theme as string);
+		localStorage.setItem('theme', theme);
 		this.isOpened = false;
 		this.theme$.next(theme);
-		if (theme === 'system') {
-			const media = window.matchMedia('(prefers-color-scheme: dark)');
-			document.body.setAttribute('data-theme', media.matches ? 'dark' : 'light');
-		} else {
-			document.body.setAttribute('data-theme', theme as string);
-		}
+		document.body.setAttribute('tuiTheme', theme);
 	};
 }

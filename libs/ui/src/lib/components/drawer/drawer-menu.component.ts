@@ -18,7 +18,7 @@ import { DrawerService } from './drawer.service';
 		'[style.user-select]': '"none"',
 		'[style.width]': '"var(--icon-width, 1.5rem)"',
 		'[style.height]': '"var(--icon-width, 1.5rem)"',
-		'[style.background-color]': '"white"',
+		'[style.background-color]': '"currentColor"',
 		'(click)': 'openDrawer()',
 	},
 })

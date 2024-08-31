@@ -8,7 +8,7 @@
 .drawer {
   display: block;
   position: relative;
-  color: black;
+  color: currentColor;
   background: #f9f9fa;
   width: 17rem;
   height: 100%;
@@ -44,5 +44,5 @@
 
 
 ::ng-deep app-icon {
-  background: #fafaf9;
+  background: currentColor;
 }
