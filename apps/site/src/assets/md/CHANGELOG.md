@@ -1,5 +1,14 @@
 
 
+## [2.6.0](https://github.com/deprecated-guy/rdpctd/compare/2.5.0...2.6.0) (2024-08-31)
+
+
+### Features
+
+* **comment:** start with working on comment system ([79886ea](https://github.com/deprecated-guy/rdpctd/commit/79886ea8e3db3eddea27b3d0422e9c13ef32babd))
+* **comment:** start with working on comment system ([04bc506](https://github.com/deprecated-guy/rdpctd/commit/04bc50600fec4a83929d8764d5ef6e29a7a909b2))
+* **comment:** start with working on comment system ([39dca69](https://github.com/deprecated-guy/rdpctd/commit/39dca6931e3592ef07a4968e3edb4fe48ad1b9d6))
+
 ## [2.5.0](https://github.com/deprecated-guy/rdpctd/compare/2.4.0...2.5.0) (2024-08-31)
 
 
