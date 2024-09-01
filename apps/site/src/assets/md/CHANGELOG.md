@@ -1,5 +1,15 @@
 
 
+## [2.7.0](https://github.com/deprecated-guy/rdpctd/compare/2.6.0...2.7.0) (2024-09-01)
+
+
+### Features
+
+* **comment:** start with working on comment system ([016e032](https://github.com/deprecated-guy/rdpctd/commit/016e032acd40f3e06110eee82601636648c991d3))
+* **comment:** start with working on comment system ([3bd75de](https://github.com/deprecated-guy/rdpctd/commit/3bd75debfac6c7ae56753ee3e81ac3297b884b75))
+* **pwa:** added pwa support ([cef07b8](https://github.com/deprecated-guy/rdpctd/commit/cef07b8e4a8376cb88ad9bcc5750d51c6f15121a))
+* **pwa:** added pwa support ([37f574e](https://github.com/deprecated-guy/rdpctd/commit/37f574ef8b4766913b99c7b319e5d969df82cd24))
+
 ## [2.6.0](https://github.com/deprecated-guy/rdpctd/compare/2.5.0...2.6.0) (2024-08-31)
 
 
