@@ -1,5 +1,16 @@
 
 
+## [2.8.0](https://github.com/deprecated-guy/rdpctd/compare/2.7.0...2.8.0) (2024-09-01)
+
+
+### Features
+
+* **nginx:** changed listening ports ([51c7db9](https://github.com/deprecated-guy/rdpctd/commit/51c7db9f603c4413a8561fe84dc24950245e005c))
+* **nginx:** changed listening ports ([e0007da](https://github.com/deprecated-guy/rdpctd/commit/e0007dacc95724fa3fff9dcf4d05a1558e524cb2))
+* **nginx:** changed listening ports ([aaaef28](https://github.com/deprecated-guy/rdpctd/commit/aaaef28e49ffbc9602b38a621e0ef3a01f0be530))
+* **styles:** updated stykes ([93a72a3](https://github.com/deprecated-guy/rdpctd/commit/93a72a372add0fe74f5cef0dddb7d2f0b4f3ad3b))
+* **styles:** updated styles ([8e37dff](https://github.com/deprecated-guy/rdpctd/commit/8e37dff4d304e3cda423880b9699113c93b41bda))
+
 ## [2.7.0](https://github.com/deprecated-guy/rdpctd/compare/2.6.0...2.7.0) (2024-09-01)
 
 
