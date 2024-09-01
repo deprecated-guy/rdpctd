@@ -24,7 +24,7 @@ export class LocaleService {
         }),
         switchMap(() => {
             this.currentLocaleSubject.next(locale);
-            return of(locale).pipe(map((key) => this.translations[key]?.[locale] || key));
+            return of(locale).pipe(map((key) => this.translations()[key]?.[locale] || key));
         })
     );
   }

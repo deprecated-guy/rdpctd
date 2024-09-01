@@ -112,6 +112,32 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "site-e2e": [
+        {
+          "file": "apps/site-e2e/playwright.config.ts",
+          "hash": "16871041557852848344",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/project.json",
+          "hash": "13813813342432828684"
+        },
+        {
+          "file": "apps/site-e2e/src/example.spec.ts",
+          "hash": "10535992647702454484",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/tsconfig.json",
+          "hash": "7012811660374785764"
+        }
+      ],
       "ui": [
         {
           "file": "libs/ui/README.md",
@@ -777,32 +803,6 @@
           "hash": "11325107235789347333"
         }
       ],
-      "site-e2e": [
-        {
-          "file": "apps/site-e2e/playwright.config.ts",
-          "hash": "16871041557852848344",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/site-e2e/project.json",
-          "hash": "13813813342432828684"
-        },
-        {
-          "file": "apps/site-e2e/src/example.spec.ts",
-          "hash": "10535992647702454484",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/site-e2e/tsconfig.json",
-          "hash": "7012811660374785764"
-        }
-      ],
       "site": [
         {
           "file": "apps/site/.idea/.gitignore",
@@ -1174,7 +1174,7 @@
         },
         {
           "file": "apps/site/src/assets/md/CHANGELOG.md",
-          "hash": "15840058443220099704"
+          "hash": "954157621509921983"
         },
         {
           "file": "apps/site/src/assets/service-worker.js",
@@ -1423,11 +1423,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "12003395046593370922"
+        "hash": "6440355280507852326"
       },
       {
         "file": "package.json",
-        "hash": "2699019863723920571"
+        "hash": "16596558566270616492"
       },
       {
         "file": "tsconfig.base.json",
