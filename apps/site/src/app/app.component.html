@@ -1,9 +1,11 @@
 <tui-root >
+	<app-header class="header"></app-header>
 
-	<app-header></app-header>
 
-	<div class="page normal">
-		<router-outlet></router-outlet>
+	<div class="flexible-container">
+		<main>
+			<router-outlet></router-outlet>
+		</main>
 	</div>
 
 	<app-footer></app-footer>

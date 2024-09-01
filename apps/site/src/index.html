@@ -14,7 +14,6 @@
 	<body>
 		<app-root></app-root>
 		<script>
-			if ('serviceWorker' in navigator) {
 				window.addEventListener('load', () => {
 					navigator.serviceWorker.register('assets/service-worker.js')
 						.then((registration) => {
@@ -24,7 +23,6 @@
 							console.log('ServiceWorker registration failed: ', error);
 						});
 				});
-			}
 		</script>
 	</body>
 </html>

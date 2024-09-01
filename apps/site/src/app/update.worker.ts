@@ -33,7 +33,7 @@ function parseVersion(version: string): number {
 
 function fetchVersion(): Observable<number> {
 	return from(
-		fetch('/version')
+		fetch('../version')
 			.then((response) => {
 				return response.text();
 			})

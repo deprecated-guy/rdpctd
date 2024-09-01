@@ -4,82 +4,58 @@
 :host {
   display: block;
   width: 100%;
-  color: var(--text-color);
-  margin-bottom: 5rem;
- 
+  position: sticky;
+  top: 0;
 }
-
-app-icon {
-  color: var(--text-color);
-  width: 1rem;
-  height: 1rem;
-}
-
-.mobile-buttons {
-  display: none;
-  transition: .3s;
-  cursor: pointer;
-  color: var(--text-color);
-
-  ::ng-deep app-drawer-menu {
-    width: 20px;
-    color: var(--text-color);
-  }
-
-  &:hover {
-    color: darkgrey;
-  }
-
-  @media #{media.$mobile}, #{media.$tablet} {
-    display: flex;
-    gap: 1rem;
-    margin-right: 1rem;
-    align-items: center;
-  }
-}
-
 
 .header {
   backdrop-filter: blur(10px);
-  position: fixed;
-  top: 0;
   width: 100%;
-  display: flex;
-  padding: 0.7rem;
-  box-shadow: 0 1px var(--border-bottom-color);
-  color: var(--text-color);
+  border-bottom: 1px solid var(--text-color);
+  font-family: 'Playwrite GB S';
+  padding: 5px 1rem;
+  position: sticky;
+  top: 0;
 
+  @media #{media.$mobile} {
+    padding: 5px 0.3rem;
+  }
 }
 
 .row {
   display: flex;
-  width: 100%;
+  color: var(--text-color);
+  align-items: center;
   justify-content: space-between;
-}
 
-.logo {
-  width: 10rem;
-  font-family: 'Playwrite GB+S', cursive;
-  font-size: 1.2rem;
-  color: var(--text-color);
-  cursor: pointer;
-  transition: .25s ease-in-out;
-
-  &:hover {
-    color: gray;
+  .menu {
+    color: var(--text-color);
+    margin-left: auto;
+    align-items: center;
   }
-}
 
-.menu {
-  display: flex;
-  gap: 1rem;
-  color: var(--text-color);
+  .mobile-buttons {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 0.3;
+
+    .theme-changer{
+      color: var(--text-color);
+    }
+
+  }
 
   @media #{media.$mobile} {
-    display: none;
+    .counter {
+      display: none;
+    }
+
+    .menu {
+      display: none;
+    }
   }
 }
-
 
 
 .drawer-link {

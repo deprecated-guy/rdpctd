@@ -41,8 +41,8 @@ export class UpdateAlertsComponent implements OnInit, OnDestroy {
 	private currentVersion: string = '';
 
 	ngOnInit(): void {
-		if (typeof Worker === 'undefined') return;
-
+		// if (typeof Worker === 'undefined') return;
+		this.worker = new Worker(new URL('../update.worker.ts', import.meta.url));
 		this.initializeWorker();
 	}
 
@@ -52,9 +52,10 @@ export class UpdateAlertsComponent implements OnInit, OnDestroy {
 
 	private initializeWorker(): void {
 		this.worker = new Worker(new URL('../update.worker', import.meta.url));
+		console.log(this.worker);
 
 		this.worker.onmessage = this.handleWorkerMessage.bind(this);
-
+		console.log(this.currentVersion);
 		this.worker.postMessage({ type: 'START', currentVersion: this.currentVersion });
 	}
 
@@ -75,6 +76,7 @@ export class UpdateAlertsComponent implements OnInit, OnDestroy {
 
 	private showAlert(): void {
 		const content = new PolymorpheusComponent(ChangelogMessageComponent);
+		console.log('showAlert');
 
 		this.alertService
 			.open(content, {

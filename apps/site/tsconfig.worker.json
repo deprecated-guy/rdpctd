@@ -6,6 +6,6 @@
 		"types": []
 	},
 	"include": ["src/**/*.worker.ts",
-		"./src/assets/service-worker.js"
+		"/src/assets/service-worker.js"
 	]
 }

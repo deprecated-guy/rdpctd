@@ -6,7 +6,7 @@
 					it's Deprecated!
 				</div>
 
-				<div class="menu">
+				<div class="menu" *appDevice="'desktop'">
 
 				@for (item of headerService.navigation(); track $index) {
 					<app-header-item [dropdownItem]="item"></app-header-item>
@@ -15,7 +15,7 @@
 					<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
 					<app-theme-changer></app-theme-changer>
 				</div>
-			<div class="mobile-buttons">
+			<div class="mobile-buttons" *appDevice="['tablet', 'mobile']">
 				<app-drawer-menu
 					*appDevice="['mobile', 'tablet']"
 					[content]="drawer"
@@ -23,6 +23,8 @@
 				></app-drawer-menu>
 
 				<app-install-button *appDevice="['mobile', 'tablet']"></app-install-button>
+
+				<app-theme-changer class="theme-changer"></app-theme-changer>
 			</div>
 		</div>
 	</div>
@@ -37,9 +39,9 @@
 					tuiLink
 					(click)="item.children ? openExpand() : 0"
 				>
-				<span class="link-text">
-					{{ item.title }}
-				</span>
+					<span class="link-text">
+						{{ item.title }}
+					</span>
 				</a>
 				@if(item.children) {
 					<tui-expand
@@ -69,6 +71,6 @@
 		</div>
 
 		<div class="counter">refactoring stage: {{ counter() | plural: 'days': 'day' }}</div>
-		<app-theme-changer class="theme-changer"></app-theme-changer>
+
 	</div>
 </ng-template>

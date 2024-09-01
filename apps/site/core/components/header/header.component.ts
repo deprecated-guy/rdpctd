@@ -1,14 +1,14 @@
-import { Component, inject, signal, output } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { expand, map, timer } from 'rxjs';
+import { map, timer } from 'rxjs';
 import * as luxon from 'luxon';
 import { PluralPipe } from '@ui/pipes';
 import { DrawerMenuComponent, IconComponent, LinkComponent, ThemeChangerComponent } from '@ui/components';
 import { RouterLink } from '@angular/router';
 import { HeaderService } from './header.service';
 import { HeaderItemComponent } from './item/header-item.component';
-import { TuiExpand } from '@taiga-ui/core';
+import { TuiExpand, TuiLink } from '@taiga-ui/core';
 import { DeviceService } from '@ui/services';
 import { DeviceDirective } from '@ui/directives';
 import { InstallButtonComponent } from './install/install-button.component';
@@ -30,6 +30,7 @@ import { InstallButtonComponent } from './install/install-button.component';
 		ThemeChangerComponent,
 		DeviceDirective,
 		InstallButtonComponent,
+		TuiLink,
 	],
 	providers: [HeaderService],
 })

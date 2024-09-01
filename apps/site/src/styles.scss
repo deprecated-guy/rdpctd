@@ -17,6 +17,7 @@
 	--dropdown-bg: rgba(255, 255, 255, 0.5);
 	--theme-bg: rgba(94, 94, 94, 0.76);
 }
+
 [tuiTheme='dark'] {
 	--body-color: #222;
 	--text-color: #fff;
@@ -53,4 +54,5 @@
 body {
 	background: var(--body-color);
 	color: var(--text-color);
+	font-family: 'Playwrite GB S';
 }
