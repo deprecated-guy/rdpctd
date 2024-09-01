@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, RendererFactory2, inject, input, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import type { PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
-import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
+import { PolymorpheusOutlet, type PolymorpheusContent } from '@taiga-ui/polymorpheus';
 import { ActiveZoneDirective } from '@ui/directives';
 import { DropDownService } from '@ui/components/drop-down/drop-down.service';
 
@@ -13,7 +12,7 @@ export type LinkAppearance = 'default' | 'full-width';
 @Component({
 	selector: 'a[appLink], button[appLink]',
 	standalone: true,
-	imports: [CommonModule, IconComponent, ActiveZoneDirective, PolymorpheusModule],
+	imports: [CommonModule, IconComponent, ActiveZoneDirective, PolymorpheusOutlet],
 	templateUrl: './link.component.html',
 	styleUrl: './link.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -24,7 +23,7 @@ export type LinkAppearance = 'default' | 'full-width';
 export class LinkComponent {
 	private readonly renderer = inject(RendererFactory2).createRenderer(null, null);
 	private readonly dropdownService = inject(DropDownService);
-	private readonly host = viewChild<HTMLDivElement>('link')!;
+	private readonly host = viewChild.required<HTMLDivElement>('link');
 	icon = input<Icon>();
 	iconRight = input<Icon>();
 	appearance = input<LinkAppearance | string>('default');

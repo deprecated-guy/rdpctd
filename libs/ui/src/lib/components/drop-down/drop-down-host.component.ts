@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { DROPDOWNS } from '@ui/components/drop-down/constants';
-import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import { AsyncPipe } from '@angular/common';
+import { PolymorpheusOutlet } from '@taiga-ui/polymorpheus';
 
 @Component({
 	selector: 'app-drop-down-host',
@@ -34,7 +34,7 @@ import { AsyncPipe } from '@angular/common';
 			}
 		`,
 	],
-	imports: [PolymorpheusModule, AsyncPipe],
+	imports: [PolymorpheusOutlet, AsyncPipe],
 })
 export class DropDownHostComponent {
 	readonly dropdowns = inject(DROPDOWNS);

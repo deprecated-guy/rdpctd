@@ -1,5 +1,5 @@
 import { Component, DestroyRef, computed, inject, input } from '@angular/core';
-import type { PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
+import type { PolymorpheusContent } from '@taiga-ui/polymorpheus';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import type { Icon } from '@ui/components';
 import { icons } from '@ui/components';

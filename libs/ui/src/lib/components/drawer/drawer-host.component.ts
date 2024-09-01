@@ -1,15 +1,15 @@
 import { Component, inject } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import { PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import type { BehaviorSubject } from 'rxjs';
 import { hostAnimation } from '../../animations';
 import type { Drawer } from './tokens';
 import { DRAWERS } from './tokens';
+import { PolymorpheusOutlet } from '@taiga-ui/polymorpheus';
 
 @Component({
 	selector: 'app-drawer-host',
 	standalone: true,
-	imports: [AsyncPipe, PolymorpheusModule],
+	imports: [AsyncPipe, PolymorpheusOutlet],
 	animations: [hostAnimation],
 	template: `
 		@for (drawer of (drawers | async) ?? []; track $index) {

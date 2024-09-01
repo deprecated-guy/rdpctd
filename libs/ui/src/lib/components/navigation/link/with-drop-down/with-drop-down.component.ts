@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ActiveZoneDirective, CenterizeElementDirective } from '@ui/directives';
 import type { Icon } from '@ui/components';
 import { IconComponent } from '@ui/components';
-import { type PolymorpheusContent, PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
+import { type PolymorpheusContent, PolymorpheusOutlet } from '@taiga-ui/polymorpheus';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { DeviceService } from '@ui/services';
 
@@ -22,7 +22,7 @@ import { DeviceService } from '@ui/services';
 			transition(':leave', [animate('300ms ease-in', style({ opacity: 0, transform: 'translateY(-20px)' }))]),
 		]),
 	],
-	imports: [CommonModule, ActiveZoneDirective, IconComponent, PolymorpheusModule, CenterizeElementDirective],
+	imports: [CommonModule, ActiveZoneDirective, IconComponent, PolymorpheusOutlet, CenterizeElementDirective],
 })
 export class WithDropDownComponent {
 	readonly deviceService = inject(DeviceService);

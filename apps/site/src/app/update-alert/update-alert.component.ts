@@ -3,28 +3,28 @@ import { Component, DestroyRef, inject } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { TuiAlertService } from '@taiga-ui/core';
 import { RouterLink } from '@angular/router';
-import { PolymorpheusComponent } from '@tinkoff/ng-polymorpheus';
+import { PolymorpheusComponent } from '@taiga-ui/polymorpheus';
 
 @Component({
 	selector: 'changelog-message',
 	standalone: true,
-	imports: [
-		RouterLink,
-	],
+	imports: [RouterLink],
 	template: 'Доступно новое обновление. <br>Проверьте <a routerLink="/changelog">список изменений</a> <- кликабельно',
-	styles: [`
-		:host {
-			text-align: center;
-		}
-
-		a {
-			text-decoration: dotted white 2px;
-
-			&:hover {
-				text-decoration: none;
+	styles: [
+		`
+			:host {
+				text-align: center;
 			}
-		}
-	`],
+
+			a {
+				text-decoration: dotted white 2px;
+
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		`,
+	],
 })
 export class ChangelogMessageComponent {}
 

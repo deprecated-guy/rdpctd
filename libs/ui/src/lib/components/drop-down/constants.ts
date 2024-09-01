@@ -1,5 +1,5 @@
+import { PolymorpheusComponent, PolymorpheusContent } from '@taiga-ui/polymorpheus';
 import { createDiToken } from '@ui/di';
-import type { PolymorpheusComponent, PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
 import { BehaviorSubject } from 'rxjs';
 
 export interface Context<T> {

@@ -18,7 +18,6 @@
     "@taiga-ui/addon-charts": "4.4.1",
     "@taiga-ui/addon-commerce": "4.4.1",
     "@taiga-ui/addon-doc": "4.4.1",
-    "@taiga-ui/addon-editor": "^3.35.0",
     "@taiga-ui/addon-table": "4.4.1",
     "@taiga-ui/cdk": "4.4.1",
     "@taiga-ui/core": "4.4.1",
@@ -127,7 +126,7 @@
       },
       {
         "file": ".gitignore",
-        "hash": "10533234009292190829"
+        "hash": "16868631337178041366"
       },
       {
         "file": ".prettierignore",
@@ -291,11 +290,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "3230894902420816577"
+        "hash": "12003395046593370922"
       },
       {
         "file": "package.json",
-        "hash": "18069193612890396671"
+        "hash": "2699019863723920571"
       },
       {
         "file": "tsconfig.base.json",
@@ -303,486 +302,6 @@
       }
     ],
     "projectFileMap": {
-      "site-e2e": [
-        {
-          "file": "apps/site-e2e/playwright.config.ts",
-          "hash": "16871041557852848344",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/site-e2e/project.json",
-          "hash": "13813813342432828684"
-        },
-        {
-          "file": "apps/site-e2e/src/example.spec.ts",
-          "hash": "10535992647702454484",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/site-e2e/tsconfig.json",
-          "hash": "7012811660374785764"
-        }
-      ],
-      "site": [
-        {
-          "file": "apps/site/.idea/.gitignore",
-          "hash": "16259663310133185705"
-        },
-        {
-          "file": "apps/site/app.component.ts",
-          "hash": "9021446216453416223",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "ui",
-            "npm:@taiga-ui/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/comments/comments.component.ts",
-          "hash": "12477569221758836480",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/addon-editor",
-            "npm:@angular/forms"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/footer/footer.component.html",
-          "hash": "11483102615737529325"
-        },
-        {
-          "file": "apps/site/core/components/footer/footer.component.scss",
-          "hash": "5506487418028673181"
-        },
-        {
-          "file": "apps/site/core/components/footer/footer.component.ts",
-          "hash": "5019663333881166676",
-          "deps": [
-            "npm:@angular/core",
-            "npm:luxon",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/header.component.html",
-          "hash": "1913144224113455600"
-        },
-        {
-          "file": "apps/site/core/components/header/header.component.scss",
-          "hash": "11349465459996919914"
-        },
-        {
-          "file": "apps/site/core/components/header/header.component.ts",
-          "hash": "4208307548147047250",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs",
-            "npm:luxon",
-            "ui",
-            "npm:@angular/router",
-            "npm:@taiga-ui/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/header.service.ts",
-          "hash": "960623142596184788",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/header.spec.ts",
-          "hash": "3999655794764044536",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@taiga-ui/core",
-            "npm:@angular/common",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/index.ts",
-          "hash": "6785501596725676180"
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.html",
-          "hash": "1446277021145414988"
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.scss",
-          "hash": "12061479180151337652"
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.spec.ts",
-          "hash": "5630069330071402158",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.ts",
-          "hash": "4269732425128755714",
-          "deps": [
-            "npm:@angular/core",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/item/header-item.component.html",
-          "hash": "11101175079135893817"
-        },
-        {
-          "file": "apps/site/core/components/header/item/header-item.component.scss",
-          "hash": "16471011461481255550"
-        },
-        {
-          "file": "apps/site/core/components/header/item/header-item.component.ts",
-          "hash": "12941647847618645006",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/router",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/index.ts",
-          "hash": "7668091337790116480"
-        },
-        {
-          "file": "apps/site/core/pages/changelog/changelog-page.component.ts",
-          "hash": "3709144273010069693",
-          "deps": [
-            "npm:@angular/core",
-            "npm:ngx-markdown"
-          ]
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page-menu.service.ts",
-          "hash": "16525954597278059140",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page.component.html",
-          "hash": "4669054763900284953"
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page.component.ts",
-          "hash": "16632215219466990148",
-          "deps": [
-            "npm:@angular/core",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/pages/home/home-page.component.html",
-          "hash": "108891061275071302"
-        },
-        {
-          "file": "apps/site/core/pages/home/home-page.component.scss",
-          "hash": "1063822320311731940"
-        },
-        {
-          "file": "apps/site/core/pages/home/home-page.component.ts",
-          "hash": "13944699022234311560",
-          "deps": [
-            "npm:@angular/core",
-            "ui",
-            "npm:@taiga-ui/kit"
-          ]
-        },
-        {
-          "file": "apps/site/core/routes.ts",
-          "hash": "9296979566643320017",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/core/services/index.ts",
-          "hash": "9960828106358643742"
-        },
-        {
-          "file": "apps/site/core/services/version-checker.ts",
-          "hash": "13281608742877626651",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/site/core/types/index.ts",
-          "hash": "16792068329914762467"
-        },
-        {
-          "file": "apps/site/core/types/navigation.ts",
-          "hash": "13596354618083482558"
-        },
-        {
-          "file": "apps/site/favicon.ico",
-          "hash": "8177864596884989230"
-        },
-        {
-          "file": "apps/site/jest.config.ts",
-          "hash": "4594408215348490631"
-        },
-        {
-          "file": "apps/site/nginx.conf",
-          "hash": "11042413931057454861"
-        },
-        {
-          "file": "apps/site/project.json",
-          "hash": "10699027076067477151"
-        },
-        {
-          "file": "apps/site/pwabuilder-sw.js",
-          "hash": "4327776593525947569"
-        },
-        {
-          "file": "apps/site/src/app/app.component.html",
-          "hash": "734291074626152238"
-        },
-        {
-          "file": "apps/site/src/app/app.component.scss",
-          "hash": "11166012981606546035"
-        },
-        {
-          "file": "apps/site/src/app/app.component.spec.ts",
-          "hash": "17533233993363202480",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/app.component.ts",
-          "hash": "51508583529971376",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "ui",
-            "npm:@taiga-ui/core"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/app.config.ts",
-          "hash": "1045256214934825695",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/platform-browser",
-            "npm:ngx-markdown",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/app.routes.ts",
-          "hash": "900313941850849633",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/update-alert/update-alert.component.spec.ts",
-          "hash": "3799408773772524607",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/update-alert/update-alert.component.ts",
-          "hash": "10278048244625503872",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/update.worker.ts",
-          "hash": "2687586432758036068",
-          "deps": [
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/site/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/site/src/assets/audio/1.mp3",
-          "hash": "12517172483144333080"
-        },
-        {
-          "file": "apps/site/src/assets/icons/android-chrome-192x192.png",
-          "hash": "7554562995625848166"
-        },
-        {
-          "file": "apps/site/src/assets/icons/android-chrome-512x512.png",
-          "hash": "3760469285071407085"
-        },
-        {
-          "file": "apps/site/src/assets/icons/apple-touch-icon.png",
-          "hash": "16484408581097406029"
-        },
-        {
-          "file": "apps/site/src/assets/icons/favicon-16x16.png",
-          "hash": "793523201967719027"
-        },
-        {
-          "file": "apps/site/src/assets/icons/favicon-32x32.png",
-          "hash": "9686903329107219367"
-        },
-        {
-          "file": "apps/site/src/assets/icons/site.webmanifest",
-          "hash": "15656720897124240449"
-        },
-        {
-          "file": "apps/site/src/assets/images/avif/gaming.avif",
-          "hash": "2091177350363909433"
-        },
-        {
-          "file": "apps/site/src/assets/images/home.svg",
-          "hash": "17385893261432377413"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/arrow-back.svg",
-          "hash": "16478592501813965403"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/chevron-right.svg",
-          "hash": "9740220266409664291"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/dark-mode.svg",
-          "hash": "9186116881370337183"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/drawer.svg",
-          "hash": "10966457523750163136"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/game.svg",
-          "hash": "1992619078645377789"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/go-back.svg",
-          "hash": "15713111610721385284"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/home.svg",
-          "hash": "2873902914267026661"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/install-desktop-rounded.svg",
-          "hash": "7967312247491124147"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/light-mode.svg",
-          "hash": "494311918134035544"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/palette.svg",
-          "hash": "5374860913320618550"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/system.svg",
-          "hash": "10928649621634633373"
-        },
-        {
-          "file": "apps/site/src/assets/logo.svg",
-          "hash": "13914118732899144713"
-        },
-        {
-          "file": "apps/site/src/assets/md/CHANGELOG.md",
-          "hash": "15840058443220099704"
-        },
-        {
-          "file": "apps/site/src/assets/version.txt",
-          "hash": "967953648387744540"
-        },
-        {
-          "file": "apps/site/src/favicon.ico",
-          "hash": "7874704730912671046"
-        },
-        {
-          "file": "apps/site/src/index.html",
-          "hash": "3804961075423929717"
-        },
-        {
-          "file": "apps/site/src/main.ts",
-          "hash": "16035020251937385991",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/site/src/manifest.json",
-          "hash": "6703198591361658899"
-        },
-        {
-          "file": "apps/site/src/styles.scss",
-          "hash": "16702359457705768455"
-        },
-        {
-          "file": "apps/site/src/test-setup.ts",
-          "hash": "3663864336796512338",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "apps/site/styles/comtainers.scss",
-          "hash": "5913477300004289269"
-        },
-        {
-          "file": "apps/site/styles/reset.scss",
-          "hash": "10545327061799297318"
-        },
-        {
-          "file": "apps/site/tsconfig.app.json",
-          "hash": "6370381941926563109"
-        },
-        {
-          "file": "apps/site/tsconfig.editor.json",
-          "hash": "5683551997488081321"
-        },
-        {
-          "file": "apps/site/tsconfig.json",
-          "hash": "12908826500892150196"
-        },
-        {
-          "file": "apps/site/tsconfig.spec.json",
-          "hash": "11325107235789347333"
-        },
-        {
-          "file": "apps/site/tsconfig.worker.json",
-          "hash": "2628236068720859373"
-        },
-        {
-          "file": "apps/site/version",
-          "hash": "6549415737367071778"
-        }
-      ],
       "ui": [
         {
           "file": "libs/ui/README.md",
@@ -912,18 +431,20 @@
         },
         {
           "file": "libs/ui/src/lib/components/drawer/drawer-host.component.ts",
-          "hash": "13949099184766008119",
+          "hash": "5901637868923759135",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
           "file": "libs/ui/src/lib/components/drawer/drawer-menu.component.ts",
-          "hash": "16726611607284248082",
+          "hash": "6517405349421080021",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
@@ -943,21 +464,23 @@
         },
         {
           "file": "libs/ui/src/lib/components/drawer/drawer.component.ts",
-          "hash": "9002937481195776607",
+          "hash": "14769722107711779747",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
             "npm:@angular/router",
             "npm:@taiga-ui/cdk",
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
           "file": "libs/ui/src/lib/components/drawer/drawer.service.ts",
-          "hash": "14984409183961534856",
+          "hash": "11479501842878951327",
           "deps": [
             "npm:@angular/core",
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
@@ -966,32 +489,36 @@
         },
         {
           "file": "libs/ui/src/lib/components/drawer/tokens.ts",
-          "hash": "1423747864306272391",
+          "hash": "13592888634077657736",
           "deps": [
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
           "file": "libs/ui/src/lib/components/drop-down/constants.ts",
-          "hash": "276246437635917226",
+          "hash": "15929616666357959649",
           "deps": [
+            "npm:@taiga-ui/polymorpheus",
             "npm:rxjs"
           ]
         },
         {
           "file": "libs/ui/src/lib/components/drop-down/drop-down-host.component.ts",
-          "hash": "10327183685448760082",
+          "hash": "3014362513472881498",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
           "file": "libs/ui/src/lib/components/drop-down/drop-down.service.ts",
-          "hash": "17940621856396710001",
+          "hash": "10873515308151978529",
           "deps": [
             "npm:@angular/core",
-            "npm:rxjs"
+            "npm:rxjs",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
@@ -1130,10 +657,11 @@
         },
         {
           "file": "libs/ui/src/lib/components/navigation/link/link.component.ts",
-          "hash": "10138942915217973984",
+          "hash": "17596225416221079668",
           "deps": [
             "npm:@angular/core",
-            "npm:@angular/common"
+            "npm:@angular/common",
+            "npm:@taiga-ui/polymorpheus"
           ]
         },
         {
@@ -1157,10 +685,11 @@
         },
         {
           "file": "libs/ui/src/lib/components/navigation/link/with-drop-down/with-drop-down.component.ts",
-          "hash": "13650880598813012737",
+          "hash": "13290207192935225979",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
+            "npm:@taiga-ui/polymorpheus",
             "npm:@angular/animations"
           ]
         },
@@ -1330,6 +859,15 @@
           ]
         },
         {
+          "file": "libs/ui/src/lib/i18n/locale.service.ts",
+          "hash": "7167745979045618921",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
           "file": "libs/ui/src/lib/pipes/index.ts",
           "hash": "5166352912110979210"
         },
@@ -1427,6 +965,472 @@
         {
           "file": "libs/ui/tsconfig.spec.json",
           "hash": "11325107235789347333"
+        }
+      ],
+      "site-e2e": [
+        {
+          "file": "apps/site-e2e/playwright.config.ts",
+          "hash": "16871041557852848344",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/project.json",
+          "hash": "13813813342432828684"
+        },
+        {
+          "file": "apps/site-e2e/src/example.spec.ts",
+          "hash": "10535992647702454484",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/tsconfig.json",
+          "hash": "7012811660374785764"
+        }
+      ],
+      "site": [
+        {
+          "file": "apps/site/.idea/.gitignore",
+          "hash": "16259663310133185705"
+        },
+        {
+          "file": "apps/site/core/components/comments/comments.component.ts",
+          "hash": "11648408058207628153"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.html",
+          "hash": "11483102615737529325"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.scss",
+          "hash": "5506487418028673181"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.ts",
+          "hash": "5019663333881166676",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.html",
+          "hash": "1913144224113455600"
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.scss",
+          "hash": "11349465459996919914"
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.ts",
+          "hash": "4208307548147047250",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:luxon",
+            "ui",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.service.ts",
+          "hash": "960623142596184788",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.spec.ts",
+          "hash": "3999655794764044536",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/index.ts",
+          "hash": "6785501596725676180"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.html",
+          "hash": "1446277021145414988"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.scss",
+          "hash": "12061479180151337652"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.spec.ts",
+          "hash": "5630069330071402158",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.ts",
+          "hash": "4269732425128755714",
+          "deps": [
+            "npm:@angular/core",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.html",
+          "hash": "11101175079135893817"
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.scss",
+          "hash": "16471011461481255550"
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.ts",
+          "hash": "12941647847618645006",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/index.ts",
+          "hash": "16475506410355975494"
+        },
+        {
+          "file": "apps/site/core/pages/changelog/changelog-page.component.ts",
+          "hash": "3709144273010069693",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ngx-markdown"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page-menu.service.ts",
+          "hash": "16525954597278059140",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.html",
+          "hash": "4669054763900284953"
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.ts",
+          "hash": "16632215219466990148",
+          "deps": [
+            "npm:@angular/core",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.html",
+          "hash": "108891061275071302"
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.scss",
+          "hash": "1063822320311731940"
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.ts",
+          "hash": "13944699022234311560",
+          "deps": [
+            "npm:@angular/core",
+            "ui",
+            "npm:@taiga-ui/kit"
+          ]
+        },
+        {
+          "file": "apps/site/core/routes.ts",
+          "hash": "9296979566643320017",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/core/services/index.ts",
+          "hash": "9960828106358643742"
+        },
+        {
+          "file": "apps/site/core/services/version-checker.ts",
+          "hash": "13281608742877626651",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/site/core/types/index.ts",
+          "hash": "16792068329914762467"
+        },
+        {
+          "file": "apps/site/core/types/navigation.ts",
+          "hash": "13596354618083482558"
+        },
+        {
+          "file": "apps/site/favicon.ico",
+          "hash": "8177864596884989230"
+        },
+        {
+          "file": "apps/site/jest.config.ts",
+          "hash": "4594408215348490631"
+        },
+        {
+          "file": "apps/site/nginx.conf",
+          "hash": "11042413931057454861"
+        },
+        {
+          "file": "apps/site/project.json",
+          "hash": "10699027076067477151"
+        },
+        {
+          "file": "apps/site/src/app/app.component.html",
+          "hash": "734291074626152238"
+        },
+        {
+          "file": "apps/site/src/app/app.component.scss",
+          "hash": "11166012981606546035"
+        },
+        {
+          "file": "apps/site/src/app/app.component.spec.ts",
+          "hash": "17533233993363202480",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.component.ts",
+          "hash": "51508583529971376",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "ui",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.config.ts",
+          "hash": "1045256214934825695",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser",
+            "npm:ngx-markdown",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.routes.ts",
+          "hash": "900313941850849633",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update-alert/update-alert.component.spec.ts",
+          "hash": "3799408773772524607",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update-alert/update-alert.component.ts",
+          "hash": "11612198637752617154",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router",
+            "npm:@taiga-ui/polymorpheus"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update.worker.ts",
+          "hash": "2687586432758036068",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/site/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/site/src/assets/audio/1.mp3",
+          "hash": "12517172483144333080"
+        },
+        {
+          "file": "apps/site/src/assets/icons/android-chrome-192x192.png",
+          "hash": "7554562995625848166"
+        },
+        {
+          "file": "apps/site/src/assets/icons/android-chrome-512x512.png",
+          "hash": "3760469285071407085"
+        },
+        {
+          "file": "apps/site/src/assets/icons/apple-touch-icon.png",
+          "hash": "16484408581097406029"
+        },
+        {
+          "file": "apps/site/src/assets/icons/favicon-16x16.png",
+          "hash": "793523201967719027"
+        },
+        {
+          "file": "apps/site/src/assets/icons/favicon-32x32.png",
+          "hash": "9686903329107219367"
+        },
+        {
+          "file": "apps/site/src/assets/icons/site.webmanifest",
+          "hash": "15656720897124240449"
+        },
+        {
+          "file": "apps/site/src/assets/images/avif/gaming.avif",
+          "hash": "2091177350363909433"
+        },
+        {
+          "file": "apps/site/src/assets/images/home.svg",
+          "hash": "17385893261432377413"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/arrow-back.svg",
+          "hash": "16478592501813965403"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/chevron-right.svg",
+          "hash": "9740220266409664291"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/dark-mode.svg",
+          "hash": "9186116881370337183"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/drawer.svg",
+          "hash": "10966457523750163136"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/game.svg",
+          "hash": "1992619078645377789"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/go-back.svg",
+          "hash": "15713111610721385284"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/home.svg",
+          "hash": "2873902914267026661"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/install-desktop-rounded.svg",
+          "hash": "7967312247491124147"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/light-mode.svg",
+          "hash": "494311918134035544"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/palette.svg",
+          "hash": "5374860913320618550"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/system.svg",
+          "hash": "10928649621634633373"
+        },
+        {
+          "file": "apps/site/src/assets/logo.svg",
+          "hash": "13914118732899144713"
+        },
+        {
+          "file": "apps/site/src/assets/manifest.json",
+          "hash": "4811563073821598162"
+        },
+        {
+          "file": "apps/site/src/assets/md/CHANGELOG.md",
+          "hash": "15840058443220099704"
+        },
+        {
+          "file": "apps/site/src/assets/service-worker.js",
+          "hash": "12844243558477657805"
+        },
+        {
+          "file": "apps/site/src/assets/version.txt",
+          "hash": "967953648387744540"
+        },
+        {
+          "file": "apps/site/src/favicon.ico",
+          "hash": "7874704730912671046"
+        },
+        {
+          "file": "apps/site/src/index.html",
+          "hash": "4940562199106136907"
+        },
+        {
+          "file": "apps/site/src/main.ts",
+          "hash": "16035020251937385991",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/site/src/styles.scss",
+          "hash": "16702359457705768455"
+        },
+        {
+          "file": "apps/site/src/test-setup.ts",
+          "hash": "3663864336796512338",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/site/styles/comtainers.scss",
+          "hash": "5913477300004289269"
+        },
+        {
+          "file": "apps/site/styles/reset.scss",
+          "hash": "10545327061799297318"
+        },
+        {
+          "file": "apps/site/tsconfig.app.json",
+          "hash": "6370381941926563109"
+        },
+        {
+          "file": "apps/site/tsconfig.editor.json",
+          "hash": "5683551997488081321"
+        },
+        {
+          "file": "apps/site/tsconfig.json",
+          "hash": "12908826500892150196"
+        },
+        {
+          "file": "apps/site/tsconfig.spec.json",
+          "hash": "11325107235789347333"
+        },
+        {
+          "file": "apps/site/tsconfig.worker.json",
+          "hash": "7757015397810295421"
+        },
+        {
+          "file": "apps/site/version",
+          "hash": "6549415737367071778"
         }
       ]
     }

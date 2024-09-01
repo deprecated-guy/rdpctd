@@ -8,7 +8,7 @@
 		<link rel="icon" type="image/x-icon" href="favicon.ico" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/apps/site/src/assets/icons/favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png" />
-		<link rel="manifest" href="manifest.json" /> 
+		<link rel="manifest" href="assets/manifest.json" />
 		<link rel="stylesheet" href="https://unpkg.com/prismjs@1.24.1/themes/prism.css" />
 	</head>
 	<body>
@@ -16,7 +16,7 @@
 		<script>
 			if ('serviceWorker' in navigator) {
 				window.addEventListener('load', () => {
-					navigator.serviceWorker.register('/service-worker.js')
+					navigator.serviceWorker.register('assets/service-worker.js')
 						.then((registration) => {
 							console.log('ServiceWorker registration successful with scope: ', registration.scope);
 						})

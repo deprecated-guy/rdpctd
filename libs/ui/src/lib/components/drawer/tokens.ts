@@ -1,7 +1,7 @@
 import { BehaviorSubject } from 'rxjs';
-import type { PolymorpheusComponent, PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
 import { createDiToken } from '../../di';
 import type { DrawerComponent } from './drawer.component';
+import { PolymorpheusComponent, PolymorpheusContent } from '@taiga-ui/polymorpheus';
 
 export type Appearance = 'translucent' | 'colored';
 

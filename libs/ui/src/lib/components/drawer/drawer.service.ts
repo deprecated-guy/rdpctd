@@ -1,11 +1,10 @@
 import { Injectable, inject } from '@angular/core';
-import type { PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
-import { PolymorpheusComponent } from '@tinkoff/ng-polymorpheus';
 import { Observable } from 'rxjs';
 import { IdService } from '../../services';
 import type { DrawerOptions } from './tokens';
 import { DRAWERS } from './tokens';
 import { DrawerComponent } from './drawer.component';
+import { PolymorpheusComponent, PolymorpheusContent } from '@taiga-ui/polymorpheus';
 
 @Injectable({
 	providedIn: 'root',

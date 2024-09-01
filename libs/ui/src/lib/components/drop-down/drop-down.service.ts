@@ -1,11 +1,10 @@
 import { Injectable, inject } from '@angular/core';
 import type { DropdownOptions } from '@ui/components/drop-down/constants';
 import { DROPDOWNS } from '@ui/components/drop-down/constants';
-import type { PolymorpheusContent } from '@tinkoff/ng-polymorpheus';
-import { PolymorpheusComponent } from '@tinkoff/ng-polymorpheus';
 import { DropdownComponent } from '@ui/components/drop-down/dropdown.component';
 import { Observable } from 'rxjs';
 import { IdService } from '@ui/services';
+import { PolymorpheusComponent, PolymorpheusContent } from '@taiga-ui/polymorpheus';
 
 @Injectable({
 	providedIn: 'root',

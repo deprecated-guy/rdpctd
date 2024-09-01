@@ -1,19 +1,17 @@
-import { ChangeDetectionStrategy, Component, ElementRef, Inject, OnInit, ViewEncapsulation, viewChild } from '@angular/core';
+import type { ElementRef, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, ViewEncapsulation, viewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { POLYMORPHEUS_CONTEXT, PolymorpheusModule } from '@tinkoff/ng-polymorpheus';
 import { RouterLinkActive } from '@angular/router';
 import { TuiActiveZone } from '@taiga-ui/cdk';
-import { BehaviorSubject } from 'rxjs';
-import { Drawer, DRAWERS } from './tokens';
+import type { BehaviorSubject } from 'rxjs';
+import type { Drawer } from './tokens';
+import { DRAWERS } from './tokens';
+import { POLYMORPHEUS_CONTEXT, PolymorpheusOutlet } from '@taiga-ui/polymorpheus';
 
 @Component({
 	selector: 'app-drawer',
 	standalone: true,
-	imports: [
-		CommonModule,
-		PolymorpheusModule,
-		TuiActiveZone,
-	],
+	imports: [CommonModule, PolymorpheusOutlet, TuiActiveZone],
 	templateUrl: './drawer.component.html',
 	styleUrl: './drawer.component.scss',
 	encapsulation: ViewEncapsulation.None,
