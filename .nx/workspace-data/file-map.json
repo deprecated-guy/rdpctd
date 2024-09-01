@@ -111,196 +111,6 @@
     }
   ],
   "fileMap": {
-    "nonProjectFiles": [
-      {
-        "file": ".editorconfig",
-        "hash": "2374015138586113482"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "6735175061466857373"
-      },
-      {
-        "file": ".github/workflows/ci.yml",
-        "hash": "12040479358860647098"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "16868631337178041366"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "16718859004094159296"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16002859196136172863"
-      },
-      {
-        "file": ".stylelintrc.json",
-        "hash": "6584642611273190665"
-      },
-      {
-        "file": "@app/styles.scss",
-        "hash": "6751073670544562302"
-      },
-      {
-        "file": "@app/styles/animations.scss",
-        "hash": "2356226981778440058"
-      },
-      {
-        "file": "@app/styles/colors.scss",
-        "hash": "9321145188958129851"
-      },
-      {
-        "file": "@app/styles/fonts.scss",
-        "hash": "12963312856185215372"
-      },
-      {
-        "file": "@app/styles/helpers.scss",
-        "hash": "15174633213739512132"
-      },
-      {
-        "file": "@app/styles/index.ts",
-        "hash": "11599067226990834830"
-      },
-      {
-        "file": "@app/styles/media.scss",
-        "hash": "14949630566539513345"
-      },
-      {
-        "file": "@app/styles/mixins.css",
-        "hash": "15036214574332298676"
-      },
-      {
-        "file": "Dockerfile",
-        "hash": "4994892546905600232"
-      },
-      {
-        "file": "README.md",
-        "hash": "18039151155636579385"
-      },
-      {
-        "file": "apps/shared/components/banner.component.html",
-        "hash": "6324986471101619984"
-      },
-      {
-        "file": "apps/shared/components/banner.component.scss",
-        "hash": "16796206064688779044"
-      },
-      {
-        "file": "apps/shared/components/banner.component.ts",
-        "hash": "8482905030071884966"
-      },
-      {
-        "file": "apps/shared/components/index.ts",
-        "hash": "5054771398833662235"
-      },
-      {
-        "file": "apps/shared/components/menu/index.ts",
-        "hash": "14339211539003883323"
-      },
-      {
-        "file": "apps/shared/components/menu/menu.component.html",
-        "hash": "13961188937584122743"
-      },
-      {
-        "file": "apps/shared/components/menu/menu.component.scss",
-        "hash": "13042312538660926492"
-      },
-      {
-        "file": "apps/shared/components/menu/menu.component.ts",
-        "hash": "3857543613485533368"
-      },
-      {
-        "file": "apps/shared/components/menu/menu.spec.ts",
-        "hash": "773086909397414136"
-      },
-      {
-        "file": "apps/shared/index.ts",
-        "hash": "1876729099506414002"
-      },
-      {
-        "file": "apps/shared/prism/highlight.service.ts",
-        "hash": "14251125054005398332"
-      },
-      {
-        "file": "apps/shared/prism/index.ts",
-        "hash": "13091410641929237706"
-      },
-      {
-        "file": "apps/shared/prism/prism.composnt.ts",
-        "hash": "7809930322099467087"
-      },
-      {
-        "file": "apps/shared/services/app-title.strategy.ts",
-        "hash": "4434206773157554893"
-      },
-      {
-        "file": "apps/shared/services/index.ts",
-        "hash": "11063451600824480113"
-      },
-      {
-        "file": "apps/shared/utils/index.ts",
-        "hash": "10987243275213197703"
-      },
-      {
-        "file": "apps/shared/utils/to-int.ts",
-        "hash": "3627492181200841854"
-      },
-      {
-        "file": "commitlint.config.js",
-        "hash": "14014965562667558644"
-      },
-      {
-        "file": "docker-compose.yml",
-        "hash": "15474704570665545565"
-      },
-      {
-        "file": "eslint.config.js",
-        "hash": "6401502104204425905"
-      },
-      {
-        "file": "fucking_forbidden.txt",
-        "hash": "3769467211614037210"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "4634451141672255890"
-      },
-      {
-        "file": "jest.preset.cjs",
-        "hash": "14464320925661375313"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "7473220183190921152"
-      },
-      {
-        "file": "migrations.json",
-        "hash": "14963468593480723543"
-      },
-      {
-        "file": "nginx.conf",
-        "hash": "15056848018467873989"
-      },
-      {
-        "file": "nx.json",
-        "hash": "16920245762557786011"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "12003395046593370922"
-      },
-      {
-        "file": "package.json",
-        "hash": "2699019863723920571"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "5858805953047146107"
-      }
-    ],
     "projectFileMap": {
       "ui": [
         {
@@ -1433,6 +1243,196 @@
           "hash": "6549415737367071778"
         }
       ]
-    }
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "2374015138586113482"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "6735175061466857373"
+      },
+      {
+        "file": ".github/workflows/ci.yml",
+        "hash": "12040479358860647098"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "16868631337178041366"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "16718859004094159296"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16002859196136172863"
+      },
+      {
+        "file": ".stylelintrc.json",
+        "hash": "6584642611273190665"
+      },
+      {
+        "file": "@app/styles.scss",
+        "hash": "6751073670544562302"
+      },
+      {
+        "file": "@app/styles/animations.scss",
+        "hash": "2356226981778440058"
+      },
+      {
+        "file": "@app/styles/colors.scss",
+        "hash": "9321145188958129851"
+      },
+      {
+        "file": "@app/styles/fonts.scss",
+        "hash": "12963312856185215372"
+      },
+      {
+        "file": "@app/styles/helpers.scss",
+        "hash": "15174633213739512132"
+      },
+      {
+        "file": "@app/styles/index.ts",
+        "hash": "11599067226990834830"
+      },
+      {
+        "file": "@app/styles/media.scss",
+        "hash": "14949630566539513345"
+      },
+      {
+        "file": "@app/styles/mixins.css",
+        "hash": "15036214574332298676"
+      },
+      {
+        "file": "Dockerfile",
+        "hash": "4994892546905600232"
+      },
+      {
+        "file": "README.md",
+        "hash": "18039151155636579385"
+      },
+      {
+        "file": "apps/shared/components/banner.component.html",
+        "hash": "6324986471101619984"
+      },
+      {
+        "file": "apps/shared/components/banner.component.scss",
+        "hash": "16796206064688779044"
+      },
+      {
+        "file": "apps/shared/components/banner.component.ts",
+        "hash": "8482905030071884966"
+      },
+      {
+        "file": "apps/shared/components/index.ts",
+        "hash": "5054771398833662235"
+      },
+      {
+        "file": "apps/shared/components/menu/index.ts",
+        "hash": "14339211539003883323"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.component.html",
+        "hash": "13961188937584122743"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.component.scss",
+        "hash": "13042312538660926492"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.component.ts",
+        "hash": "3857543613485533368"
+      },
+      {
+        "file": "apps/shared/components/menu/menu.spec.ts",
+        "hash": "773086909397414136"
+      },
+      {
+        "file": "apps/shared/index.ts",
+        "hash": "1876729099506414002"
+      },
+      {
+        "file": "apps/shared/prism/highlight.service.ts",
+        "hash": "14251125054005398332"
+      },
+      {
+        "file": "apps/shared/prism/index.ts",
+        "hash": "13091410641929237706"
+      },
+      {
+        "file": "apps/shared/prism/prism.composnt.ts",
+        "hash": "7809930322099467087"
+      },
+      {
+        "file": "apps/shared/services/app-title.strategy.ts",
+        "hash": "4434206773157554893"
+      },
+      {
+        "file": "apps/shared/services/index.ts",
+        "hash": "11063451600824480113"
+      },
+      {
+        "file": "apps/shared/utils/index.ts",
+        "hash": "10987243275213197703"
+      },
+      {
+        "file": "apps/shared/utils/to-int.ts",
+        "hash": "3627492181200841854"
+      },
+      {
+        "file": "commitlint.config.js",
+        "hash": "14014965562667558644"
+      },
+      {
+        "file": "docker-compose.yml",
+        "hash": "15474704570665545565"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "6401502104204425905"
+      },
+      {
+        "file": "fucking_forbidden.txt",
+        "hash": "3769467211614037210"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "4634451141672255890"
+      },
+      {
+        "file": "jest.preset.cjs",
+        "hash": "14464320925661375313"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "7473220183190921152"
+      },
+      {
+        "file": "migrations.json",
+        "hash": "14963468593480723543"
+      },
+      {
+        "file": "nginx.conf",
+        "hash": "15056848018467873989"
+      },
+      {
+        "file": "nx.json",
+        "hash": "16920245762557786011"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "12003395046593370922"
+      },
+      {
+        "file": "package.json",
+        "hash": "2699019863723920571"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "5858805953047146107"
+      }
+    ]
   }
 }

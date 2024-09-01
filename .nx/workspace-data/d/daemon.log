@@ -3149,3 +3149,24 @@ If you get this error again, check for any errors in the daemon process logs fou
 [NX Daemon Server] - 2024-09-01T09:24:11.503Z - [REQUEST]: Responding to the client. handleGlob
 [NX Daemon Server] - 2024-09-01T09:24:11.504Z - Done responding to the client handleGlob
 [NX Daemon Server] - 2024-09-01T09:24:11.504Z - Handled GLOB. Handling time: 2. Response time: 1.
+[NX Daemon Server] - 2024-09-01T09:24:13.112Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-09-01T09:24:13.113Z - [REQUEST]: 
+[NX Daemon Server] - 2024-09-01T09:24:13.113Z - [REQUEST]: 
+[NX Daemon Server] - 2024-09-01T09:24:13.140Z - Time taken for 'loadNxPlugins' 1507.1263ms
+[NX Daemon Server] - 2024-09-01T09:24:14.787Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-01T09:24:14.788Z - Closed a connection. Number of open connections: 1
+[NX Daemon Server] - 2024-09-01T09:24:14.788Z - Established a connection. Number of open connections: 2
+[NX Daemon Server] - 2024-09-01T09:24:14.790Z - [REQUEST]: Responding to the client. handleGlob
+[NX Daemon Server] - 2024-09-01T09:24:14.791Z - Done responding to the client handleGlob
+[NX Daemon Server] - 2024-09-01T09:24:14.791Z - Handled GLOB. Handling time: 0. Response time: 1.
+[NX Daemon Server] - 2024-09-01T09:24:20.263Z - Time taken for 'build-project-configs' 7090.516899999999ms
+[NX Daemon Server] - 2024-09-01T09:24:20.393Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-09-01T09:24:20.395Z - [SYNC]: scheduling: []
+[NX Daemon Server] - 2024-09-01T09:24:20.395Z - Time taken for 'total execution time for createProjectGraph()' 110.95079999999871ms
+[NX Daemon Server] - 2024-09-01T09:25:14.872Z - [REQUEST]: Responding to the client. handleNxWorkspaceFiles
+[NX Daemon Server] - 2024-09-01T09:25:14.872Z - Done responding to the client handleNxWorkspaceFiles
+[NX Daemon Server] - 2024-09-01T09:25:14.872Z - Handled GET_NX_WORKSPACE_FILES. Handling time: 1. Response time: 0.
+[NX Daemon Server] - 2024-09-01T09:25:14.956Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX Daemon Server] - 2024-09-01T09:25:14.957Z - Done responding to the client handleContextFileData
+[NX Daemon Server] - 2024-09-01T09:25:14.957Z - Handled GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 1.
+[NX Daemon Server] - 2024-09-01T09:25:14.958Z - Closed a connection. Number of open connections: 1
