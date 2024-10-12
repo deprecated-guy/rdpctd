@@ -1,4 +1,4 @@
-import type { ElementRef } from '@angular/core';
+import { ElementRef } from '@angular/core';
 // eslint-disable-next-line max-len
 import { ChangeDetectionStrategy, Component, HostListener, RendererFactory2, computed, inject, input, signal, viewChild } from '@angular/core';
 import { TuiDropdown, TuiLink } from '@taiga-ui/core';
@@ -19,14 +19,14 @@ import type { Navigation } from '@core/types';
 	],
 	host: {
 		'[style.position]': 'position()',
-		'[style.float]': 'isSticky() ? "top" : null',
-		'[style.top]': 'isSticky() ? "3rem" : null',
+		'[style.top.px]': 'isSticky() ? "45" : null',
 		'[style.backdrop-filter]': '"blur(0.7rem)"',
 		'[style.left]': '"0"',
 	},
 })
 export class PageMenuComponent {
 	readonly menuLinks = input.required<Navigation[]>();
+	private readonly el = inject<ElementRef<HTMLElement>>(ElementRef).nativeElement;
 	private readonly menu = viewChild<ElementRef<HTMLDivElement>>('menu');
 	private readonly renderer = inject(RendererFactory2).createRenderer(this.menu()?.nativeElement, null);
 	readonly isSticky = signal<boolean | null>(null);
@@ -36,10 +36,11 @@ export class PageMenuComponent {
 	onScroll() {
 		const scrollTop = window.scrollY;
 		const menuElement = this.menu()?.nativeElement;
-		const offsetTop = menuElement?.offsetTop ?? 0;
+		const offsetTop = menuElement?.getBoundingClientRect().top ?? 0;
 		const menuHeight = menuElement?.offsetHeight ?? 0;
-
-		if (scrollTop > offsetTop + menuHeight) {
+		
+	
+		if (scrollTop > offsetTop  + 15) {
 			this.isSticky.set(true);
 		} else if (scrollTop <= offsetTop) {
 			this.isSticky.set(false);
