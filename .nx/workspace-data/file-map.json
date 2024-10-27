@@ -83,9 +83,6 @@
     "typescript": "5.5.4"
   },
   "pathMappings": {
-    "@ui/*": [
-      "libs/ui/src/lib/*"
-    ],
     "@core/*": [
       "apps/site/core/*"
     ],
@@ -94,6 +91,9 @@
     ],
     "@shared/*": [
       "apps/shared/*"
+    ],
+    "@ui/*": [
+      "libs/ui/src/lib/*"
     ]
   },
   "nxJsonPlugins": [
@@ -112,32 +112,6 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "site-e2e": [
-        {
-          "file": "apps/site-e2e/playwright.config.ts",
-          "hash": "16871041557852848344",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "apps/site-e2e/project.json",
-          "hash": "13813813342432828684"
-        },
-        {
-          "file": "apps/site-e2e/src/example.spec.ts",
-          "hash": "10535992647702454484",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "apps/site-e2e/tsconfig.json",
-          "hash": "7012811660374785764"
-        }
-      ],
       "ui": [
         {
           "file": "libs/ui/README.md",
@@ -696,7 +670,7 @@
         },
         {
           "file": "libs/ui/src/lib/i18n/locale.service.ts",
-          "hash": "7167745979045618921",
+          "hash": "16571198156479219045",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -803,6 +777,32 @@
           "hash": "11325107235789347333"
         }
       ],
+      "site-e2e": [
+        {
+          "file": "apps/site-e2e/playwright.config.ts",
+          "hash": "16871041557852848344",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/project.json",
+          "hash": "13813813342432828684"
+        },
+        {
+          "file": "apps/site-e2e/src/example.spec.ts",
+          "hash": "10535992647702454484",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "apps/site-e2e/tsconfig.json",
+          "hash": "7012811660374785764"
+        }
+      ],
       "site": [
         {
           "file": "apps/site/.idea/.gitignore",
@@ -831,15 +831,15 @@
         },
         {
           "file": "apps/site/core/components/header/header.component.html",
-          "hash": "1913144224113455600"
+          "hash": "15657238120024985793"
         },
         {
           "file": "apps/site/core/components/header/header.component.scss",
-          "hash": "11349465459996919914"
+          "hash": "11516253720352003048"
         },
         {
           "file": "apps/site/core/components/header/header.component.ts",
-          "hash": "4208307548147047250",
+          "hash": "14082248239225697086",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/common",
@@ -950,11 +950,11 @@
         },
         {
           "file": "apps/site/core/pages/home/home-page.component.html",
-          "hash": "108891061275071302"
+          "hash": "18170706420249051669"
         },
         {
           "file": "apps/site/core/pages/home/home-page.component.scss",
-          "hash": "1063822320311731940"
+          "hash": "14664710884660977024"
         },
         {
           "file": "apps/site/core/pages/home/home-page.component.ts",
@@ -962,7 +962,8 @@
           "deps": [
             "npm:@angular/core",
             "ui",
-            "npm:@taiga-ui/kit"
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/core"
           ]
         },
         {
@@ -1004,7 +1005,7 @@
         },
         {
           "file": "apps/site/nginx.conf",
-          "hash": "11042413931057454861"
+          "hash": "10412904414727117843"
         },
         {
           "file": "apps/site/project.json",
@@ -1012,11 +1013,11 @@
         },
         {
           "file": "apps/site/src/app/app.component.html",
-          "hash": "734291074626152238"
+          "hash": "2692910464773108375"
         },
         {
           "file": "apps/site/src/app/app.component.scss",
-          "hash": "11166012981606546035"
+          "hash": "15036214574332298676"
         },
         {
           "file": "apps/site/src/app/app.component.spec.ts",
@@ -1028,7 +1029,7 @@
         },
         {
           "file": "apps/site/src/app/app.component.ts",
-          "hash": "51508583529971376",
+          "hash": "16097699148539138013",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router",
@@ -1065,7 +1066,7 @@
         },
         {
           "file": "apps/site/src/app/update-alert/update-alert.component.ts",
-          "hash": "11612198637752617154",
+          "hash": "15183747566582517881",
           "deps": [
             "npm:@angular/core",
             "npm:@taiga-ui/core",
@@ -1075,7 +1076,7 @@
         },
         {
           "file": "apps/site/src/app/update.worker.ts",
-          "hash": "2687586432758036068",
+          "hash": "17792266601369897295",
           "deps": [
             "npm:rxjs"
           ]
@@ -1174,7 +1175,7 @@
         },
         {
           "file": "apps/site/src/assets/md/CHANGELOG.md",
-          "hash": "954157621509921983"
+          "hash": "3718989895632179322"
         },
         {
           "file": "apps/site/src/assets/service-worker.js",
@@ -1182,7 +1183,7 @@
         },
         {
           "file": "apps/site/src/assets/version.txt",
-          "hash": "967953648387744540"
+          "hash": "8192196416156000410"
         },
         {
           "file": "apps/site/src/favicon.ico",
@@ -1190,7 +1191,7 @@
         },
         {
           "file": "apps/site/src/index.html",
-          "hash": "4940562199106136907"
+          "hash": "9484161198729415613"
         },
         {
           "file": "apps/site/src/main.ts",
@@ -1201,7 +1202,7 @@
         },
         {
           "file": "apps/site/src/styles.scss",
-          "hash": "16702359457705768455"
+          "hash": "3779750947311156318"
         },
         {
           "file": "apps/site/src/test-setup.ts",
@@ -1212,11 +1213,11 @@
         },
         {
           "file": "apps/site/styles/comtainers.scss",
-          "hash": "5913477300004289269"
+          "hash": "440943745456053329"
         },
         {
           "file": "apps/site/styles/reset.scss",
-          "hash": "10545327061799297318"
+          "hash": "10356370665655772817"
         },
         {
           "file": "apps/site/tsconfig.app.json",
@@ -1236,11 +1237,11 @@
         },
         {
           "file": "apps/site/tsconfig.worker.json",
-          "hash": "7757015397810295421"
+          "hash": "16049377979760804925"
         },
         {
           "file": "apps/site/version",
-          "hash": "6549415737367071778"
+          "hash": "10480324889189853578"
         }
       ]
     },
@@ -1248,6 +1249,10 @@
       {
         "file": ".editorconfig",
         "hash": "2374015138586113482"
+      },
+      {
+        "file": ".env",
+        "hash": "2604418711527154440"
       },
       {
         "file": ".eslintignore",
@@ -1343,7 +1348,7 @@
       },
       {
         "file": "apps/shared/components/menu/menu.component.ts",
-        "hash": "3857543613485533368"
+        "hash": "9823592796102372884"
       },
       {
         "file": "apps/shared/components/menu/menu.spec.ts",
@@ -1387,7 +1392,7 @@
       },
       {
         "file": "docker-compose.yml",
-        "hash": "15474704570665545565"
+        "hash": "15282805217150888770"
       },
       {
         "file": "eslint.config.js",
@@ -1415,7 +1420,7 @@
       },
       {
         "file": "nginx.conf",
-        "hash": "15056848018467873989"
+        "hash": "6661969757014332212"
       },
       {
         "file": "nx.json",
@@ -1423,11 +1428,11 @@
       },
       {
         "file": "package-lock.json",
-        "hash": "6440355280507852326"
+        "hash": "13792355231378250534"
       },
       {
         "file": "package.json",
-        "hash": "16596558566270616492"
+        "hash": "16768192134288485804"
       },
       {
         "file": "tsconfig.base.json",

@@ -23,6 +23,11 @@
 				[
 				"apps/site/src/favicon.ico",
 				"apps/site/src/assets",
+					{
+						"glob": "version",
+						"input": "apps/site",
+						"output": ""
+					},
 				{
 	              "glob": "**/*",
 	              "input": "node_modules/@taiga-ui/icons/src",

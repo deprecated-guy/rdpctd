@@ -7,54 +7,28 @@
 	>
       <section class="welcome-block">
         <h1>Добро пожаловать на rdpctd.dev!</h1>
-        <p>
-          <span class="what-is">
-            Что такое
-            <br>
-            <span class="site-name">
-              Reactive
-              <strong class="red-cursive">Deprecated</strong>
-            </span>
-          </span>
-          <br>
-          <span class="about-text spy">
-            Если кратко: <br><br>
-            <strong>Все технологии, которые мы используем ежедневно, могут устареть, но не исчезнут со временем</strong>
-          </span>
-        </p>
-        <div class="magnum-opus">
-          <p>
-            В мире технологий постоянное развитие - это данность. Однако, как только появляются новые технологии, они начинают процесс устаревания. На Reactive Deprecated мы углубляемся в это явление, анализируя жизненный цикл технологий и исследуя, как быстро они становятся устаревшими.
-          </p>
-          <p>
-            Здесь вы найдете актуальные обзоры, аналитические статьи и экспертные мнения о последних разработках, которые только что вошли в мир технологий, но уже сталкиваются с неизбежностью устаревания. Мы предлагаем глубокое понимание того, почему технологии теряют свою актуальность и как это влияет на разработчиков, бизнес и конечных пользователей.
-          </p>
-          <p>
-            Присоединяйтесь к нашему сообществу, чтобы быть в курсе последних тенденций и изменений в мире технологий. Вместе мы исследуем, как эффективно использовать новые инструменты и платформы, несмотря на их быстрое устаревание.
-          </p>
-          <p class="thanks">
-            Спасибо, что посетили нас.
-          </p>
-          <p>
-            Давайте вместе исследовать и понимать мир технологий в его неустанном стремлении к обновлению и трансформации.
-          </p>
-        </div>
-      </section>
-      <section class="dev-team spy">
-        <h2>Основная команда:</h2>
-        <div class="core-team">
-          <div class="developer">
-            <tui-avatar class="avatar">Me</tui-avatar>
-            <div class="text">Егор К. (Я)</div>
-          </div>
-          <div class="developer">
-            <tui-avatar class="avatar">
-							You
-						</tui-avatar>
-            <div class="text">Вы</div>
-          </div>
-        </div>
-      </section>
+			</section>
+
+			<tui-scrollbar>
+
+				<div class="development-stages">
+						@for(stage of devStages(); track $index) {
+							<site-progress-card
+								[name]="stage.name"
+								[image]="stage.image"
+								[isActive]="stage.isChecked"
+								[showStep]="true"s
+							></site-progress-card>
+						}
+
+				</div>
+			</tui-scrollbar>
+
+
+
+			<section class="some">
+				In next time i will starting the realise other content for this site. please wait
+			</section>
     </div>
   </div>
 </div>

@@ -119,3 +119,23 @@
     }
   }
 }
+
+.development-stages {
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.some {
+  color: var(--text-color);
+  font-size: 3rem;
+  margin-top: 2rem;
+  line-height: 1.4;
+
+  @media  #{media.$mobile}, #{media.$tablet} {
+    font-size: 1.9rem;
+    line-height: 1.2;
+  }
+}
+
