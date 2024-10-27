@@ -1,5 +1,26 @@
 
 
+## [2.9.0](https://github.com/deprecated-guy/rdpctd/compare/2.8.0...2.9.0) (2024-10-27)
+
+
+### Features
+
+* **build:** aded ssl support in nginx conf ([e5b0c4d](https://github.com/deprecated-guy/rdpctd/commit/e5b0c4dd6de48a339e42d0ec85d3d29ecfa39c86))
+* **build:** aded ssl support in nginx conf ([8a27b59](https://github.com/deprecated-guy/rdpctd/commit/8a27b59522af59a711a363fc31c8d38fee5ebefc))
+* **build:** aded ssl support in nginx conf ([b6635d4](https://github.com/deprecated-guy/rdpctd/commit/b6635d494c5540ede655d20da482130ef4f2ea7b))
+* **build:** aded ssl support in nginx conf ([977297d](https://github.com/deprecated-guy/rdpctd/commit/977297df29ec81d9d870baef2596cab18d29b357))
+* **build:** aded ssl support in nginx conf ([7dcc4c4](https://github.com/deprecated-guy/rdpctd/commit/7dcc4c483b0f46ff995398bb575cd41bebfcb5fe))
+* **build:** aded ssl support in nginx conf ([785cb6e](https://github.com/deprecated-guy/rdpctd/commit/785cb6ed31b79e5d82a9c597f36bb2db36ab5a09))
+* **build:** aded ssl support in nginx conf ([f31b8ae](https://github.com/deprecated-guy/rdpctd/commit/f31b8ae4c424dd7d697556b01407305bf7bfd47f))
+* **build:** aded ssl support in nginx conf ([f5b18ab](https://github.com/deprecated-guy/rdpctd/commit/f5b18ab6dfa6db19dbe6d9ad8d39f712907078bc))
+* **build:** aded ssl support in nginx conf ([6e33648](https://github.com/deprecated-guy/rdpctd/commit/6e3364899444cb472e0eb6882fa7787fb872986d))
+* **build:** aded ssl support in nginx conf ([cdcacdc](https://github.com/deprecated-guy/rdpctd/commit/cdcacdc7fa822065652cacd523a5e60050ff107b))
+* **build:** ipdated nginx.comf ([eb523f3](https://github.com/deprecated-guy/rdpctd/commit/eb523f32846c3bdf51cca00f1422d9a84f86b1bf))
+* **build:** ipdated nginx.comf ([8dddb62](https://github.com/deprecated-guy/rdpctd/commit/8dddb62ac2d9ff3a70f359b08c88ae2dba89739f))
+* **build:** ipdated nginx.comf ([0afe238](https://github.com/deprecated-guy/rdpctd/commit/0afe2387854dae73a8b8946342bce38d3ff3bb9e))
+* **ui:** added slider ([a15bbed](https://github.com/deprecated-guy/rdpctd/commit/a15bbed5eddd5bb6ec5e56ad1862020e0940d431))
+* **ui:** added slider ([fec3a9c](https://github.com/deprecated-guy/rdpctd/commit/fec3a9c34c4fae298b1681969d8a6fa0fc33c0db))
+
 ## [2.8.0](https://github.com/deprecated-guy/rdpctd/compare/2.7.0...2.8.0) (2024-09-01)
 
 
