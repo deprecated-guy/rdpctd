@@ -1,0 +1,43 @@
+.step-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 50%; /* Центрируем линию по вертикали */
+  left: 12px; /* Начало линии от центра первой точки */
+  right: 12px; /* Конец линии до центра последней точки */
+  height: 0.2rem;
+  background-color: #61d361;
+  z-index: -1; /* Убедитесь, что линия находится за индикаторами */
+}
+
+.indicator {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #ccc;
+  z-index: 1; /* Повышаем индикатор над линией */
+}
+
+.indicator.active::before {
+  background-color: #61d361; /* Изменение цвета активного индикатора */
+}
+
+.indicator::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: transparent;
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='10' fill='white'/%3E%3C/svg%3E");
+  background-color: inherit; /* Наследуем фоновый цвет от .indicator */
+}

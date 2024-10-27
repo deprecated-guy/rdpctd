@@ -1,0 +1,42 @@
+.card {
+  width: 12rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  justify-content: center;
+  gap: 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+
+  &:hover {
+    border-radius: 1.25rem;
+    box-shadow: -5px 10px 20px -5px rgba(255, 255,255, 50%);
+  }
+}
+
+.icon-wrapper {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+
+.icon {
+  width: 4.5rem;
+  height: 4.5rem;
+
+}
+
+.card-name {
+  max-width: 10rem;
+  text-align: center;
+  line-height: 1.3rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

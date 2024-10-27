@@ -1,0 +1,46 @@
+<div class="wrapper">
+	<div class="card">
+
+		@if(content()) {
+			<ng-container *polymorpheusOutlet="content() as text">
+				<div [innerHTML]="text"></div>
+			</ng-container>
+		} @else {
+
+			<div class="icon-wrapper">
+				@if (image()) {
+					<img
+						class="icon"
+						[src]="image()"
+						alt=""
+					>
+				} @else if (name() && !image()) {
+					<div class="icon">
+						{{firstLetter()}}
+					</div>
+				} @else {
+					<ng-content
+						class="icon"
+						select="[appProgressCardIcon]"
+					></ng-content>
+				}
+			</div>
+
+		}
+
+		<div class="card-name">
+			@if(name()) {
+				{{ name() }}
+			} @else {
+				<ng-content select="[appProgressCardName]"></ng-content>
+			}
+		</div>
+	</div>
+
+	@if (showStep()) {
+
+		<app-progress-step [isActive]="isActive()"></app-progress-step>
+	}
+
+
+</div>
