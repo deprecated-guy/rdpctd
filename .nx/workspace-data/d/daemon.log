@@ -3186,3 +3186,10 @@ If you get this error again, check for any errors in the daemon process logs fou
 [NX Daemon Server] - 2024-10-23T06:30:05.247Z - Closed a connection. Number of open connections: 0
 [NX Daemon Server] - 2024-10-23T06:30:05.247Z - [WATCHER]: Stopping the watcher for C:\Users\root\Desktop\ad-remover\rdpctd (sources)
 [NX Daemon Server] - 2024-10-23T06:30:05.248Z - [WATCHER]: Stopping the watcher for C:\Users\root\Desktop\ad-remover\rdpctd (outputs)
+[NX Daemon Server] - 2024-11-06T09:26:25.031Z - Started listening on: \\.\pipe\nx\C:\Users\root\AppData\Local\Temp\f0089cf11cff48459c47\d.sock
+[NX Daemon Server] - 2024-11-06T09:26:25.043Z - [WATCHER]: Subscribed to changes within: C:\Users\root\Desktop\ad-remover\rdpctd (native)
+[NX Daemon Server] - 2024-11-06T09:26:26.800Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX Daemon Server] - 2024-11-06T09:26:26.800Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-06T09:26:26.800Z - [REQUEST]: 
+[NX Daemon Server] - 2024-11-06T09:26:27.858Z - [SYNC]: collect registered sync generators
+[NX Daemon Server] - 2024-11-06T09:26:27.860Z - [SYNC]: scheduling: []

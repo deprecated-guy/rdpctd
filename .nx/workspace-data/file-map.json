@@ -112,6 +112,491 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "site": [
+        {
+          "file": "apps/site/.idea/.gitignore",
+          "hash": "16259663310133185705"
+        },
+        {
+          "file": "apps/site/core/components/comments/comments.component.ts",
+          "hash": "11648408058207628153"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.html",
+          "hash": "11483102615737529325"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.scss",
+          "hash": "5506487418028673181"
+        },
+        {
+          "file": "apps/site/core/components/footer/footer.component.ts",
+          "hash": "5019663333881166676",
+          "deps": [
+            "npm:@angular/core",
+            "npm:luxon",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.html",
+          "hash": "15657238120024985793"
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.scss",
+          "hash": "15135920342307574140"
+        },
+        {
+          "file": "apps/site/core/components/header/header.component.ts",
+          "hash": "14082248239225697086",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:rxjs",
+            "npm:luxon",
+            "ui",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.service.ts",
+          "hash": "960623142596184788",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/header.spec.ts",
+          "hash": "3999655794764044536",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/index.ts",
+          "hash": "6785501596725676180"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.html",
+          "hash": "1446277021145414988"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.scss",
+          "hash": "12061479180151337652"
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.spec.ts",
+          "hash": "5630069330071402158",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/install/install-button.component.ts",
+          "hash": "4269732425128755714",
+          "deps": [
+            "npm:@angular/core",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.html",
+          "hash": "11101175079135893817"
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.scss",
+          "hash": "16471011461481255550"
+        },
+        {
+          "file": "apps/site/core/components/header/item/header-item.component.ts",
+          "hash": "12941647847618645006",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/components/index.ts",
+          "hash": "16475506410355975494"
+        },
+        {
+          "file": "apps/site/core/pages/changelog/changelog-page.component.ts",
+          "hash": "3709144273010069693",
+          "deps": [
+            "npm:@angular/core",
+            "npm:ngx-markdown"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page-menu.service.ts",
+          "hash": "16525954597278059140",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.html",
+          "hash": "4669054763900284953"
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.scss",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/site/core/pages/games/games-page.component.ts",
+          "hash": "16632215219466990148",
+          "deps": [
+            "npm:@angular/core",
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.html",
+          "hash": "2242099549937883902"
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.scss",
+          "hash": "13731358006294425180"
+        },
+        {
+          "file": "apps/site/core/pages/home/home-page.component.ts",
+          "hash": "139140401397450226",
+          "deps": [
+            "npm:@angular/core",
+            "ui",
+            "npm:@taiga-ui/kit",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/core/routes.ts",
+          "hash": "9296979566643320017",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/core/services/index.ts",
+          "hash": "9960828106358643742"
+        },
+        {
+          "file": "apps/site/core/services/version-checker.ts",
+          "hash": "13281608742877626651",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/common",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/site/core/types/index.ts",
+          "hash": "16792068329914762467"
+        },
+        {
+          "file": "apps/site/core/types/navigation.ts",
+          "hash": "13596354618083482558"
+        },
+        {
+          "file": "apps/site/favicon.ico",
+          "hash": "8177864596884989230"
+        },
+        {
+          "file": "apps/site/jest.config.ts",
+          "hash": "4594408215348490631"
+        },
+        {
+          "file": "apps/site/nginx.conf",
+          "hash": "10412904414727117843"
+        },
+        {
+          "file": "apps/site/project.json",
+          "hash": "7740080436814807015"
+        },
+        {
+          "file": "apps/site/src/app/app.component.html",
+          "hash": "2692910464773108375"
+        },
+        {
+          "file": "apps/site/src/app/app.component.scss",
+          "hash": "15036214574332298676"
+        },
+        {
+          "file": "apps/site/src/app/app.component.spec.ts",
+          "hash": "17533233993363202480",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.component.ts",
+          "hash": "16097699148539138013",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "ui",
+            "npm:@taiga-ui/core"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.config.ts",
+          "hash": "1045256214934825695",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router",
+            "npm:@angular/platform-browser",
+            "npm:ngx-markdown",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/app.routes.ts",
+          "hash": "900313941850849633",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update-alert/update-alert.component.spec.ts",
+          "hash": "3799408773772524607",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update-alert/update-alert.component.ts",
+          "hash": "15183747566582517881",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@taiga-ui/core",
+            "npm:@angular/router",
+            "npm:@taiga-ui/polymorpheus"
+          ]
+        },
+        {
+          "file": "apps/site/src/app/update.worker.ts",
+          "hash": "17792266601369897295",
+          "deps": [
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "apps/site/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/site/src/assets/audio/1.mp3",
+          "hash": "12517172483144333080"
+        },
+        {
+          "file": "apps/site/src/assets/icons/android-chrome-192x192.png",
+          "hash": "7554562995625848166"
+        },
+        {
+          "file": "apps/site/src/assets/icons/android-chrome-512x512.png",
+          "hash": "3760469285071407085"
+        },
+        {
+          "file": "apps/site/src/assets/icons/apple-touch-icon.png",
+          "hash": "16484408581097406029"
+        },
+        {
+          "file": "apps/site/src/assets/icons/favicon-16x16.png",
+          "hash": "793523201967719027"
+        },
+        {
+          "file": "apps/site/src/assets/icons/favicon-32x32.png",
+          "hash": "9686903329107219367"
+        },
+        {
+          "file": "apps/site/src/assets/icons/site.webmanifest",
+          "hash": "15656720897124240449"
+        },
+        {
+          "file": "apps/site/src/assets/images/avif/gaming.avif",
+          "hash": "2091177350363909433"
+        },
+        {
+          "file": "apps/site/src/assets/images/home.svg",
+          "hash": "17385893261432377413"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/apollo.svg",
+          "hash": "12158091591033102078"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/arrow-back.svg",
+          "hash": "16478592501813965403"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/auth.svg",
+          "hash": "1168312539858254112"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/chevron-right.svg",
+          "hash": "9740220266409664291"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/clock.svg",
+          "hash": "12367382405728154199"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/cv.svg",
+          "hash": "4576621593233453765"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/dark-mode.svg",
+          "hash": "9186116881370337183"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/database.svg",
+          "hash": "9992502586202600679"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/deps.svg",
+          "hash": "14395015664913671529"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/drawer.svg",
+          "hash": "10966457523750163136"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/forum.svg",
+          "hash": "10897526177801774609"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/game.svg",
+          "hash": "1992619078645377789"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/go-back.svg",
+          "hash": "15713111610721385284"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/graphql.svg",
+          "hash": "17982382809865310698"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/home.svg",
+          "hash": "2873902914267026661"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/idea.svg",
+          "hash": "5872423031738545565"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/install-desktop-rounded.svg",
+          "hash": "7967312247491124147"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/jwt.svg",
+          "hash": "6350241681582595614"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/light-mode.svg",
+          "hash": "494311918134035544"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/palette.svg",
+          "hash": "5374860913320618550"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/rust-logo.svg",
+          "hash": "7661932737948837237"
+        },
+        {
+          "file": "apps/site/src/assets/images/svg/system.svg",
+          "hash": "10928649621634633373"
+        },
+        {
+          "file": "apps/site/src/assets/logo.svg",
+          "hash": "13914118732899144713"
+        },
+        {
+          "file": "apps/site/src/assets/manifest.json",
+          "hash": "4811563073821598162"
+        },
+        {
+          "file": "apps/site/src/assets/md/CHANGELOG.md",
+          "hash": "13117777429416327578"
+        },
+        {
+          "file": "apps/site/src/assets/service-worker.js",
+          "hash": "12844243558477657805"
+        },
+        {
+          "file": "apps/site/src/assets/version.txt",
+          "hash": "8192196416156000410"
+        },
+        {
+          "file": "apps/site/src/favicon.ico",
+          "hash": "7874704730912671046"
+        },
+        {
+          "file": "apps/site/src/index.html",
+          "hash": "9484161198729415613"
+        },
+        {
+          "file": "apps/site/src/main.ts",
+          "hash": "16035020251937385991",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "apps/site/src/styles.scss",
+          "hash": "3779750947311156318"
+        },
+        {
+          "file": "apps/site/src/test-setup.ts",
+          "hash": "3663864336796512338",
+          "deps": [
+            "npm:jest-preset-angular"
+          ]
+        },
+        {
+          "file": "apps/site/styles/comtainers.scss",
+          "hash": "440943745456053329"
+        },
+        {
+          "file": "apps/site/styles/reset.scss",
+          "hash": "10356370665655772817"
+        },
+        {
+          "file": "apps/site/tsconfig.app.json",
+          "hash": "6370381941926563109"
+        },
+        {
+          "file": "apps/site/tsconfig.editor.json",
+          "hash": "5683551997488081321"
+        },
+        {
+          "file": "apps/site/tsconfig.json",
+          "hash": "12908826500892150196"
+        },
+        {
+          "file": "apps/site/tsconfig.spec.json",
+          "hash": "11325107235789347333"
+        },
+        {
+          "file": "apps/site/tsconfig.worker.json",
+          "hash": "16049377979760804925"
+        },
+        {
+          "file": "apps/site/version",
+          "hash": "6187375516382002419"
+        }
+      ],
       "ui": [
         {
           "file": "libs/ui/README.md",
@@ -524,6 +1009,75 @@
           ]
         },
         {
+          "file": "libs/ui/src/lib/components/progress-card/index.ts",
+          "hash": "17223956993105771070"
+        },
+        {
+          "file": "libs/ui/src/lib/components/progress-card/process-card-icon.directive.spec.ts",
+          "hash": "8581349669946623282"
+        },
+        {
+          "file": "libs/ui/src/lib/components/progress-card/process-card-icon.directive.ts",
+          "hash": "12419691999934681769",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/progress-card/process-card-name.directive.ts",
+          "hash": "3314300595993662223",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/progress-card/progress-card.component.html",
+          "hash": "11198110270868688294"
+        },
+        {
+          "file": "libs/ui/src/lib/components/progress-card/progress-card.component.scss",
+          "hash": "2325113280670032593"
+        },
+        {
+          "file": "libs/ui/src/lib/components/progress-card/progress-card.component.ts",
+          "hash": "11516923860992763120",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common",
+            "npm:@taiga-ui/polymorpheus"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/stepper/progress-step.component.html",
+          "hash": "14566715256550438914"
+        },
+        {
+          "file": "libs/ui/src/lib/components/stepper/progress-step.component.scss",
+          "hash": "1484736387494686799"
+        },
+        {
+          "file": "libs/ui/src/lib/components/stepper/progress-step.component.spec.ts",
+          "hash": "6114124363713086896",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/stepper/progress-step.component.ts",
+          "hash": "16060290929232829390",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/common"
+          ]
+        },
+        {
+          "file": "libs/ui/src/lib/components/stepper/stepper.component.spec.ts",
+          "hash": "13409452824970934241",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "libs/ui/src/lib/components/tabs/index.ts",
           "hash": "1961428661859078723"
         },
@@ -802,447 +1356,6 @@
           "file": "apps/site-e2e/tsconfig.json",
           "hash": "7012811660374785764"
         }
-      ],
-      "site": [
-        {
-          "file": "apps/site/.idea/.gitignore",
-          "hash": "16259663310133185705"
-        },
-        {
-          "file": "apps/site/core/components/comments/comments.component.ts",
-          "hash": "11648408058207628153"
-        },
-        {
-          "file": "apps/site/core/components/footer/footer.component.html",
-          "hash": "11483102615737529325"
-        },
-        {
-          "file": "apps/site/core/components/footer/footer.component.scss",
-          "hash": "5506487418028673181"
-        },
-        {
-          "file": "apps/site/core/components/footer/footer.component.ts",
-          "hash": "5019663333881166676",
-          "deps": [
-            "npm:@angular/core",
-            "npm:luxon",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/header.component.html",
-          "hash": "15657238120024985793"
-        },
-        {
-          "file": "apps/site/core/components/header/header.component.scss",
-          "hash": "11516253720352003048"
-        },
-        {
-          "file": "apps/site/core/components/header/header.component.ts",
-          "hash": "14082248239225697086",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common",
-            "npm:rxjs",
-            "npm:luxon",
-            "ui",
-            "npm:@angular/router",
-            "npm:@taiga-ui/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/header.service.ts",
-          "hash": "960623142596184788",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/header.spec.ts",
-          "hash": "3999655794764044536",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@taiga-ui/core",
-            "npm:@angular/common",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/index.ts",
-          "hash": "6785501596725676180"
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.html",
-          "hash": "1446277021145414988"
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.scss",
-          "hash": "12061479180151337652"
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.spec.ts",
-          "hash": "5630069330071402158",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/install/install-button.component.ts",
-          "hash": "4269732425128755714",
-          "deps": [
-            "npm:@angular/core",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/header/item/header-item.component.html",
-          "hash": "11101175079135893817"
-        },
-        {
-          "file": "apps/site/core/components/header/item/header-item.component.scss",
-          "hash": "16471011461481255550"
-        },
-        {
-          "file": "apps/site/core/components/header/item/header-item.component.ts",
-          "hash": "12941647847618645006",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/router",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/components/index.ts",
-          "hash": "16475506410355975494"
-        },
-        {
-          "file": "apps/site/core/pages/changelog/changelog-page.component.ts",
-          "hash": "3709144273010069693",
-          "deps": [
-            "npm:@angular/core",
-            "npm:ngx-markdown"
-          ]
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page-menu.service.ts",
-          "hash": "16525954597278059140",
-          "deps": [
-            "npm:@angular/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page.component.html",
-          "hash": "4669054763900284953"
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page.component.scss",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/site/core/pages/games/games-page.component.ts",
-          "hash": "16632215219466990148",
-          "deps": [
-            "npm:@angular/core",
-            "ui"
-          ]
-        },
-        {
-          "file": "apps/site/core/pages/home/home-page.component.html",
-          "hash": "18170706420249051669"
-        },
-        {
-          "file": "apps/site/core/pages/home/home-page.component.scss",
-          "hash": "14664710884660977024"
-        },
-        {
-          "file": "apps/site/core/pages/home/home-page.component.ts",
-          "hash": "13944699022234311560",
-          "deps": [
-            "npm:@angular/core",
-            "ui",
-            "npm:@taiga-ui/kit",
-            "npm:@taiga-ui/core"
-          ]
-        },
-        {
-          "file": "apps/site/core/routes.ts",
-          "hash": "9296979566643320017",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/core/services/index.ts",
-          "hash": "9960828106358643742"
-        },
-        {
-          "file": "apps/site/core/services/version-checker.ts",
-          "hash": "13281608742877626651",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/common",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/site/core/types/index.ts",
-          "hash": "16792068329914762467"
-        },
-        {
-          "file": "apps/site/core/types/navigation.ts",
-          "hash": "13596354618083482558"
-        },
-        {
-          "file": "apps/site/favicon.ico",
-          "hash": "8177864596884989230"
-        },
-        {
-          "file": "apps/site/jest.config.ts",
-          "hash": "4594408215348490631"
-        },
-        {
-          "file": "apps/site/nginx.conf",
-          "hash": "10412904414727117843"
-        },
-        {
-          "file": "apps/site/project.json",
-          "hash": "10699027076067477151"
-        },
-        {
-          "file": "apps/site/src/app/app.component.html",
-          "hash": "2692910464773108375"
-        },
-        {
-          "file": "apps/site/src/app/app.component.scss",
-          "hash": "15036214574332298676"
-        },
-        {
-          "file": "apps/site/src/app/app.component.spec.ts",
-          "hash": "17533233993363202480",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/app.component.ts",
-          "hash": "16097699148539138013",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "ui",
-            "npm:@taiga-ui/core"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/app.config.ts",
-          "hash": "1045256214934825695",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router",
-            "npm:@angular/platform-browser",
-            "npm:ngx-markdown",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/app.routes.ts",
-          "hash": "900313941850849633",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/update-alert/update-alert.component.spec.ts",
-          "hash": "3799408773772524607",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/update-alert/update-alert.component.ts",
-          "hash": "15183747566582517881",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@taiga-ui/core",
-            "npm:@angular/router",
-            "npm:@taiga-ui/polymorpheus"
-          ]
-        },
-        {
-          "file": "apps/site/src/app/update.worker.ts",
-          "hash": "17792266601369897295",
-          "deps": [
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "apps/site/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "apps/site/src/assets/audio/1.mp3",
-          "hash": "12517172483144333080"
-        },
-        {
-          "file": "apps/site/src/assets/icons/android-chrome-192x192.png",
-          "hash": "7554562995625848166"
-        },
-        {
-          "file": "apps/site/src/assets/icons/android-chrome-512x512.png",
-          "hash": "3760469285071407085"
-        },
-        {
-          "file": "apps/site/src/assets/icons/apple-touch-icon.png",
-          "hash": "16484408581097406029"
-        },
-        {
-          "file": "apps/site/src/assets/icons/favicon-16x16.png",
-          "hash": "793523201967719027"
-        },
-        {
-          "file": "apps/site/src/assets/icons/favicon-32x32.png",
-          "hash": "9686903329107219367"
-        },
-        {
-          "file": "apps/site/src/assets/icons/site.webmanifest",
-          "hash": "15656720897124240449"
-        },
-        {
-          "file": "apps/site/src/assets/images/avif/gaming.avif",
-          "hash": "2091177350363909433"
-        },
-        {
-          "file": "apps/site/src/assets/images/home.svg",
-          "hash": "17385893261432377413"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/arrow-back.svg",
-          "hash": "16478592501813965403"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/chevron-right.svg",
-          "hash": "9740220266409664291"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/dark-mode.svg",
-          "hash": "9186116881370337183"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/drawer.svg",
-          "hash": "10966457523750163136"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/game.svg",
-          "hash": "1992619078645377789"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/go-back.svg",
-          "hash": "15713111610721385284"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/home.svg",
-          "hash": "2873902914267026661"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/install-desktop-rounded.svg",
-          "hash": "7967312247491124147"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/light-mode.svg",
-          "hash": "494311918134035544"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/palette.svg",
-          "hash": "5374860913320618550"
-        },
-        {
-          "file": "apps/site/src/assets/images/svg/system.svg",
-          "hash": "10928649621634633373"
-        },
-        {
-          "file": "apps/site/src/assets/logo.svg",
-          "hash": "13914118732899144713"
-        },
-        {
-          "file": "apps/site/src/assets/manifest.json",
-          "hash": "4811563073821598162"
-        },
-        {
-          "file": "apps/site/src/assets/md/CHANGELOG.md",
-          "hash": "3718989895632179322"
-        },
-        {
-          "file": "apps/site/src/assets/service-worker.js",
-          "hash": "12844243558477657805"
-        },
-        {
-          "file": "apps/site/src/assets/version.txt",
-          "hash": "8192196416156000410"
-        },
-        {
-          "file": "apps/site/src/favicon.ico",
-          "hash": "7874704730912671046"
-        },
-        {
-          "file": "apps/site/src/index.html",
-          "hash": "9484161198729415613"
-        },
-        {
-          "file": "apps/site/src/main.ts",
-          "hash": "16035020251937385991",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "apps/site/src/styles.scss",
-          "hash": "3779750947311156318"
-        },
-        {
-          "file": "apps/site/src/test-setup.ts",
-          "hash": "3663864336796512338",
-          "deps": [
-            "npm:jest-preset-angular"
-          ]
-        },
-        {
-          "file": "apps/site/styles/comtainers.scss",
-          "hash": "440943745456053329"
-        },
-        {
-          "file": "apps/site/styles/reset.scss",
-          "hash": "10356370665655772817"
-        },
-        {
-          "file": "apps/site/tsconfig.app.json",
-          "hash": "6370381941926563109"
-        },
-        {
-          "file": "apps/site/tsconfig.editor.json",
-          "hash": "5683551997488081321"
-        },
-        {
-          "file": "apps/site/tsconfig.json",
-          "hash": "12908826500892150196"
-        },
-        {
-          "file": "apps/site/tsconfig.spec.json",
-          "hash": "11325107235789347333"
-        },
-        {
-          "file": "apps/site/tsconfig.worker.json",
-          "hash": "16049377979760804925"
-        },
-        {
-          "file": "apps/site/version",
-          "hash": "10480324889189853578"
-        }
       ]
     },
     "nonProjectFiles": [
@@ -1424,19 +1537,19 @@
       },
       {
         "file": "nx.json",
-        "hash": "16920245762557786011"
+        "hash": "10330239757656913737"
       },
       {
         "file": "package-lock.json",
-        "hash": "13792355231378250534"
+        "hash": "8981263405133480506"
       },
       {
         "file": "package.json",
-        "hash": "16768192134288485804"
+        "hash": "17552632805463626804"
       },
       {
         "file": "tsconfig.base.json",
-        "hash": "5858805953047146107"
+        "hash": "16767645217108389678"
       }
     ]
   }
